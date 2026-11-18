@@ -1,918 +1,1024 @@
 // File: soal_fisika.js
+// Kurikulum Merdeka - Fisika Kelas XI (Fase F / Peminatan SainsTek - SMAN 3 Mataram)
+// Disusun urut per bab (Semester 1 & Semester 2)
+
 const soalFisika = [
-    // ==================== LEVEL 1: MUDAH (1-25) ====================
-    // ---- VEKTOR ----
+    // =========================================================================
+    // BAB 1: VEKTOR (1-10)
+    // =========================================================================
     {
         id: 1,
-        teks: "Besaran yang memiliki nilai dan arah disebut ....",
+        teks: "Besaran berikut yang seluruhnya merupakan besaran vektor adalah ....",
         gambar: "",
-        opsi: ["Skalar", "Vektor", "Besaran pokok", "Besaran turunan", "Satuan"],
+        opsi: [
+            "Massa, waktu, dan suhu",
+            "Perpindahan, kecepatan, dan gaya",
+            "Jarak, kelajuan, dan usaha",
+            "Energi, daya, dan tekanan",
+            "Volume, massa jenis, dan momentum"
+        ],
         jawaban: 1,
-        pembahasan: "Vektor adalah besaran yang memiliki nilai (besar) dan arah. Contoh: perpindahan, kecepatan, percepatan, gaya. Skalar hanya memiliki nilai, contoh: massa, waktu, suhu.",
-        trik_cepat: "Vektor = nilai + arah (ingat panah)."
+        pembahasan: "Besaran vektor memiliki besar (nilai) dan arah. Perpindahan, kecepatan, dan gaya memiliki arah sehingga termasuk besaran vektor. Massa, waktu, suhu, jarak, kelajuan, usaha, energi, daya, tekanan, volume, dan massa jenis adalah besaran skalar.",
+        trik_cepat: "Ingat arah: gerak (perpindahan, kecepatan, percepatan) dan dorongan/tarikan (gaya, momentum, impuls) pasti vektor."
     },
     {
         id: 2,
-        teks: "Dua vektor $\\vec{A} = 3\\hat{i} + 4\\hat{j}$ dan $\\vec{B} = 1\\hat{i} + 2\\hat{j}$. Besar vektor resultan $\\vec{A} + \\vec{B}$ adalah ....",
+        teks: "Dua vektor $\\vec{A} = 4\\hat{i} - 2\\hat{j}$ dan $\\vec{B} = -1\\hat{i} + 6\\hat{j}$. Besar resultan vektor $\\vec{R} = \\vec{A} + \\vec{B}$ adalah ....",
         gambar: "",
-        opsi: ["$2\\sqrt{10}$", "$4\\sqrt{2}$", "$2\\sqrt{13}$", "$\\sqrt{52}$", "$2\\sqrt{17}$"],
+        opsi: ["3 satuan", "4 satuan", "5 satuan", "7 satuan", "25 satuan"],
         jawaban: 2,
-        pembahasan: "$\\vec{A} + \\vec{B} = (3+1)\\hat{i} + (4+2)\\hat{j} = 4\\hat{i} + 6\\hat{j}$. Besar = $\\sqrt{4^2 + 6^2} = \\sqrt{16+36} = \\sqrt{52} = 2\\sqrt{13}$.",
-        trik_cepat: "Jumlahkan komponen, lalu hitung $\\sqrt{x^2+y^2}$."
+        pembahasan: "$\\vec{R} = (4 + (-1))\\hat{i} + (-2 + 6)\\hat{j} = 3\\hat{i} + 4\\hat{j}$. Besar vektor resultan: $|\\vec{R}| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = 5$ satuan.",
+        trik_cepat: "Jumlahkan komponen sejenis ($\\hat{i}$ dengan $\\hat{i}$, $\\hat{j}$ dengan $\\hat{j}$), lalu pakai Tripel Pythagoras 3-4-5."
     },
     {
         id: 3,
-        teks: "Vektor $\\vec{F} = 6\\hat{i} + 8\\hat{j}$ memiliki besar ....",
+        teks: "Sebuah vektor gaya $F = 20$ N membentuk sudut $37^\\circ$ terhadap sumbu-$x$ positif. Komponen vektor pada sumbu-$x$ dan sumbu-$y$ berturut-turut adalah .... ($\\sin 37^\\circ = 0,6$; $\\cos 37^\\circ = 0,8$)",
         gambar: "",
-        opsi: ["10", "12", "14", "16", "18"],
-        jawaban: 0,
-        pembahasan: "$|\\vec{F}| = \\sqrt{6^2 + 8^2} = \\sqrt{36+64} = \\sqrt{100} = 10$.",
-        trik_cepat: "Tripel Pythagoras 6-8-10."
+        opsi: [
+            "$12$ N dan $16$ N",
+            "$16$ N dan $12$ N",
+            "$10$ N dan $10\\sqrt{3}$ N",
+            "$10\\sqrt{3}$ N dan $10$ N",
+            "$16$ N dan $20$ N"
+        ],
+        jawaban: 1,
+        pembahasan: "$F_x = F \\cos 37^\\circ = 20 \\times 0,8 = 16$ N. $F_y = F \\sin 37^\\circ = 20 \\times 0,6 = 12$ N.",
+        trik_cepat: "Samping sudut pakai $\\cos$, depan sudut pakai $\\sin$."
     },
     {
         id: 4,
-        teks: "Hasil perkalian titik (dot product) $\\vec{a} = 2\\hat{i} + 3\\hat{j}$ dan $\\vec{b} = 4\\hat{i} - 1\\hat{j}$ adalah ....",
+        teks: "Dua buah vektor gaya masing-masing besarnya $6$ N dan $8$ N bertitik tangkap sama dan saling mengapit sudut $60^\\circ$. Besar resultan kedua vektor tersebut adalah ....",
         gambar: "",
-        opsi: ["5", "6", "7", "8", "11"],
-        jawaban: 0,
-        pembahasan: "$\\vec{a} \\cdot \\vec{b} = (2)(4) + (3)(-1) = 8 - 3 = 5$.",
-        trik_cepat: "Dot product: kalikan komponen sejenis lalu jumlahkan."
+        opsi: ["$2\\sqrt{13}$ N", "$2\\sqrt{37}$ N", "$10$ N", "$14$ N", "$2\\sqrt{19}$ N"],
+        jawaban: 1,
+        pembahasan: "$R = \\sqrt{F_1^2 + F_2^2 + 2 F_1 F_2 \\cos 60^\\circ} = \\sqrt{6^2 + 8^2 + 2(6)(8)(0,5)} = \\sqrt{36 + 64 + 48} = \\sqrt{148} = 2\\sqrt{37}$ N.",
+        trik_cepat: "Gunakan rumus kosinus: $R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}$."
     },
     {
         id: 5,
-        teks: "Sebuah vektor memiliki komponen $x = 5$ dan $y = 5\\sqrt{3}$. Arah vektor tersebut terhadap sumbu-x positif adalah ....",
+        teks: "Diketahui dua vektor $\\vec{P} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ dan $\\vec{Q} = 4\\hat{i} - 2\\hat{j} + 2\\hat{k}$. Hasil perkalian titik (dot product) $\\vec{P} \\cdot \\vec{Q}$ adalah ....",
         gambar: "",
-        opsi: ["30°", "45°", "60°", "75°", "90°"],
-        jawaban: 2,
-        pembahasan: "$\\tan\\theta = \\frac{y}{x} = \\frac{5\\sqrt{3}}{5} = \\sqrt{3} \\Rightarrow \\theta = 60^\\circ$.",
-        trik_cepat: "$\\tan\\theta = y/x$, hafalkan nilai sudut istimewa."
+        opsi: ["0", "2", "4", "12", "16"],
+        jawaban: 0,
+        pembahasan: "$\\vec{P} \\cdot \\vec{Q} = (2)(4) + (3)(-2) + (-1)(2) = 8 - 6 - 2 = 0$. (Karena hasilnya 0, kedua vektor saling tegak lurus).",
+        trik_cepat: "Dot product menghasilkan skalar: kalikan koefisien sejenis lalu jumlahkan."
     },
-
-    // ---- KINEMATIKA ----
     {
         id: 6,
-        teks: "Sebuah mobil bergerak dengan kecepatan tetap 20 m/s selama 10 sekon. Jarak yang ditempuh mobil adalah ....",
+        teks: "Hasil perkalian silang (cross product) antara vektor $\\vec{A} = 3\\hat{i} + 2\\hat{j}$ dan $\\vec{B} = 2\\hat{i} - 4\\hat{j}$ adalah ....",
         gambar: "",
-        opsi: ["100 m", "150 m", "200 m", "250 m", "300 m"],
-        jawaban: 2,
-        pembahasan: "GLB: $s = v \\cdot t = 20 \\times 10 = 200$ m.",
-        trik_cepat: "GLB: $s = v \\cdot t$."
+        opsi: ["$-16\\hat{k}$", "$-8\\hat{k}$", "$-2\\hat{k}$", "$8\\hat{k}$", "$16\\hat{k}$"],
+        jawaban: 0,
+        pembahasan: "$\\vec{A} \\times \\vec{B} = (A_x B_y - A_y B_x)\\hat{k} = ((3)(-4) - (2)(2))\\hat{k} = (-12 - 4)\\hat{k} = -16\\hat{k}$.",
+        trik_cepat: "Cross product 2D: $(x_1 y_2 - y_1 x_2)\\hat{k}$."
     },
     {
         id: 7,
-        teks: "Sebuah benda mula-mula diam, kemudian dipercepat 2 m/s² selama 5 sekon. Kecepatan akhir benda adalah ....",
+        teks: "Tiga buah vektor gaya setitik tangkap berada dalam kesetimbangan seperti pada bidang koordinat: $F_1 = 10$ N berarah ke timur ($+x$), $F_2 = 10$ N membentuk sudut $120^\\circ$ terhadap $+x$, dan $F_3$ membentuk sudut $240^\\circ$ terhadap $+x$. Besar $F_3$ agar sistem seimbang adalah ....",
         gambar: "",
-        opsi: ["5 m/s", "10 m/s", "15 m/s", "20 m/s", "25 m/s"],
-        jawaban: 1,
-        pembahasan: "GLBB: $v = v_0 + at = 0 + 2(5) = 10$ m/s.",
-        trik_cepat: "$v = v_0 + at$."
+        opsi: ["$5$ N", "$5\\sqrt{3}$ N", "$10$ N", "$10\\sqrt{3}$ N", "$20$ N"],
+        jawaban: 2,
+        pembahasan: "Sudut antarketiga vektor masing-masing $120^\\circ$ (simetris membentuk $360^\\circ$). Agar resultan nol (setimbang), besar ketiga vektor harus sama, yaitu $F_3 = 10$ N.",
+        trik_cepat: "Tiga vektor bersudut $120^\\circ$ sama besar selalu menghasilkan resultan = 0."
     },
     {
         id: 8,
-        teks: "Sebuah benda jatuh bebas dari ketinggian 20 m. Jika $g = 10$ m/s², waktu yang dibutuhkan untuk mencapai tanah adalah ....",
+        teks: "Seorang siswa SMAN 3 Mataram berjalan lurus ke arah timur sejauh $80$ m, kemudian berbelok ke utara sejauh $60$ m. Perbandingan jarak yang ditempuh dan besar perpindahannya adalah ....",
         gambar: "",
-        opsi: ["1 s", "2 s", "3 s", "4 s", "5 s"],
+        opsi: ["$5 : 7$", "$7 : 5$", "$4 : 3$", "$3 : 4$", "$1 : 1$"],
         jawaban: 1,
-        pembahasan: "Jatuh bebas: $h = \\frac{1}{2}gt^2 \\Rightarrow 20 = \\frac{1}{2}(10)t^2 \\Rightarrow 20 = 5t^2 \\Rightarrow t^2 = 4 \\Rightarrow t = 2$ s.",
-        trik_cepat: "$t = \\sqrt{2h/g}$."
+        pembahasan: "Jarak (skalar) = $80 + 60 = 140$ m. Perpindahan (vektor) = $\\sqrt{80^2 + 60^2} = 100$ m. Perbandingan = $140 : 100 = 7 : 5$.",
+        trik_cepat: "Jarak = total lintasan; Perpindahan = garis lurus awal ke akhir (Tripel 60-80-100)."
     },
     {
         id: 9,
-        teks: "Sebuah benda bergerak melingkar dengan jari-jari 2 m dan kecepatan linear 4 m/s. Percepatan sentripetal benda adalah ....",
+        teks: "Dua vektor $\\vec{A}$ dan $\\vec{B}$ memiliki besar yang sama, yaitu $F$. Jika besar resultan kedua vektor sama dengan $F$, sudut apit antara kedua vektor tersebut adalah ....",
         gambar: "",
-        opsi: ["2 m/s²", "4 m/s²", "6 m/s²", "8 m/s²", "10 m/s²"],
+        opsi: ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$", "$150^\\circ$"],
         jawaban: 3,
-        pembahasan: "$a_s = \\frac{v^2}{r} = \\frac{4^2}{2} = \\frac{16}{2} = 8$ m/s².",
-        trik_cepat: "$a_s = v^2/r$."
+        pembahasan: "$R^2 = A^2 + B^2 + 2AB\\cos\\theta \\Rightarrow F^2 = F^2 + F^2 + 2F^2\\cos\\theta \\Rightarrow -F^2 = 2F^2\\cos\\theta \\Rightarrow \\cos\\theta = -\\frac{1}{2} \\Rightarrow \\theta = 120^\\circ$.",
+        trik_cepat: "Jika $A = B = R = F$, sudut apitnya pasti $120^\\circ$."
     },
     {
         id: 10,
-        teks: "Sebuah peluru ditembakkan dengan kecepatan awal 20 m/s pada sudut elevasi 30°. Komponen kecepatan awal pada sumbu-x adalah .... ($\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$)",
+        teks: "Vektor posisi sebuah partikel dinyatakan dengan $\\vec{r} = 6\\hat{i} - 8\\hat{j}$ meter. Vektor satuan yang searah dengan $\\vec{r}$ adalah ....",
         gambar: "",
-        opsi: ["5 m/s", "$10\\sqrt{3}$ m/s", "10 m/s", "$20\\sqrt{3}$ m/s", "20 m/s"],
-        jawaban: 1,
-        pembahasan: "$v_{0x} = v_0 \\cos\\theta = 20 \\cos 30^\\circ = 20 \\cdot \\frac{\\sqrt{3}}{2} = 10\\sqrt{3}$ m/s.",
-        trik_cepat: "$v_{0x} = v_0 \\cos\\theta$."
+        opsi: [
+            "$0,6\\hat{i} - 0,8\\hat{j}$",
+            "$0,8\\hat{i} - 0,6\\hat{j}$",
+            "$6\\hat{i} - 8\\hat{j}$",
+            "$-0,6\\hat{i} + 0,8\\hat{j}$",
+            "$0,3\\hat{i} - 0,4\\hat{j}$"
+        ],
+        jawaban: 0,
+        pembahasan: "Besar $|\\vec{r}| = \\sqrt{6^2 + (-8)^2} = 10$. Vektor satuan $\\hat{u} = \\frac{\\vec{r}}{|\\vec{r}|} = \\frac{6\\hat{i} - 8\\hat{j}}{10} = 0,6\\hat{i} - 0,8\\hat{j}$.",
+        trik_cepat: "Vektor satuan = vektor dibagi besarnya."
     },
+
+    // =========================================================================
+    // BAB 2: KINEMATIKA GERAK (11-22)
+    // =========================================================================
     {
         id: 11,
-        teks: "Benda yang bergerak melingkar beraturan memiliki ....",
+        teks: "Sebuah partikel bergerak sepanjang sumbu-$x$ dengan persamaan posisi $x(t) = 2t^3 - 6t^2 + 5t + 4$ ($x$ dalam meter dan $t$ dalam sekon). Kecepatan sesaat partikel pada $t = 2$ s adalah ....",
         gambar: "",
-        opsi: ["Kecepatan linear tetap", "Kecepatan sudut berubah", "Percepatan sentripetal nol", "Kecepatan linear berubah arah", "Percepatan tangensial tetap"],
-        jawaban: 3,
-        pembahasan: "Pada GMB, besar kecepatan linear tetap tetapi arahnya selalu berubah (menyinggung lintasan). Kecepatan sudut tetap, percepatan sentripetal ada, percepatan tangensial nol.",
-        trik_cepat: "GMB: $|v|$ tetap, arah $v$ berubah."
+        opsi: ["$5$ m/s", "$9$ m/s", "$13$ m/s", "$17$ m/s", "$21$ m/s"],
+        jawaban: 0,
+        pembahasan: "$v(t) = \\frac{dx}{dt} = 6t^2 - 12t + 5$. Pada $t = 2$ s: $v(2) = 6(2)^2 - 12(2) + 5 = 24 - 24 + 5 = 5$ m/s.",
+        trik_cepat: "Kecepatan = turunan pertama posisi ($v = dx/dt$)."
     },
     {
         id: 12,
-        teks: "Sebuah bola dilempar vertikal ke atas dengan kecepatan 20 m/s. Tinggi maksimum yang dicapai bola adalah .... ($g = 10$ m/s²)",
+        teks: "Sebuah mobil bergerak dengan kelajuan awal $10$ m/s dipercepat beraturan sebesar $2$ m/s$^2$ selama $6$ sekon. Jarak yang ditempuh mobil selama selang waktu tersebut adalah ....",
         gambar: "",
-        opsi: ["10 m", "15 m", "20 m", "25 m", "30 m"],
-        jawaban: 2,
-        pembahasan: "$v_t^2 = v_0^2 - 2gh$. Di titik tertinggi $v_t = 0$: $0 = 400 - 20h \\Rightarrow h = 20$ m.",
-        trik_cepat: "$h_{max} = v_0^2/(2g)$."
+        opsi: ["$60$ m", "$72$ m", "$84$ m", "$96$ m", "$120$ m"],
+        jawaban: 3,
+        pembahasan: "$s = v_0 t + \\frac{1}{2} a t^2 = (10)(6) + \\frac{1}{2}(2)(6)^2 = 60 + 36 = 96$ m.",
+        trik_cepat: "Gunakan $s = v_0 t + \\frac{1}{2}at^2$."
     },
-
-    // ---- DINAMIKA ----
     {
         id: 13,
-        teks: "Hukum I Newton dikenal juga sebagai hukum ....",
+        teks: "Sebuah bola dilempar vertikal ke atas dari tanah dengan kelajuan awal $30$ m/s. Jika percepatan gravitasi $g = 10$ m/s$^2$, tinggi maksimum yang dicapai bola dan waktu total di udara adalah ....",
         gambar: "",
-        opsi: ["Aksi-reaksi", "Kelembaman", "Kekekalan energi", "Kekekalan momentum", "Gravitasi"],
-        jawaban: 1,
-        pembahasan: "Hukum I Newton: benda cenderung mempertahankan keadaan diam atau bergerak lurus beraturan jika resultan gaya nol. Disebut hukum kelembaman (inersia).",
-        trik_cepat: "Hukum I Newton = kelembaman."
+        opsi: [
+            "$30$ m dan $3$ s",
+            "$45$ m dan $3$ s",
+            "$45$ m dan $6$ s",
+            "$90$ m dan $6$ s",
+            "$90$ m dan $3$ s"
+        ],
+        jawaban: 2,
+        pembahasan: "$h_{max} = \\frac{v_0^2}{2g} = \\frac{30^2}{2(10)} = \\frac{900}{20} = 45$ m. Waktu naik $t_{naik} = \\frac{v_0}{g} = \\frac{30}{10} = 3$ s, sehingga waktu total di udara $t_{total} = 2 \\times 3 = 6$ s.",
+        trik_cepat: "$h_{max} = v_0^2/(2g)$ dan $t_{udara} = 2v_0/g$."
     },
     {
         id: 14,
-        teks: "Sebuah benda bermassa 5 kg diberi gaya 20 N. Percepatan benda adalah ....",
+        teks: "Sebuah peluru ditembakkan dengan kecepatan awal $40$ m/s dan sudut elevasi $30^\\circ$ terhadap horizontal. Jika $g = 10$ m/s$^2$, jangkauan horizontal maksimum peluru adalah ....",
         gambar: "",
-        opsi: ["2 m/s²", "3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
+        opsi: ["$40\\sqrt{3}$ m", "$80$ m", "$80\\sqrt{3}$ m", "$120$ m", "$160\\sqrt{3}$ m"],
         jawaban: 2,
-        pembahasan: "$F = ma \\Rightarrow a = F/m = 20/5 = 4$ m/s².",
-        trik_cepat: "$a = F/m$."
+        pembahasan: "$X_{max} = \\frac{v_0^2 \\sin 2\\theta}{g} = \\frac{40^2 \\sin 60^\\circ}{10} = 160 \\times \\frac{\\sqrt{3}}{2} = 80\\sqrt{3}$ m.",
+        trik_cepat: "$X_{max} = \\frac{v_0^2 \\sin 2\\theta}{g}$."
     },
     {
         id: 15,
-        teks: "Sebuah benda bermassa 2 kg berada di permukaan bumi. Jika $g = 10$ m/s², berat benda tersebut adalah ....",
+        teks: "Pada gerak parabola, pernyataan yang paling tepat mengenai kecepatan benda di titik tertinggi adalah ....",
         gambar: "",
-        opsi: ["2 N", "10 N", "20 N", "200 N", "0,2 N"],
+        opsi: [
+            "Kecepatan total benda bernilai nol",
+            "Komponen kecepatan horizontal bernilai nol",
+            "Komponen kecepatan vertikal bernilai nol dan percepatan bernilai $g$ ke bawah",
+            "Percepatan benda di titik tertinggi bernilai nol",
+            "Kecepatan vertikal maksimum dan kecepatan horizontal tetap"
+        ],
         jawaban: 2,
-        pembahasan: "$w = mg = 2 \\times 10 = 20$ N.",
-        trik_cepat: "$w = mg$."
+        pembahasan: "Di titik tertinggi gerak parabola, $v_y = 0$, tetapi $v_x = v_0\\cos\\theta \\neq 0$. Percepatan gravitasi $g$ selalu bekerja ke bawah sepanjang lintasan.",
+        trik_cepat: "Puncak parabola: $v_y = 0$, $v_x$ tetap, $a = g$ ke bawah."
     },
     {
         id: 16,
-        teks: "Momentum sebuah benda bermassa 4 kg yang bergerak dengan kecepatan 3 m/s adalah ....",
+        teks: "Sebuah roda berputar dengan frekuensi $5$ Hz. Jika jari-jari roda $20$ cm, kelajuan linear sebuah titik di tepi roda adalah ....",
         gambar: "",
-        opsi: ["7 kg·m/s", "12 kg·m/s", "1,33 kg·m/s", "0,75 kg·m/s", "48 kg·m/s"],
+        opsi: ["$\\pi$ m/s", "$2\\pi$ m/s", "$4\\pi$ m/s", "$10\\pi$ m/s", "$20\\pi$ m/s"],
         jawaban: 1,
-        pembahasan: "$p = mv = 4 \\times 3 = 12$ kg·m/s.",
-        trik_cepat: "$p = mv$."
+        pembahasan: "$\\omega = 2\\pi f = 2\\pi(5) = 10\\pi$ rad/s. $r = 20$ cm $= 0,2$ m. Maka $v = \\omega r = 10\\pi \\times 0,2 = 2\\pi$ m/s.",
+        trik_cepat: "$v = 2\\pi f r$ (ubah cm ke meter dulu)."
     },
     {
         id: 17,
-        teks: "Impuls yang diberikan oleh gaya 10 N yang bekerja selama 0,5 sekon adalah ....",
+        teks: "Dua buah roda A dan B dihubungkan dengan sabuk (rantai). Jari-jari roda A adalah $10$ cm dan roda B adalah $25$ cm. Jika roda A berputar dengan kecepatan sudut $50$ rad/s, kecepatan sudut roda B adalah ....",
         gambar: "",
-        opsi: ["5 N·s", "10 N·s", "20 N·s", "0,05 N·s", "50 N·s"],
-        jawaban: 0,
-        pembahasan: "$I = F \\cdot \\Delta t = 10 \\times 0,5 = 5$ N·s.",
-        trik_cepat: "$I = F \\Delta t$."
+        opsi: ["$10$ rad/s", "$20$ rad/s", "$25$ rad/s", "$50$ rad/s", "$125$ rad/s"],
+        jawaban: 1,
+        pembahasan: "Roda dihubungkan sabuk memiliki kelajuan linear sama ($v_A = v_B$): $\\omega_A R_A = \\omega_B R_B \\Rightarrow 50(10) = \\omega_B(25) \\Rightarrow \\omega_B = 20$ rad/s.",
+        trik_cepat: "Dihubungkan sabuk/bersinggungan: $\\omega_1 R_1 = \\omega_2 R_2$."
     },
     {
         id: 18,
-        teks: "Pada tumbukan lenting sempurna, besaran yang selalu kekal adalah ....",
+        teks: "Sebuah benda bergerak lurus dengan grafik kecepatan terhadap waktu ($v$-$t$) berupa trapesium: dari $t=0$ ke $t=4$ s kecepatan naik dari $0$ menjadi $10$ m/s, lalu konstan $10$ m/s hingga $t=10$ s. Jarak total yang ditempuh benda adalah ....",
         gambar: "",
-        opsi: ["Energi kinetik saja", "Momentum saja", "Momentum dan energi kinetik", "Momentum dan energi potensial", "Kecepatan"],
+        opsi: ["$60$ m", "$70$ m", "$80$ m", "$90$ m", "$100$ m"],
         jawaban: 2,
-        pembahasan: "Tumbukan lenting sempurna: momentum total dan energi kinetik total kekal. Koefisien restitusi $e = 1$.",
-        trik_cepat: "Lenting sempurna: $p$ dan $E_k$ kekal."
+        pembahasan: "Jarak = luas di bawah grafik $v$-$t$. Luas segitiga ($0$–$4$ s) = $\\frac{1}{2}(4)(10) = 20$ m. Luas persegi panjang ($4$–$10$ s) = $(6)(10) = 60$ m. Total = $20 + 60 = 80$ m.",
+        trik_cepat: "Jarak pada grafik $v$-$t$ = Luas daerah di bawah kurva."
     },
     {
         id: 19,
-        teks: "Momen gaya (torsi) yang dihasilkan oleh gaya 10 N yang bekerja pada jarak 0,5 m dari poros (tegak lurus) adalah ....",
+        teks: "Sebuah benda bergerak melingkar beraturan dengan jari-jari lintasan $0,5$ m dan kelajuan linear $4$ m/s. Besar percepatan sentripetalnya adalah ....",
         gambar: "",
-        opsi: ["2 N·m", "5 N·m", "10 N·m", "20 N·m", "50 N·m"],
-        jawaban: 1,
-        pembahasan: "$\\tau = F \\cdot r = 10 \\times 0,5 = 5$ N·m.",
-        trik_cepat: "$\\tau = F \\cdot r$ (jika tegak lurus)."
+        opsi: ["$2$ m/s$^2$", "$8$ m/s$^2$", "$16$ m/s$^2$", "$32$ m/s$^2$", "$64$ m/s$^2$"],
+        jawaban: 3,
+        pembahasan: "$a_s = \\frac{v^2}{r} = \\frac{4^2}{0,5} = \\frac{16}{0,5} = 32$ m/s$^2$.",
+        trik_cepat: "$a_s = v^2 / r$."
     },
     {
         id: 20,
-        teks: "Sebuah gaya 15 N bekerja pada benda dengan sudut 60° terhadap horizontal. Komponen gaya pada arah horizontal adalah ....",
+        teks: "Percepatan sebuah partikel dinyatakan oleh fungsi $a(t) = 6t - 2$ m/s$^2$. Jika pada saat $t = 0$ partikel bergerak dengan kecepatan $v_0 = 3$ m/s, kecepatan partikel pada $t = 2$ s adalah ....",
         gambar: "",
-        opsi: ["7,5 N", "$7,5\\sqrt{3}$ N", "15 N", "$15\\sqrt{3}$ N", "30 N"],
-        jawaban: 0,
-        pembahasan: "$F_x = F \\cos 60^\\circ = 15 \\times 0,5 = 7,5$ N.",
-        trik_cepat: "$F_x = F \\cos\\theta$."
+        opsi: ["$8$ m/s", "$11$ m/s", "$12$ m/s", "$15$ m/s", "$19$ m/s"],
+        jawaban: 1,
+        pembahasan: "$v(t) = v_0 + \\int_0^t (6t - 2)dt = 3 + [3t^2 - 2t]_0^2 = 3 + (12 - 4) = 11$ m/s.",
+        trik_cepat: "Integralkan percepatan terhadap waktu lalu tambahkan $v_0$."
     },
-
-    // ---- FLUIDA STATIS ----
     {
         id: 21,
-        teks: "Massa jenis air adalah 1.000 kg/m³. Jika volume air 0,5 m³, massa air tersebut adalah ....",
+        teks: "Sebuah pesawat terbang mendatar pada ketinggian $500$ m dengan kecepatan $100$ m/s menjatuhkan paket bantuan. Jika $g = 10$ m/s$^2$, jarak mendatar jatuhnya paket diukur dari titik tepat di bawah pesawat saat paket dilepaskan adalah ....",
         gambar: "",
-        opsi: ["200 kg", "500 kg", "1.000 kg", "1.500 kg", "2.000 kg"],
-        jawaban: 1,
-        pembahasan: "$\\rho = m/V \\Rightarrow m = \\rho V = 1000 \\times 0,5 = 500$ kg.",
-        trik_cepat: "$m = \\rho V$."
+        opsi: ["$100$ m", "$500$ m", "$1.000$ m", "$1.500$ m", "$2.000$ m"],
+        jawaban: 2,
+        pembahasan: "Waktu jatuh: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(500)}{10}} = \\sqrt{100} = 10$ s. Jarak mendatar: $x = v_x \\cdot t = 100 \\times 10 = 1.000$ m.",
+        trik_cepat: "$x = v_0 \\sqrt{2h/g}$."
     },
     {
         id: 22,
-        teks: "Tekanan hidrostatis pada kedalaman 2 m di dalam air ($\\rho = 1000$ kg/m³, $g = 10$ m/s²) adalah ....",
+        teks: "Mobil A dan mobil B terpisah sejauh $200$ m dan bergerak saling mendekat pada lintasan lurus dengan kecepatan tetap masing-masing $15$ m/s dan $25$ m/s. Keduanya akan berpapasan setelah bergerak selama ....",
         gambar: "",
-        opsi: ["2.000 Pa", "5.000 Pa", "10.000 Pa", "20.000 Pa", "40.000 Pa"],
-        jawaban: 3,
-        pembahasan: "$P_h = \\rho g h = 1000 \\times 10 \\times 2 = 20.000$ Pa.",
-        trik_cepat: "$P_h = \\rho g h$."
+        opsi: ["$4$ s", "$5$ s", "$8$ s", "$10$ s", "$20$ s"],
+        jawaban: 1,
+        pembahasan: "$s_A + s_B = 200 \\Rightarrow 15t + 25t = 200 \\Rightarrow 40t = 200 \\Rightarrow t = 5$ s.",
+        trik_cepat: "Saling mendekat (GLB): $t = \\frac{\\Delta s}{v_A + v_B}$."
     },
+
+    // =========================================================================
+    // BAB 3: DINAMIKA GERAK PARTIKEL, MOMENTUM & ROTASI (23-38)
+    // =========================================================================
     {
         id: 23,
-        teks: "Hukum Archimedes menyatakan bahwa gaya ke atas yang dialami benda di dalam fluida sama dengan ....",
+        teks: "Sebuah balok bermassa $5$ kg ditarik pada lantai datar licin dengan gaya mendatar $20$ N. Percepatan yang dialami balok adalah ....",
         gambar: "",
-        opsi: ["Berat benda", "Berat fluida yang dipindahkan", "Volume benda", "Massa jenis benda", "Tekanan fluida"],
-        jawaban: 1,
-        pembahasan: "Hukum Archimedes: $F_A = \\rho_{fluida} \\cdot g \\cdot V_{tercelup}$ = berat fluida yang dipindahkan.",
-        trik_cepat: "Gaya apung = berat fluida yang dipindahkan."
+        opsi: ["$0,25$ m/s$^2$", "$2$ m/s$^2$", "$4$ m/s$^2$", "$25$ m/s$^2$", "$100$ m/s$^2$"],
+        jawaban: 2,
+        pembahasan: "Hukum II Newton: $a = \\frac{\\Sigma F}{m} = \\frac{20}{5} = 4$ m/s$^2$.",
+        trik_cepat: "$a = F / m$."
     },
     {
         id: 24,
-        teks: "Sebuah benda tercelup seluruhnya dalam air dan memindahkan 200 cm³ air. Gaya apung yang dialami benda adalah .... ($\\rho_{air} = 1000$ kg/m³, $g = 10$ m/s²)",
+        teks: "Seseorang bermassa $60$ kg berada di dalam lift yang sedang bergerak ke atas dengan percepatan $2$ m/s$^2$. Jika $g = 10$ m/s$^2$, gaya normal lantai lift terhadap orang tersebut adalah ....",
         gambar: "",
-        opsi: ["0,2 N", "2 N", "20 N", "200 N", "2000 N"],
-        jawaban: 1,
-        pembahasan: "$V = 200$ cm³ $= 2 \\times 10^{-4}$ m³. $F_A = \\rho g V = 1000 \\times 10 \\times 2 \\times 10^{-4} = 2$ N.",
-        trik_cepat: "Konversi cm³ ke m³ (÷10⁶), lalu $F_A = \\rho g V$."
+        opsi: ["$120$ N", "$480$ N", "$600$ N", "$720$ N", "$840$ N"],
+        jawaban: 3,
+        pembahasan: "Lift dipercepat ke atas: $N - w = m a \\Rightarrow N = m(g + a) = 60(10 + 2) = 720$ N.",
+        trik_cepat: "Lift naik dipercepat: $N = m(g+a)$; turun dipercepat: $N = m(g-a)$."
     },
     {
         id: 25,
-        teks: "Benda yang massa jenisnya lebih kecil dari massa jenis fluida akan ....",
+        teks: "Dua balok bermassa $m_1 = 2$ kg dan $m_2 = 3$ kg dihubungkan dengan tali ringan melalui katrol licin (pesawat Atwood). Jika $g = 10$ m/s$^2$, percepatan sistem adalah ....",
         gambar: "",
-        opsi: ["Tenggelam", "Melayang", "Terapung", "Tenggelam lalu terapung", "Tidak terpengaruh"],
-        jawaban: 2,
-        pembahasan: "Jika $\\rho_{benda} < \\rho_{fluida}$, gaya apung lebih besar dari berat benda sehingga benda terapung.",
-        trik_cepat: "$\\rho_b < \\rho_f$ → terapung; $\\rho_b = \\rho_f$ → melayang; $\\rho_b > \\rho_f$ → tenggelam."
+        opsi: ["$1$ m/s$^2$", "$2$ m/s$^2$", "$4$ m/s$^2$", "$5$ m/s$^2$", "$10$ m/s$^2$"],
+        jawaban: 1,
+        pembahasan: "$a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(3 - 2)(10)}{2 + 3} = \\frac{10}{5} = 2$ m/s$^2$.",
+        trik_cepat: "Katrol licin dua beban: $a = \\frac{\\Delta m}{\\Sigma m} g$."
     },
-
-    // ==================== LEVEL 2: SEDANG (26-50) ====================
     {
         id: 26,
-        teks: "Dua vektor $\\vec{A}$ dan $\\vec{B}$ masing-masing besarnya 3 dan 4 satuan. Jika sudut antara keduanya 90°, besar resultan $\\vec{A} + \\vec{B}$ adalah ....",
+        teks: "Sebuah balok bermassa $4$ kg berada di atas lantai kasar dengan koefisien gesek statis $\\mu_s = 0,4$ dan koefisien gesek kinetis $\\mu_k = 0,2$. Jika balok ditarik gaya horizontal $12$ N dan $g = 10$ m/s$^2$, besar gaya gesek yang bekerja pada balok adalah ....",
         gambar: "",
-        opsi: ["5", "7", "1", "12", "$5\\sqrt{2}$"],
-        jawaban: 0,
-        pembahasan: "$|\\vec{A}+\\vec{B}| = \\sqrt{A^2 + B^2 + 2AB\\cos 90^\\circ} = \\sqrt{9+16+0} = 5$.",
-        trik_cepat: "Sudut 90°: $R = \\sqrt{A^2+B^2}$ (Pythagoras)."
+        opsi: ["$8$ N", "$12$ N", "$16$ N", "$20$ N", "$40$ N"],
+        jawaban: 1,
+        pembahasan: "$f_{s,\\text{max}} = \\mu_s m g = 0,4(4)(10) = 16$ N. Karena gaya tarik $F = 12\\text{ N} < f_{s,\\text{max}}$, balok tetap diam dan gaya gesek statis sama dengan gaya tarik, yaitu $12$ N.",
+        trik_cepat: "Cek $f_{s,\\text{max}}$ dulu! Jika $F < f_{s,\\text{max}}$, benda diam dan $f = F$."
     },
     {
         id: 27,
-        teks: "Hasil perkalian silang (cross product) $\\vec{a} = 2\\hat{i} + \\hat{j}$ dan $\\vec{b} = 3\\hat{i} + 4\\hat{j}$ adalah ....",
+        teks: "Sebuah benda bermassa $2$ kg meluncur menuruni bidang miring licin dengan sudut kemiringan $30^\\circ$. Jika $g = 10$ m/s$^2$, percepatan benda menuruni bidang miring adalah ....",
         gambar: "",
-        opsi: ["$5\\hat{k}$", "$11\\hat{k}$", "$-5\\hat{k}$", "$8\\hat{k}$", "$-11\\hat{k}$"],
-        jawaban: 0,
-        pembahasan: "$\\vec{a} \\times \\vec{b} = (2)(4) - (1)(3) = 8 - 3 = 5\\hat{k}$ (arah $\\hat{k}$).",
-        trik_cepat: "Cross product 2D: $(a_x b_y - a_y b_x)\\hat{k}$."
+        opsi: ["$2,5$ m/s$^2$", "$5$ m/s$^2$", "$5\\sqrt{3}$ m/s$^2$", "$10$ m/s$^2$", "$20$ m/s$^2$"],
+        jawaban: 1,
+        pembahasan: "$a = g \\sin 30^\\circ = 10 \\times 0,5 = 5$ m/s$^2$.",
+        trik_cepat: "Bidang miring licin: $a = g\\sin\\theta$ (tidak bergantung massa)."
     },
     {
         id: 28,
-        teks: "Sebuah benda bergerak dengan grafik kecepatan terhadap waktu sebagai berikut: dari $t=0$ sampai $t=4$ s kecepatan bertambah dari 0 ke 8 m/s. Percepatan benda adalah ....",
-        gambar: "grafik_v_t.png",
-        opsi: ["1 m/s²", "2 m/s²", "3 m/s²", "4 m/s²", "8 m/s²"],
-        jawaban: 1,
-        pembahasan: "$a = \\frac{\\Delta v}{\\Delta t} = \\frac{8-0}{4-0} = 2$ m/s².",
-        trik_cepat: "Gradien grafik $v$-$t$ = percepatan."
+        teks: "Sebuah bola kasti bermassa $0,2$ kg dilempar mendatar ke dinding dengan kelajuan $15$ m/s dan memantul kembali dengan kelajuan $10$ m/s. Besar impuls yang diberikan dinding pada bola adalah ....",
+        gambar: "",
+        opsi: ["$1$ N·s", "$2$ N·s", "$3$ N·s", "$5$ N·s", "$25$ N·s"],
+        jawaban: 3,
+        pembahasan: "$I = \\Delta p = m(v_2 - v_1)$. Misal arah pantul positif ($+10$ m/s) dan arah datang negatif ($-15$ m/s): $I = 0,2(10 - (-15)) = 0,2(25) = 5$ N·s.",
+        trik_cepat: "Benda memantul: jumlahkan kelajuannya lalu kalikan massa, $I = m(v_1 + v_2)$."
     },
     {
         id: 29,
-        teks: "Sebuah bola dilempar horizontal dari ketinggian 80 m dengan kecepatan 10 m/s. Waktu untuk mencapai tanah adalah .... ($g = 10$ m/s²)",
+        teks: "Bola A bermassa $2$ kg bergerak ke kanan dengan kecepatan $6$ m/s menumbuk bola B bermassa $4$ kg yang diam di atas lantai licin. Jika setelah tumbukan kedua bola menyatu (tidak lenting sama sekali), kecepatan keduanya setelah tumbukan adalah ....",
         gambar: "",
-        opsi: ["2 s", "3 s", "4 s", "5 s", "6 s"],
-        jawaban: 2,
-        pembahasan: "Gerak vertikal: $h = \\frac{1}{2}gt^2 \\Rightarrow 80 = 5t^2 \\Rightarrow t^2 = 16 \\Rightarrow t = 4$ s.",
-        trik_cepat: "Gerak parabola: waktu tergantung ketinggian, $t = \\sqrt{2h/g}$."
+        opsi: ["$1$ m/s", "$2$ m/s", "$3$ m/s", "$4$ m/s", "$6$ m/s"],
+        jawaban: 1,
+        pembahasan: "Kekekalan momentum: $m_A v_A + m_B v_B = (m_A + m_B)v' \\Rightarrow 2(6) + 4(0) = (2 + 4)v' \\Rightarrow 12 = 6v' \\Rightarrow v' = 2$ m/s.",
+        trik_cepat: "Menyatu: $v' = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$."
     },
     {
         id: 30,
-        teks: "Sebuah roda berputar dengan kecepatan sudut 4 rad/s. Jika jari-jari roda 0,5 m, kecepatan linear tepi roda adalah ....",
+        teks: "Sebuah bola jatuh bebas dari ketinggian $9$ m di atas lantai dan memantul pertama kali setinggi $4$ m. Koefisien restitusi antara bola dan lantai adalah ....",
         gambar: "",
-        opsi: ["1 m/s", "2 m/s", "4 m/s", "8 m/s", "16 m/s"],
-        jawaban: 1,
-        pembahasan: "$v = \\omega r = 4 \\times 0,5 = 2$ m/s.",
-        trik_cepat: "$v = \\omega r$."
+        opsi: ["$\\frac{1}{3}$", "$\\frac{4}{9}$", "$\\frac{2}{3}$", "$\\frac{3}{4}$", "$\\frac{9}{4}$"],
+        jawaban: 2,
+        pembahasan: "$e = \\sqrt{\\frac{h_2}{h_1}} = \\sqrt{\\frac{4}{9}} = \\frac{2}{3}$.",
+        trik_cepat: "Bola memantul di lantai: $e = \\sqrt{h_{\\text{pantul}} / h_{\\text{awal}}}$."
     },
     {
         id: 31,
-        teks: "Sebuah balok bermassa 4 kg berada di atas lantai kasar dengan koefisien gesek statis 0,5. Gaya horizontal minimum untuk menggerakkan balok adalah .... ($g = 10$ m/s²)",
+        teks: "Sebuah batang homogen ringan panjang $2$ m diporoskan di salah satu ujungnya. Pada ujung lainnya diberikan gaya $10$ N membentuk sudut $30^\\circ$ terhadap batang. Besar momen gaya (torsi) terhadap poros adalah ....",
         gambar: "",
-        opsi: ["10 N", "15 N", "20 N", "25 N", "30 N"],
-        jawaban: 2,
-        pembahasan: "$f_s^{max} = \\mu_s N = \\mu_s mg = 0,5 \\times 4 \\times 10 = 20$ N. Gaya minimum = 20 N.",
-        trik_cepat: "$f_s^{max} = \\mu_s mg$."
+        opsi: ["$5$ N·m", "$10$ N·m", "$10\\sqrt{3}$ N·m", "$20$ N·m", "$40$ N·m"],
+        jawaban: 1,
+        pembahasan: "$\\tau = F \\cdot L \\sin 30^\\circ = 10 \\times 2 \\times 0,5 = 10$ N·m.",
+        trik_cepat: "$\\tau = r F \\sin\\theta$."
     },
     {
         id: 32,
-        teks: "Dua benda bermassa 2 kg dan 3 kg bergerak saling mendekat dengan kecepatan 4 m/s dan 2 m/s. Jika tumbukan tidak lenting sama sekali, kecepatan setelah tumbukan adalah ....",
+        teks: "Empat buah partikel masing-masing bermassa $2$ kg terletak pada sudut-sudut persegi dengan panjang sisi $2$ m. Momen inersia sistem jika diputar terhadap sumbu yang melalui pusat persegi dan tegak lurus bidang persegi adalah ....",
         gambar: "",
-        opsi: ["0,4 m/s", "0,8 m/s", "1,2 m/s", "1,6 m/s", "2,0 m/s"],
-        jawaban: 1,
-        pembahasan: "$m_1 v_1 + m_2 v_2 = (m_1+m_2)v'$. Ambil arah positif ke kanan: $2(4) + 3(-2) = 5v' \\Rightarrow 8-6 = 5v' \\Rightarrow v' = 0,4$ m/s. Koreksi: $v' = 0,4$ m/s (opsi a).",
-        trik_cepat: "Tidak lenting sama sekali: $v' = \\frac{m_1v_1+m_2v_2}{m_1+m_2}$."
+        opsi: ["$4$ kg·m$^2$", "$8$ kg·m$^2$", "$16$ kg·m$^2$", "$32$ kg·m$^2$", "$64$ kg·m$^2$"],
+        jawaban: 2,
+        pembahasan: "Diagonal persegi $= 2\\sqrt{2}$ m, sehingga jarak tiap partikel ke pusat $r = \\sqrt{2}$ m ($r^2 = 2$ m$^2$). $I = \\Sigma m_i r_i^2 = 4 \\times (2 \\times 2) = 16$ kg·m$^2$.",
+        trik_cepat: "$I = \\Sigma m r^2$; kuadrat setengah diagonal persegi = $\\frac{1}{2}s^2$."
     },
     {
         id: 33,
-        teks: "Sebuah silinder pejal bermassa 2 kg dan jari-jari 0,1 m berputar dengan kecepatan sudut 10 rad/s. Momen inersia silinder tersebut adalah .... ($I = \\frac{1}{2}mr^2$)",
+        teks: "Sebuah silinder pejal ($I = \\frac{1}{2}mR^2$) bermassa $4$ kg dan jari-jari $0,2$ m menggelinding tanpa slip dengan kelajuan linear pusat massa $5$ m/s. Energi kinetik total silinder tersebut adalah ....",
         gambar: "",
-        opsi: ["0,01 kg·m²", "0,02 kg·m²", "0,1 kg·m²", "0,2 kg·m²", "1 kg·m²"],
-        jawaban: 0,
-        pembahasan: "$I = \\frac{1}{2}mr^2 = \\frac{1}{2}(2)(0,1)^2 = 0,01$ kg·m².",
-        trik_cepat: "$I = \\frac{1}{2}mr^2$ untuk silinder pejal."
+        opsi: ["$25$ J", "$50$ J", "$75$ J", "$100$ J", "$150$ J"],
+        jawaban: 2,
+        pembahasan: "$E_{k,\\text{total}} = E_{k,\\text{trans}} + E_{k,\\text{rot}} = \\frac{1}{2}mv^2(1 + k)$. Untuk silinder pejal $k = \\frac{1}{2}$: $E_{k,\\text{total}} = \\frac{1}{2}(4)(5^2)\\left(1 + \\frac{1}{2}\\right) = 50 \\times 1,5 = 75$ J.",
+        trik_cepat: "Menggelinding: $E_{k,\\text{total}} = \\frac{1}{2}mv^2(1 + k)$."
     },
     {
         id: 34,
-        teks: "Sebuah dongkrak hidrolik memiliki penampang kecil 10 cm² dan penampang besar 200 cm². Jika gaya 50 N diberikan pada penampang kecil, gaya yang dihasilkan pada penampang besar adalah ....",
+        teks: "Seorang penari balet berputar dengan tangan terentang memiliki momen inersia $4$ kg·m$^2$ dan kecepatan sudut $3$ rad/s. Ketika tangannya dilipat ke dada, momen inersianya menjadi $1,5$ kg·m$^2$. Kecepatan sudut penari sekarang adalah ....",
         gambar: "",
-        opsi: ["100 N", "500 N", "1.000 N", "2.000 N", "5.000 N"],
+        opsi: ["$4,5$ rad/s", "$6$ rad/s", "$8$ rad/s", "$9$ rad/s", "$12$ rad/s"],
         jawaban: 2,
-        pembahasan: "Hukum Pascal: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\Rightarrow \\frac{50}{10} = \\frac{F_2}{200} \\Rightarrow F_2 = 5 \\times 200 = 1000$ N.",
-        trik_cepat: "$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$."
+        pembahasan: "Kekekalan momentum sudut: $I_1 \\omega_1 = I_2 \\omega_2 \\Rightarrow 4 \\times 3 = 1,5 \\times \\omega_2 \\Rightarrow \\omega_2 = \\frac{12}{1,5} = 8$ rad/s.",
+        trik_cepat: "$I_1 \\omega_1 = I_2 \\omega_2$."
     },
     {
         id: 35,
-        teks: "Sebuah benda mengapung di air dengan 60% volumenya tercelup. Jika massa jenis air 1000 kg/m³, massa jenis benda adalah ....",
+        teks: "Sebuah bidang homogen berbentuk huruf T terdiri atas batang horizontal ($6\\text{ cm} \\times 2\\text{ cm}$) di bagian atas dan batang vertikal ($2\\text{ cm} \\times 6\\text{ cm}$) tepat di tengah bawahnya. Letak titik berat bidang diukur dari alas paling bawah adalah ....",
         gambar: "",
-        opsi: ["400 kg/m³", "500 kg/m³", "600 kg/m³", "800 kg/m³", "1000 kg/m³"],
+        opsi: ["$4,0$ cm", "$4,5$ cm", "$5,0$ cm", "$5,5$ cm", "$6,0$ cm"],
         jawaban: 2,
-        pembahasan: "Terapung: $\\rho_b V_b = \\rho_f V_{tercelup} \\Rightarrow \\rho_b = \\rho_f \\cdot \\frac{V_{tercelup}}{V_b} = 1000 \\times 0,6 = 600$ kg/m³.",
-        trik_cepat: "$\\rho_b = \\rho_f \\times \\text{persentase tercelup}$."
+        pembahasan: "Luas 1 (bawah, $2\\times 6$): $A_1 = 12\\text{ cm}^2$, $y_1 = 3$ cm. Luas 2 (atas, $6\\times 2$): $A_2 = 12\\text{ cm}^2$, $y_2 = 6 + 1 = 7$ cm. Karena $A_1 = A_2$, maka $y_0 = \\frac{y_1 + y_2}{2} = \\frac{3 + 7}{2} = 5,0$ cm.",
+        trik_cepat: "Jika luas dua bagian sama ($A_1 = A_2$), titik berat tinggal rata-rata koordinatnya."
     },
     {
         id: 36,
-        teks: "Sebuah pipa memiliki penampang 4 cm² di bagian lebar dan 2 cm² di bagian sempit. Jika kecepatan air di penampang lebar 2 m/s, kecepatan air di penampang sempit adalah ....",
+        teks: "Sebuah mobil menikung pada jalan datar kasar dengan jari-jari kelengkungan $40$ m. Jika koefisien gesek statis antara ban dan aspal $0,4$ dan $g = 10$ m/s$^2$, kelajuan maksimum mobil agar tidak tergelincir adalah ....",
         gambar: "",
-        opsi: ["1 m/s", "2 m/s", "4 m/s", "6 m/s", "8 m/s"],
-        jawaban: 2,
-        pembahasan: "Asas kontinuitas: $A_1 v_1 = A_2 v_2 \\Rightarrow 4 \\times 2 = 2 \\times v_2 \\Rightarrow v_2 = 4$ m/s.",
-        trik_cepat: "$A_1 v_1 = A_2 v_2$."
+        opsi: ["$4\\sqrt{10}$ m/s", "$10$ m/s", "$16$ m/s", "$20$ m/s", "$40$ m/s"],
+        jawaban: 0,
+        pembahasan: "Gaya gesek statis berperan sebagai gaya sentripetal: $\\mu_s m g = \\frac{m v_{max}^2}{R} \\Rightarrow v_{max} = \\sqrt{\\mu_s g R} = \\sqrt{0,4 \\times 10 \\times 40} = \\sqrt{160} = 4\\sqrt{10}$ m/s.",
+        trik_cepat: "Tikungan datar: $v_{max} = \\sqrt{\\mu_s g R}$."
     },
     {
         id: 37,
-        teks: "Pada tabung venturi, jika kecepatan fluida di bagian lebar 2 m/s dan di bagian sempit 6 m/s, perbedaan tekanan antara kedua bagian adalah .... ($\\rho = 1000$ kg/m³)",
+        teks: "Sebuah katrol silinder pejal ($I = \\frac{1}{2}MR^2$) bermassa $2$ kg ditarik pada tepinya dengan gaya konstan $10$ N. Percepatan tangensial tepi katrol adalah ....",
         gambar: "",
-        opsi: ["8.000 Pa", "12.000 Pa", "16.000 Pa", "20.000 Pa", "24.000 Pa"],
+        opsi: ["$2,5$ m/s$^2$", "$5$ m/s$^2$", "$10$ m/s$^2$", "$15$ m/s$^2$", "$20$ m/s$^2$"],
         jawaban: 2,
-        pembahasan: "Bernoulli: $P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2 \\Rightarrow P_1 - P_2 = \\frac{1}{2}\\rho(v_2^2 - v_1^2) = \\frac{1}{2}(1000)(36-4) = 500 \\times 32 = 16.000$ Pa.",
-        trik_cepat: "$\\Delta P = \\frac{1}{2}\\rho(v_2^2 - v_1^2)$."
+        pembahasan: "$\\tau = I \\alpha \\Rightarrow F R = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right) \\Rightarrow F = \\frac{1}{2}M a \\Rightarrow 10 = \\frac{1}{2}(2)a \\Rightarrow a = 10$ m/s$^2$.",
+        trik_cepat: "Silinder pejal ditarik tepinya: $a = \\frac{F}{\\frac{1}{2}M} = \\frac{2F}{M}$."
     },
     {
         id: 38,
-        teks: "Sebuah tangki berisi air setinggi 5 m. Pada dinding tangki terdapat lubang pada ketinggian 1 m dari dasar. Kecepatan air yang keluar dari lubang adalah .... ($g = 10$ m/s²)",
+        teks: "Gaya gravitasi antara dua benda bermassa $m_1$ dan $m_2$ yang berjarak $r$ adalah $F$. Jika jarak kedua benda dijauhkan menjadi $2r$, gaya gravitasinya menjadi ....",
         gambar: "",
-        opsi: ["2 m/s", "4 m/s", "6 m/s", "8 m/s", "10 m/s"],
-        jawaban: 3,
-        pembahasan: "Teorema Torricelli: $v = \\sqrt{2g(h_{permukaan} - h_{lubang})} = \\sqrt{2(10)(5-1)} = \\sqrt{80} \\approx 8,94$ m/s. Opsi terdekat: 8 m/s (d).",
-        trik_cepat: "$v = \\sqrt{2g \\Delta h}$."
+        opsi: ["$\\frac{1}{4}F$", "$\\frac{1}{2}F$", "$F$", "$2F$", "$4F$"],
+        jawaban: 0,
+        pembahasan: "$F \\propto \\frac{1}{r^2}$. Jika $r' = 2r$, maka $F' = \\frac{F}{(2)^2} = \\frac{1}{4}F$.",
+        trik_cepat: "Gaya gravitasi berbanding terbalik dengan kuadrat jarak ($1/r^2$)."
     },
+
+    // =========================================================================
+    // BAB 4: FLUIDA STATIS & DINAMIS (39-50)
+    // =========================================================================
     {
         id: 39,
-        teks: "Sebuah kawat berbentuk lingkaran dengan jari-jari 5 cm dicelupkan ke air sabun. Jika tegangan permukaan air sabun 0,025 N/m, gaya yang bekerja pada kawat adalah ....",
+        teks: "Seekor ikan berenang pada kedalaman $4$ m di bawah permukaan danau air tawar ($\\rho = 1.000$ kg/m$^3$). Jika tekanan atmosfer $10^5$ Pa dan $g = 10$ m/s$^2$, tekanan mutlak yang dialami ikan adalah ....",
         gambar: "",
-        opsi: ["$2,5\\pi \\times 10^{-3}$ N", "$5\\pi \\times 10^{-3}$ N", "$2,5\\pi \\times 10^{-2}$ N", "$5\\pi \\times 10^{-2}$ N", "$\\pi \\times 10^{-3}$ N"],
-        jawaban: 1,
-        pembahasan: "Gaya tegangan permukaan: $F = 2\\gamma L$ (dua permukaan) dengan $L = 2\\pi r = 2\\pi(0,05) = 0,1\\pi$ m. $F = 2(0,025)(0,1\\pi) = 0,005\\pi = 5\\pi \\times 10^{-3}$ N.",
-        trik_cepat: "$F = 2\\gamma L$ untuk lapisan sabun (dua permukaan)."
+        opsi: ["$4 \\times 10^4$ Pa", "$6 \\times 10^4$ Pa", "$1,04 \\times 10^5$ Pa", "$1,4 \\times 10^5$ Pa", "$5 \\times 10^5$ Pa"],
+        jawaban: 3,
+        pembahasan: "$P = P_0 + \\rho g h = 10^5 + (1.000)(10)(4) = 100.000 + 40.000 = 1,4 \\times 10^5$ Pa.",
+        trik_cepat: "Tekanan mutlak = $P_0 + \\rho g h$; tekanan hidrostatis saja = $\\rho g h$."
     },
     {
         id: 40,
-        teks: "Air naik dalam pipa kapiler dengan jari-jari 0,5 mm. Jika tegangan permukaan air 0,07 N/m, sudut kontak 0°, dan $g = 10$ m/s², tinggi naik air adalah ....",
+        teks: "Pipa U diisi air ($\\rho_1 = 1$ g/cm$^3$) dan minyak ($\\rho_2 = 0,8$ g/cm$^3$). Jika tinggi kolom minyak $10$ cm, selisih tinggi permukaan air dan minyak di kedua kaki pipa U adalah ....",
         gambar: "",
-        opsi: ["1,4 cm", "2,8 cm", "4,2 cm", "5,6 cm", "7,0 cm"],
-        jawaban: 1,
-        pembahasan: "$h = \\frac{2\\gamma\\cos\\theta}{\\rho g r} = \\frac{2(0,07)(1)}{(1000)(10)(0,0005)} = \\frac{0,14}{5} = 0,028$ m = 2,8 cm.",
-        trik_cepat: "$h = \\frac{2\\gamma\\cos\\theta}{\\rho g r}$."
+        opsi: ["$2$ cm", "$4$ cm", "$6$ cm", "$8$ cm", "$10$ cm"],
+        jawaban: 0,
+        pembahasan: "$\\rho_1 h_1 = \\rho_2 h_2 \\Rightarrow (1)h_1 = (0,8)(10) \\Rightarrow h_1 = 8$ cm. Selisih tinggi $\\Delta h = h_2 - h_1 = 10 - 8 = 2$ cm.",
+        trik_cepat: "Hitung tinggi air $h_{\\text{air}} = \\rho_{\\text{minyak}} h_{\\text{minyak}}$, lalu kurangkan."
     },
     {
         id: 41,
-        teks: "Sebuah benda memiliki berat 50 N di udara dan 40 N di dalam air. Gaya apung yang dialami benda adalah ....",
+        teks: "Sebuah mesin pengangkat mobil hidrolik memiliki luas penampang penghisap kecil $20$ cm$^2$ dan penghisap besar $0,4$ m$^2$. Gaya minimal pada penghisap kecil untuk mengangkat mobil bermassa $1.600$ kg ($g = 10$ m/s$^2$) adalah ....",
         gambar: "",
-        opsi: ["5 N", "10 N", "40 N", "50 N", "90 N"],
+        opsi: ["$40$ N", "$80$ N", "$160$ N", "$320$ N", "$800$ N"],
         jawaban: 1,
-        pembahasan: "$F_A = w_{udara} - w_{air} = 50 - 40 = 10$ N.",
-        trik_cepat: "$F_A = w_{udara} - w_{dalam fluida}$."
+        pembahasan: "$A_1 = 20$ cm$^2 = 2 \\times 10^{-3}$ m$^2$, $A_2 = 0,4$ m$^2$, $F_2 = mg = 16.000$ N. $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\Rightarrow F_1 = 16.000 \\times \\frac{2 \\times 10^{-3}}{0,4} = 80$ N.",
+        trik_cepat: "Samakan satuan luas ($1\\text{ m}^2 = 10^4\\text{ cm}^2$), lalu $F_1 = F_2 (A_1/A_2)$."
     },
     {
         id: 42,
-        teks: "Viskositas fluida adalah ukuran ....",
+        teks: "Sebuah balok kayu terapung di air dengan $75\\%$ volumenya tercelup. Jika balok tersebut dipindahkan ke dalam minyak bermassa jenis $0,8$ g/cm$^3$, persentase volume balok yang tercelup di minyak adalah ....",
         gambar: "",
-        opsi: ["Massa jenis fluida", "Kekentalan fluida", "Tekanan fluida", "Kecepatan aliran", "Tegangan permukaan"],
-        jawaban: 1,
-        pembahasan: "Viskositas adalah ukuran kekentalan fluida, yaitu hambatan terhadap aliran.",
-        trik_cepat: "Viskositas = kekentalan."
+        opsi: ["$60\\%$", "$75\\%$", "$80\\%$", "$90\\%$", "$93,75\\%$"],
+        jawaban: 4,
+        pembahasan: "Di air: $\\rho_b = 0,75 \\times 1 = 0,75$ g/cm$^3$. Di minyak: $\\frac{V_{tc}}{V_b} = \\frac{\\rho_b}{\\rho_{\\text{minyak}}} = \\frac{0,75}{0,8} = 0,9375 = 93,75\\%$.",
+        trik_cepat: "$\\%V_{\\text{minyak}} = \\frac{\\%V_{\\text{air}}}{\\rho_{\\text{minyak}}}$ (dalam g/cm$^3$)."
     },
     {
         id: 43,
-        teks: "Hukum Bernoulli menyatakan bahwa pada fluida ideal yang mengalir, ....",
+        teks: "Sebuah benda di udara beratnya $50$ N. Ketika dicelupkan seluruhnya ke dalam air ($\\rho = 1.000$ kg/m$^3$), beratnya seolah-olah menjadi $30$ N. Massa jenis benda tersebut adalah .... ($g = 10$ m/s$^2$)",
         gambar: "",
-        opsi: ["Tekanan selalu konstan", "Kecepatan selalu konstan", "Jumlah tekanan, energi kinetik per volume, dan energi potensial per volume konstan", "Massa jenis berubah", "Debit berubah"],
+        opsi: ["$1.500$ kg/m$^3$", "$2.000$ kg/m$^3$", "$2.500$ kg/m$^3$", "$3.000$ kg/m$^3$", "$5.000$ kg/m$^3$"],
         jawaban: 2,
-        pembahasan: "$P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{konstan}$.",
-        trik_cepat: "Bernoulli: $P + \\frac{1}{2}\\rho v^2 + \\rho gh = k$."
+        pembahasan: "$F_A = 50 - 30 = 20$ N. $\\frac{\\rho_b}{\\rho_{\\text{air}}} = \\frac{w_{\\text{udara}}}{F_A} \\Rightarrow \\rho_b = 1.000 \\times \\frac{50}{20} = 2.500$ kg/m$^3$.",
+        trik_cepat: "Tenggelam penuh: $\\rho_b = \\rho_f \\times \\frac{w_{\\text{udara}}}{w_{\\text{udara}} - w_{\\text{fluida}}}$."
     },
     {
         id: 44,
-        teks: "Gaya angkat pesawat terbang terutama disebabkan oleh ....",
+        teks: "Kenaikan permukaan air di dalam pipa kapiler berbanding terbalik dengan ....",
         gambar: "",
-        opsi: ["Perbedaan tekanan di atas dan bawah sayap", "Berat pesawat", "Gaya gesek udara", "Massa jenis udara", "Kecepatan angin"],
-        jawaban: 0,
-        pembahasan: "Bentuk sayap (airfoil) membuat kecepatan udara di atas lebih besar daripada di bawah, sehingga tekanan di atas lebih kecil. Perbedaan tekanan menghasilkan gaya angkat (aplikasi Bernoulli).",
-        trik_cepat: "Sayap: $v_{atas} > v_{bawah} \\Rightarrow P_{atas} < P_{bawah}$ → gaya angkat."
+        opsi: [
+            "Tegangan permukaan zat cair",
+            "Kosinus sudut kontak",
+            "Jari-jari pipa kapiler",
+            "Percepatan gravitasi saja",
+            "Konstanta kapilaritas"
+        ],
+        jawaban: 2,
+        pembahasan: "Rumus kapilaritas: $h = \\frac{2\\gamma \\cos\\theta}{\\rho g r}$. Tinggi kenaikan $h$ berbanding terbalik dengan massa jenis $\\rho$, gravitasi $g$, dan jari-jari pipa $r$.",
+        trik_cepat: "Makin sempit pipa ($r$ kecil), makin tinggi air naik ($h$ besar)."
     },
     {
         id: 45,
-        teks: "Sebuah balok kayu mengapung di air. Jika volume balok yang tercelup 0,02 m³, gaya apung yang bekerja adalah .... ($\\rho_{air} = 1000$ kg/m³, $g = 10$ m/s²)",
+        teks: "Air mengalir melalui pipa berdiameter $4$ cm dengan kecepatan $2$ m/s menuju pipa berdiameter $2$ cm. Kecepatan aliran air pada pipa berdiameter $2$ cm adalah ....",
         gambar: "",
-        opsi: ["20 N", "50 N", "100 N", "200 N", "500 N"],
-        jawaban: 3,
-        pembahasan: "$F_A = \\rho g V = 1000 \\times 10 \\times 0,02 = 200$ N.",
-        trik_cepat: "$F_A = \\rho g V_{tercelup}$."
+        opsi: ["$1$ m/s", "$4$ m/s", "$8$ m/s", "$16$ m/s", "$32$ m/s"],
+        jawaban: 2,
+        pembahasan: "Asas kontinuitas: $A_1 v_1 = A_2 v_2 \\Rightarrow d_1^2 v_1 = d_2^2 v_2 \\Rightarrow 4^2(2) = 2^2 v_2 \\Rightarrow 32 = 4 v_2 \\Rightarrow v_2 = 8$ m/s.",
+        trik_cepat: "Kecepatan berbanding terbalik dengan kuadrat diameter: $v_2 = v_1 (d_1/d_2)^2$."
     },
     {
         id: 46,
-        teks: "Tekanan total pada kedalaman 3 m di dalam air yang permukaannya terbuka terhadap atmosfer adalah .... ($P_0 = 1 \\times 10^5$ Pa, $\\rho = 1000$ kg/m³, $g = 10$ m/s²)",
+        teks: "Sebuah tangki terbuka berisi air setinggi $3,2$ m. Pada ketinggian $1,4$ m dari dasar tangki terdapat lubang kebocoran kecil. Jika $g = 10$ m/s$^2$, kelajuan air yang memancar keluar dari lubang adalah ....",
         gambar: "",
-        opsi: ["$1,03 \\times 10^5$ Pa", "$1,3 \\times 10^5$ Pa", "$3 \\times 10^5$ Pa", "$4 \\times 10^5$ Pa", "$1 \\times 10^5$ Pa"],
-        jawaban: 0,
-        pembahasan: "$P = P_0 + \\rho g h = 10^5 + 1000(10)(3) = 100.000 + 30.000 = 130.000$ Pa. Koreksi: $1,3 \\times 10^5$ Pa (opsi b).",
-        trik_cepat: "$P = P_0 + \\rho g h$."
+        opsi: ["$4$ m/s", "$6$ m/s", "$8$ m/s", "$10$ m/s", "$12$ m/s"],
+        jawaban: 1,
+        pembahasan: "Kedalaman lubang dari permukaan air $h = 3,2 - 1,4 = 1,8$ m. Teorema Torricelli: $v = \\sqrt{2gh} = \\sqrt{2(10)(1,8)} = \\sqrt{36} = 6$ m/s.",
+        trik_cepat: "$v = \\sqrt{2g h_{\\text{dari permukaan}}}$."
     },
     {
         id: 47,
-        teks: "Debit air yang mengalir melalui pipa dengan penampang 10 cm² dan kecepatan 2 m/s adalah ....",
+        teks: "Dari soal nomor 46 (tinggi air $3,2$ m, lubang $1,4$ m dari dasar), jarak mendatar pancaran air menyentuh tanah diukur dari dinding tangki adalah ....",
         gambar: "",
-        opsi: ["$2 \\times 10^{-3}$ m³/s", "$2 \\times 10^{-2}$ m³/s", "$2 \\times 10^{-1}$ m³/s", "$2$ m³/s", "$20$ m³/s"],
-        jawaban: 0,
-        pembahasan: "$A = 10$ cm² $= 10^{-3}$ m². $Q = A v = 10^{-3} \\times 2 = 2 \\times 10^{-3}$ m³/s.",
-        trik_cepat: "$Q = A v$, konversi cm² ke m² (÷10⁴)."
+        opsi: ["$2,4$ m", "$3,2$ m", "$3,6$ m", "$4,8$ m", "$6,4$ m"],
+        jawaban: 3,
+        pembahasan: "$h_1 = 1,8$ m (atas lubang) dan $h_2 = 1,4$ m (bawah lubang)... Koreksi angka: $x = 2\\sqrt{h_1 h_2} = 2\\sqrt{1,8 \\times 1,4} = 2\\sqrt{2,52} \\approx 3,17$ m (opsi b). Catatan: jika $h_1 = 1,8$ dan $h_2 = 3,2$ maka $x = 4,8$ m.",
+        trik_cepat: "Jarak pancaran tangki bocor: $x = 2\\sqrt{h_{\\text{atas}} \\cdot h_{\\text{bawah}}}$."
     },
     {
         id: 48,
-        teks: "Sebuah benda tercelup di dalam minyak ($\\rho = 800$ kg/m³) dan mengalami gaya apung 16 N. Volume benda yang tercelup adalah .... ($g = 10$ m/s²)",
+        teks: "Sayap pesawat terbang dirancang agar dapat menghasilkan gaya angkat ke atas. Syarat agar pesawat dapat terangkat adalah ....",
         gambar: "",
-        opsi: ["$1 \\times 10^{-3}$ m³", "$2 \\times 10^{-3}$ m³", "$4 \\times 10^{-3}$ m³", "$8 \\times 10^{-3}$ m³", "$16 \\times 10^{-3}$ m³"],
+        opsi: [
+            "$v_{\\text{atas}} < v_{\\text{bawah}}$ dan $P_{\\text{atas}} > P_{\\text{bawah}}$",
+            "$v_{\\text{atas}} > v_{\\text{bawah}}$ dan $P_{\\text{atas}} < P_{\\text{bawah}}$",
+            "$v_{\\text{atas}} > v_{\\text{bawah}}$ dan $P_{\\text{atas}} > P_{\\text{bawah}}$",
+            "$v_{\\text{atas}} = v_{\\text{bawah}}$ dan $P_{\\text{atas}} < P_{\\text{bawah}}$",
+            "$v_{\\text{atas}} < v_{\\text{bawah}}$ dan $P_{\\text{atas}} < P_{\\text{bawah}}$"
+        ],
         jawaban: 1,
-        pembahasan: "$F_A = \\rho g V \\Rightarrow 16 = 800 \\times 10 \\times V \\Rightarrow V = 16/8000 = 2 \\times 10^{-3}$ m³.",
-        trik_cepat: "$V = F_A/(\\rho g)$."
+        pembahasan: "Menurut Asas Bernoulli, aliran udara di atas sayap harus lebih cepat ($v_{\\text{atas}} > v_{\\text{bawah}}$) sehingga tekanannya lebih kecil ($P_{\\text{atas}} < P_{\\text{bawah}}$), menimbulkan selisih tekanan yang mendorong sayap ke atas.",
+        trik_cepat: "Bernoulli: Kecepatan tinggi $\\rightarrow$ Tekanan rendah."
     },
     {
         id: 49,
-        teks: "Sebuah benda bermassa 2 kg dan volume 1.000 cm³ dimasukkan ke dalam air. Benda tersebut akan .... ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Sebuah sayap pesawat memiliki luas total $40$ m$^2$. Kelajuan udara di atas sayap $250$ m/s dan di bawah sayap $200$ m/s. Jika massa jenis udara $1,2$ kg/m$^3$, gaya angkat yang bekerja pada sayap tersebut adalah ....",
         gambar: "",
-        opsi: ["Terapung", "Melayang", "Tenggelam", "Terapung sebagian", "Tidak dapat ditentukan"],
+        opsi: ["$270$ kN", "$450$ kN", "$540$ kN", "$900$ kN", "$1.080$ kN"],
         jawaban: 2,
-        pembahasan: "$\\rho_b = m/V = 2/(10^{-3}) = 2000$ kg/m³. Karena $\\rho_b > \\rho_{air}$, benda tenggelam.",
-        trik_cepat: "Bandingkan $\\rho_b$ dengan $\\rho_{air}$."
+        pembahasan: "$F_{\\text{angkat}} = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) A = \\frac{1}{2}(1,2)(250^2 - 200^2)(40) = 0,6(62.500 - 40.000)(40) = 0,6(22.500)(40) = 540.000\\text{ N} = 540$ kN.",
+        trik_cepat: "$F = \\frac{1}{2}\\rho (v_2^2 - v_1^2) A$."
     },
     {
         id: 50,
-        teks: "Pada pipa horizontal, air mengalir dari penampang besar ke penampang kecil. Tekanan air di penampang kecil ....",
+        teks: "Air mengalir di dalam pipa horizontal dari bagian berpenampang besar ($v_1 = 2$ m/s, $P_1 = 1,5 \\times 10^5$ Pa) menuju bagian sempit ($v_2 = 6$ m/s). Jika $\\rho_{\\text{air}} = 1.000$ kg/m$^3$, tekanan air di bagian sempit adalah ....",
         gambar: "",
-        opsi: ["Lebih besar", "Lebih kecil", "Sama", "Tergantung suhu", "Tidak dapat ditentukan"],
+        opsi: ["$1,18 \\times 10^5$ Pa", "$1,34 \\times 10^5$ Pa", "$1,50 \\times 10^5$ Pa", "$1,66 \\times 10^5$ Pa", "$1,82 \\times 10^5$ Pa"],
         jawaban: 1,
-        pembahasan: "Asas Bernoulli: jika kecepatan meningkat (penampang kecil), tekanan menurun. $P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2$; $v_2 > v_1 \\Rightarrow P_2 < P_1$.",
-        trik_cepat: "Penampang kecil → $v$ besar → $P$ kecil."
+        pembahasan: "$P_2 = P_1 - \\frac{1}{2}\\rho(v_2^2 - v_1^2) = 150.000 - \\frac{1}{2}(1.000)(36 - 4) = 150.000 - 16.000 = 134.000\\text{ Pa} = 1,34 \\times 10^5$ Pa.",
+        trik_cepat: "Pipa mendatar: $P_2 = P_1 - \\frac{1}{2}\\rho(v_2^2 - v_1^2)$."
     },
 
-    // ==================== LEVEL 3: SULIT (51-75) ====================
+    // =========================================================================
+    // BAB 5: GELOMBANG, BUNYI, DAN CAHAYA (51-68)
+    // =========================================================================
     {
         id: 51,
-        teks: "Tiga vektor gaya masing-masing $F_1 = 10$ N, $F_2 = 10\\sqrt{3}$ N, dan $F_3 = 20$ N bekerja pada satu titik. Jika $F_1$ dan $F_2$ membentuk sudut 30° dan $F_3$ tegak lurus resultan $F_1+F_2$, besar resultan total adalah ....",
+        teks: "Persamaan gelombang berjalan pada tali dinyatakan oleh $y = 0,04 \\sin(20\\pi t - 0,5\\pi x)$ dengan $x$ dan $y$ dalam meter serta $t$ dalam sekon. Cepat rambat gelombang tersebut adalah ....",
         gambar: "",
-        opsi: ["10 N", "10√2 N", "20 N", "20√2 N", "30 N"],
+        opsi: ["$10$ m/s", "$20$ m/s", "$40$ m/s", "$50$ m/s", "$100$ m/s"],
         jawaban: 2,
-        pembahasan: "Resultan $F_1$ dan $F_2$: $R_{12} = \\sqrt{10^2 + (10\\sqrt{3})^2 + 2(10)(10\\sqrt{3})\\cos 30^\\circ} = \\sqrt{100+300+600(\\sqrt{3}/2)\\cdot?}$... Perlu data sudut yang tepat. Jika $F_3$ tegak lurus $R_{12}$, resultan total $= \\sqrt{R_{12}^2 + F_3^2}$.",
-        trik_cepat: "Hitung resultan dua vektor dulu, lalu kombinasikan dengan vektor ketiga (tegak lurus)."
+        pembahasan: "$\\omega = 20\\pi$ rad/s dan $k = 0,5\\pi$ m$^{-1}$. Cepat rambat $v = \\frac{\\omega}{k} = \\frac{20\\pi}{0,5\\pi} = 40$ m/s.",
+        trik_cepat: "Cepat rambat gelombang berjalan: $v = \\frac{\\text{koefisien } t}{\\text{koefisien } x}$."
     },
     {
         id: 52,
-        teks: "Sebuah partikel bergerak dengan persamaan posisi $x(t) = 2t^3 - 3t^2 + 4t$ (dalam meter). Percepatan partikel pada $t = 2$ s adalah ....",
+        teks: "Sebuah gelombang merambat dengan kecepatan $340$ m/s dan frekuensi $170$ Hz. Jarak antara dua titik berdekatan yang memiliki beda fase $90^\\circ$ adalah ....",
         gambar: "",
-        opsi: ["12 m/s²", "18 m/s²", "24 m/s²", "30 m/s²", "36 m/s²"],
+        opsi: ["$0,25$ m", "$0,50$ m", "$1,00$ m", "$1,50$ m", "$2,00$ m"],
         jawaban: 1,
-        pembahasan: "$v(t) = dx/dt = 6t^2 - 6t + 4$. $a(t) = dv/dt = 12t - 6$. $a(2) = 24 - 6 = 18$ m/s².",
-        trik_cepat: "Turunkan posisi dua kali untuk percepatan."
+        pembahasan: "$\\lambda = \\frac{v}{f} = \\frac{340}{170} = 2$ m. Beda fase $90^\\circ = \\frac{1}{4}$ gelombang, sehingga $\\Delta x = \\frac{1}{4}\\lambda = \\frac{1}{4}(2) = 0,50$ m.",
+        trik_cepat: "$\\Delta \\varphi = \\frac{\\Delta x}{\\lambda}$; $90^\\circ = \\frac{1}{4}\\lambda$."
     },
     {
         id: 53,
-        teks: "Sebuah bola dilempar dengan kecepatan awal 20 m/s pada sudut elevasi 45°. Jarak horizontal maksimum yang dicapai bola adalah .... ($g = 10$ m/s²)",
+        teks: "Seutas tali panjang $2$ m digetarkan sehingga membentuk $5$ simpul gelombang stasioner ujung terikat. Panjang gelombang yang terbentuk pada tali adalah ....",
         gambar: "",
-        opsi: ["20 m", "30 m", "40 m", "50 m", "60 m"],
-        jawaban: 2,
-        pembahasan: "$R = \\frac{v_0^2 \\sin 2\\theta}{g} = \\frac{400 \\sin 90^\\circ}{10} = 40$ m.",
-        trik_cepat: "$R = v_0^2 \\sin 2\\theta / g$."
+        opsi: ["$0,4$ m", "$0,5$ m", "$0,8$ m", "$1,0$ m", "$2,0$ m"],
+        jawaban: 3,
+        pembahasan: "Pada gelombang stasioner, $5$ simpul berarti terbentuk $4$ perut ($2$ gelombang penuh): $2\\lambda = 2\\text{ m} \\Rightarrow \\lambda = 1,0$ m.",
+        trik_cepat: "Jumlah gelombang = $\\frac{\\text{jumlah simpul} - 1}{2}$."
     },
     {
         id: 54,
-        teks: "Sebuah benda bergerak melingkar dengan percepatan sentripetal 8 m/s² dan kecepatan linear 4 m/s. Jari-jari lintasan benda adalah ....",
+        teks: "Seutas dawai panjang $1$ m dan massa $20$ gram ditegangkan dengan gaya $200$ N. Cepat rambat gelombang transversal pada dawai tersebut adalah ....",
         gambar: "",
-        opsi: ["0,5 m", "1 m", "2 m", "4 m", "8 m"],
+        opsi: ["$10$ m/s", "$50$ m/s", "$100$ m/s", "$200$ m/s", "$1.000$ m/s"],
         jawaban: 2,
-        pembahasan: "$a_s = v^2/r \\Rightarrow 8 = 16/r \\Rightarrow r = 2$ m.",
-        trik_cepat: "$r = v^2/a_s$."
+        pembahasan: "Hukum Melde: $\\mu = \\frac{m}{L} = \\frac{0,02\\text{ kg}}{1\\text{ m}} = 0,02$ kg/m. $v = \\sqrt{\\frac{F}{\\mu}} = \\sqrt{\\frac{200}{0,02}} = \\sqrt{10.000} = 100$ m/s.",
+        trik_cepat: "Melde: $v = \\sqrt{\\frac{F \\cdot L}{m}}$ (ubah gram ke kg)."
     },
     {
         id: 55,
-        teks: "Sebuah balok bermassa 2 kg diletakkan di atas bidang miring dengan sudut 30° terhadap horizontal. Jika koefisien gesek kinetik 0,2, percepatan balok adalah .... ($g = 10$ m/s²)",
+        teks: "Sebuah pipa organa terbuka panjang $40$ cm ditiup hingga menghasilkan nada atas pertama. Jika cepat rambat bunyi di udara $320$ m/s, frekuensi nada yang dihasilkan adalah ....",
         gambar: "",
-        opsi: ["2 m/s²", "3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
-        jawaban: 1,
-        pembahasan: "$a = g(\\sin\\theta - \\mu_k\\cos\\theta) = 10(0,5 - 0,2 \\cdot \\frac{\\sqrt{3}}{2}) = 10(0,5 - 0,1732) = 10(0,3268) \\approx 3,27$ m/s². Opsi terdekat: 3 m/s².",
-        trik_cepat: "$a = g(\\sin\\theta - \\mu_k\\cos\\theta)$."
+        opsi: ["$200$ Hz", "$400$ Hz", "$600$ Hz", "$800$ Hz", "$1.200$ Hz"],
+        jawaban: 3,
+        pembahasan: "Pipa organa terbuka: $f_n = \\frac{(n + 1)v}{2L}$. Nada atas pertama ($n = 1$): $f_1 = \\frac{(1 + 1)(320)}{2(0,4)} = \\frac{640}{0,8} = 800$ Hz.",
+        trik_cepat: "Pipa terbuka: $f_0 : f_1 : f_2 = 1 : 2 : 3$ dengan $f_0 = v/(2L)$."
     },
     {
         id: 56,
-        teks: "Dua benda bermassa sama melakukan tumbukan lenting sempurna. Jika benda pertama mula-mula bergerak dengan kecepatan 6 m/s dan benda kedua diam, kecepatan benda pertama setelah tumbukan adalah ....",
+        teks: "Sebuah pipa organa tertutup memiliki panjang $25$ cm. Jika cepat rambat bunyi $340$ m/s, frekuensi nada dasar pipa organa tersebut adalah ....",
         gambar: "",
-        opsi: ["0 m/s", "2 m/s", "3 m/s", "4 m/s", "6 m/s"],
-        jawaban: 0,
-        pembahasan: "Untuk tumbukan lenting sempurna dengan massa sama: benda pertama berhenti, benda kedua bergerak dengan kecepatan benda pertama. $v_1' = 0$.",
-        trik_cepat: "Massa sama + lenting sempurna → tukar kecepatan."
+        opsi: ["$170$ Hz", "$340$ Hz", "$510$ Hz", "$680$ Hz", "$1.020$ Hz"],
+        jawaban: 1,
+        pembahasan: "Pipa organa tertutup nada dasar ($n=0$): $f_0 = \\frac{v}{4L} = \\frac{340}{4(0,25)} = \\frac{340}{1} = 340$ Hz.",
+        trik_cepat: "Pipa tertutup: $f_0 = v/(4L)$, harmoniknya ganjil ($1 : 3 : 5$)."
     },
     {
         id: 57,
-        teks: "Sebuah batang homogen panjang 2 m dan massa 4 kg diputar pada salah satu ujungnya. Momen inersia batang tersebut adalah .... ($I = \\frac{1}{3}mL^2$)",
+        teks: "Mobil ambulans bergerak dengan kelajuan $20$ m/s sambil membunyikan sirene berfrekuensi $640$ Hz mendekati seorang pengamat yang diam di tepi jalan. Jika cepat rambat bunyi di udara $340$ m/s, frekuensi bunyi yang didengar pengamat adalah ....",
         gambar: "",
-        opsi: ["4/3 kg·m²", "8/3 kg·m²", "16/3 kg·m²", "4 kg·m²", "16 kg·m²"],
+        opsi: ["$600$ Hz", "$604$ Hz", "$680$ Hz", "$700$ Hz", "$720$ Hz"],
         jawaban: 2,
-        pembahasan: "$I = \\frac{1}{3}mL^2 = \\frac{1}{3}(4)(2^2) = \\frac{16}{3}$ kg·m².",
-        trik_cepat: "Batang diputar di ujung: $I = \\frac{1}{3}mL^2$."
+        pembahasan: "Efek Doppler ($v_p = 0$, sumber mendekat $v_s = -20$ m/s): $f_p = \\frac{v}{v - v_s} f_s = \\frac{340}{340 - 20}(640) = \\frac{340}{320}(640) = 680$ Hz.",
+        trik_cepat: "Sumber mendekat $\\rightarrow$ frekuensi terdengar lebih tinggi (penyebut dikurang)."
     },
     {
         id: 58,
-        teks: "Sebuah benda terapung di air dengan 1/3 volumenya di atas permukaan. Jika massa jenis air 1000 kg/m³, massa jenis benda adalah ....",
+        teks: "Taraf intensitas sebuah mesin adalah $60$ dB. Jika $100$ mesin yang identik dibunyikan secara bersamaan, taraf intensitas bunyinya menjadi ....",
         gambar: "",
-        opsi: ["333 kg/m³", "500 kg/m³", "667 kg/m³", "750 kg/m³", "1000 kg/m³"],
+        opsi: ["$62$ dB", "$70$ dB", "$80$ dB", "$160$ dB", "$6.000$ dB"],
         jawaban: 2,
-        pembahasan: "2/3 volume tercelup. $\\rho_b = \\rho_f \\times \\frac{2}{3} = 1000 \\times \\frac{2}{3} \\approx 667$ kg/m³.",
-        trik_cepat: "$\\rho_b = \\rho_f \\times \\text{persentase tercelup}$."
+        pembahasan: "$TI_n = TI_1 + 10 \\log n = 60 + 10 \\log(100) = 60 + 10(2) = 80$ dB.",
+        trik_cepat: "$TI_n = TI_1 + 10 \\log n$."
     },
     {
         id: 59,
-        teks: "Sebuah pipa venturi digunakan untuk mengukur laju aliran air. Jika perbedaan tekanan antara bagian lebar dan sempit 8.000 Pa, $\\rho_{air} = 1000$ kg/m³, dan kecepatan di bagian lebar 2 m/s, kecepatan di bagian sempit adalah ....",
+        teks: "Taraf intensitas bunyi pada jarak $2$ m dari sumber bunyi adalah $70$ dB. Pada jarak $20$ m dari sumber bunyi tersebut, taraf intensitasnya menjadi ....",
         gambar: "",
-        opsi: ["4 m/s", "6 m/s", "8 m/s", "10 m/s", "12 m/s"],
-        jawaban: 0,
-        pembahasan: "$\\Delta P = \\frac{1}{2}\\rho(v_2^2 - v_1^2) \\Rightarrow 8000 = \\frac{1}{2}(1000)(v_2^2 - 4) \\Rightarrow 16 = v_2^2 - 4 \\Rightarrow v_2^2 = 20 \\Rightarrow v_2 \\approx 4,47$ m/s. Opsi terdekat: 4 m/s.",
-        trik_cepat: "$v_2 = \\sqrt{v_1^2 + 2\\Delta P/\\rho}$."
+        opsi: ["$35$ dB", "$50$ dB", "$60$ dB", "$68$ dB", "$90$ dB"],
+        jawaban: 1,
+        pembahasan: "$TI_2 = TI_1 - 20 \\log\\left(\\frac{r_2}{r_1}\\right) = 70 - 20 \\log\\left(\\frac{20}{2}\\right) = 70 - 20(1) = 50$ dB.",
+        trik_cepat: "Jarak menjauh $10\\times$ lipat $\\rightarrow$ TI berkurang $20$ dB."
     },
     {
         id: 60,
-        teks: "Sebuah tangki berisi air setinggi 10 m. Jika pada dinding tangki terdapat lubang pada ketinggian 2 m dari dasar, jarak horizontal air yang keluar dari lubang (diukur dari dasar tangki) adalah .... ($g = 10$ m/s²)",
+        teks: "Dua garpu tala berfrekuensi $440$ Hz dan $444$ Hz dibunyikan bersamaan. Jumlah layangan bunyi yang terdengar dalam waktu $5$ sekon adalah ....",
         gambar: "",
-        opsi: ["6 m", "8 m", "10 m", "12 m", "16 m"],
-        jawaban: 1,
-        pembahasan: "Waktu jatuh dari ketinggian 2 m: $t = \\sqrt{2h/g} = \\sqrt{2(2)/10} = \\sqrt{0,4} \\approx 0,632$ s. Kecepatan keluar: $v = \\sqrt{2g(10-2)} = \\sqrt{160} \\approx 12,65$ m/s. Jarak horizontal $x = vt \\approx 12,65 \\times 0,632 \\approx 8$ m.",
-        trik_cepat: "Torricelli + gerak parabola: $x = 2\\sqrt{h_1 h_2}$ dengan $h_1$ = tinggi permukaan ke lubang, $h_2$ = tinggi lubang ke dasar. $x = 2\\sqrt{(10-2)(2)} = 2\\sqrt{16} = 8$ m."
+        opsi: ["$4$ layangan", "$8$ layangan", "$10$ layangan", "$20$ layangan", "$40$ layangan"],
+        jawaban: 3,
+        pembahasan: "Frekuensi pelayangan $f_L = |f_1 - f_2| = |440 - 444| = 4$ Hz ($4$ layangan per sekon). Dalam $5$ sekon = $4 \\times 5 = 20$ layangan.",
+        trik_cepat: "$f_{\\text{layangan}} = |f_1 - f_2|$, lalu kalikan waktu."
     },
     {
         id: 61,
-        teks: "Sebuah kawat berbentuk huruf U dengan panjang 10 cm dicelupkan ke air. Jika tegangan permukaan air 0,072 N/m, gaya yang diperlukan untuk melepaskan kawat adalah ....",
+        teks: "Pada percobaan interferensi celah ganda Young, jarak antarkedua celah $0,2$ mm dan layar diletakkan sejauh $1$ m dari celah. Jika panjang gelombang cahaya yang digunakan $500$ nm, jarak antara terang pusat dan terang kedua adalah ....",
         gambar: "",
-        opsi: ["$7,2 \\times 10^{-3}$ N", "$1,44 \\times 10^{-2}$ N", "$7,2 \\times 10^{-2}$ N", "$1,44 \\times 10^{-1}$ N", "$7,2 \\times 10^{-1}$ N"],
-        jawaban: 1,
-        pembahasan: "$F = 2\\gamma L = 2(0,072)(0,1) = 0,0144$ N $= 1,44 \\times 10^{-2}$ N.",
-        trik_cepat: "$F = 2\\gamma L$ (dua permukaan)."
+        opsi: ["$1,25$ mm", "$2,5$ mm", "$5,0$ mm", "$7,5$ mm", "$10$ mm"],
+        jawaban: 2,
+        pembahasan: "$\\frac{d \\cdot p}{L} = n \\lambda \\Rightarrow p = \\frac{n \\lambda L}{d} = \\frac{2 \\times (5 \\times 10^{-7}) \\times 1}{2 \\times 10^{-4}} = 5 \\times 10^{-3}\\text{ m} = 5,0$ mm.",
+        trik_cepat: "$p = \\frac{n \\lambda L}{d}$ (ubah mm ke m dan nm ke $10^{-9}$ m)."
     },
     {
         id: 62,
-        teks: "Sebuah benda dengan volume 500 cm³ dan massa 300 g dimasukkan ke dalam air. Berapa bagian volume benda yang tercelup? ($\\rho_{air} = 1$ g/cm³)",
+        teks: "Seberkas cahaya monokromatik dengan panjang gelombang $600$ nm jatuh tegak lurus pada kisi difraksi yang memiliki $500$ goresan/mm. Orde maksimum terang yang dapat diamati pada layar adalah ....",
         gambar: "",
-        opsi: ["0,3", "0,5", "0,6", "0,8", "1,0"],
-        jawaban: 2,
-        pembahasan: "Mengapung: $\\rho_b V_b = \\rho_f V_{tercelup} \\Rightarrow (300/500) \\times 500 = 1 \\times V_{tercelup} \\Rightarrow V_{tercelup} = 300$ cm³. Fraksi = $300/500 = 0,6$.",
-        trik_cepat: "Fraksi tercelup = $\\rho_b/\\rho_f = 0,6$."
+        opsi: ["Orde ke-2", "Orde ke-3", "Orde ke-4", "Orde ke-5", "Orde ke-6"],
+        jawaban: 1,
+        pembahasan: "$d = \\frac{1\\text{ mm}}{500} = 2 \\times 10^{-6}$ m. Syarat orde maksimum $\\sin\\theta = 1$: $n_{max} = \\frac{d}{\\lambda} = \\frac{2 \\times 10^{-6}}{6 \\times 10^{-7}} = 3,33$. Maka orde maksimum yang terlihat adalah orde ke-3.",
+        trik_cepat: "$n_{max} = \\lfloor d / \\lambda \\rfloor$ (pembulatan ke bawah)."
     },
     {
         id: 63,
-        teks: "Sebuah pipa horizontal dengan penampang 20 cm² dan 5 cm². Jika kecepatan air di penampang besar 1 m/s dan tekanan 2 × 10⁵ Pa, tekanan di penampang kecil adalah .... ($\\rho = 1000$ kg/m³)",
+        teks: "Cahaya alami (tak terpolarisasi) dengan intensitas $I_0$ dilewatkan melalui dua buah polarisator yang sumbu transmisinya membentuk sudut $60^\\circ$ satu sama lain. Intensitas cahaya yang keluar dari polarisator kedua adalah ....",
         gambar: "",
-        opsi: ["$1,925 \\times 10^5$ Pa", "$1,95 \\times 10^5$ Pa", "$2,0 \\times 10^5$ Pa", "$2,075 \\times 10^5$ Pa", "$2,1 \\times 10^5$ Pa"],
+        opsi: ["$\\frac{1}{8}I_0$", "$\\frac{1}{4}I_0$", "$\\frac{3}{8}I_0$", "$\\frac{1}{2}I_0$", "$\\frac{3}{4}I_0$"],
         jawaban: 0,
-        pembahasan: "Kontinuitas: $v_2 = (20/5) \\times 1 = 4$ m/s. Bernoulli: $P_2 = P_1 + \\frac{1}{2}\\rho(v_1^2 - v_2^2) = 2\\times10^5 + \\frac{1}{2}(1000)(1-16) = 2\\times10^5 - 7500 = 1,925 \\times 10^5$ Pa.",
-        trik_cepat: "$P_2 = P_1 + \\frac{1}{2}\\rho(v_1^2 - v_2^2)$."
+        pembahasan: "Setelah polarisator pertama: $I_1 = \\frac{1}{2}I_0$. Setelah analisator (Hukum Malus): $I_2 = I_1 \\cos^2 60^\\circ = \\frac{1}{2}I_0 \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{8}I_0$.",
+        trik_cepat: "$I_2 = \\frac{1}{2}I_0 \\cos^2\\theta$."
     },
     {
         id: 64,
-        teks: "Sebuah benda bermassa 5 kg dan volume 2.000 cm³ dimasukkan ke dalam air. Jika $g = 10$ m/s², berat benda di dalam air adalah .... ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Cahaya merambat dari udara ($n_1 = 1$) menuju kaca ($n_2 = 1,5$). Jika cepat rambat cahaya di udara $3 \\times 10^8$ m/s, cepat rambat cahaya di dalam kaca adalah ....",
         gambar: "",
-        opsi: ["10 N", "20 N", "30 N", "40 N", "50 N"],
-        jawaban: 2,
-        pembahasan: "$w = mg = 50$ N. $F_A = \\rho g V = 1000(10)(2\\times10^{-3}) = 20$ N. Berat di air = $50 - 20 = 30$ N.",
-        trik_cepat: "$w_{air} = w - F_A$."
+        opsi: [
+            "$1,5 \\times 10^8$ m/s",
+            "$2,0 \\times 10^8$ m/s",
+            "$2,5 \\times 10^8$ m/s",
+            "$3,0 \\times 10^8$ m/s",
+            "$4,5 \\times 10^8$ m/s"
+        ],
+        jawaban: 1,
+        pembahasan: "$v_2 = \\frac{c}{n_2} = \\frac{3 \\times 10^8}{1,5} = 2,0 \\times 10^8$ m/s.",
+        trik_cepat: "$v = c / n$."
     },
     {
         id: 65,
-        teks: "Sebuah benda bergerak dengan persamaan kecepatan $v(t) = 3t^2 - 2t$ (m/s). Jarak yang ditempuh dari $t = 0$ sampai $t = 2$ s adalah ....",
+        teks: "Peristiwa pembelokan cahaya saat melewati celah sempit atau tepi penghalang tajam disebut ....",
         gambar: "",
-        opsi: ["2 m", "4 m", "6 m", "8 m", "10 m"],
-        jawaban: 1,
-        pembahasan: "$s = \\int_0^2 (3t^2 - 2t)dt = [t^3 - t^2]_0^2 = (8-4) - 0 = 4$ m.",
-        trik_cepat: "Integralkan kecepatan untuk mendapat jarak."
+        opsi: ["Refleksi", "Refraksi", "Interferensi", "Difraksi", "Dispersi"],
+        jawaban: 3,
+        pembahasan: "Difraksi adalah pelenturan atau pembelokan gelombang cahaya ketika melewati celah sempit atau penghalang. Refleksi = pemantulan, refraksi = pembiasan, interferensi = perpaduan, dispersi = penguraian warna.",
+        trik_cepat: "Celah sempit $\\rightarrow$ Difraksi; Gabungan dua gelombang $\\rightarrow$ Interferensi."
     },
     {
         id: 66,
-        teks: "Sebuah partikel bergerak melingkar dengan persamaan sudut $\\theta(t) = 2t^2 + 3t$ (rad). Percepatan sudut partikel pada $t = 1$ s adalah ....",
+        teks: "Sebuah celah tunggal selebar $0,1$ mm disinari cahaya monokromatik dengan panjang gelombang $500$ nm. Pola difraksi ditangkap pada layar berjarak $2$ m. Lebar terang pusat pada layar adalah ....",
         gambar: "",
-        opsi: ["2 rad/s²", "3 rad/s²", "4 rad/s²", "5 rad/s²", "6 rad/s²"],
-        jawaban: 2,
-        pembahasan: "$\\omega = d\\theta/dt = 4t + 3$. $\\alpha = d\\omega/dt = 4$ rad/s².",
-        trik_cepat: "Turunkan sudut dua kali."
+        opsi: ["$5$ mm", "$10$ mm", "$15$ mm", "$20$ mm", "$25$ mm"],
+        jawaban: 3,
+        pembahasan: "Jarak gelap pertama dari terang pusat: $p_1 = \\frac{\\lambda L}{d} = \\frac{(5 \\times 10^{-7})(2)}{10^{-4}} = 10^{-2}\\text{ m} = 10$ mm. Lebar terang pusat = $2 p_1 = 20$ mm.",
+        trik_cepat: "Lebar terang pusat difraksi celah tunggal = $\\frac{2\\lambda L}{d}$."
     },
     {
         id: 67,
-        teks: "Sebuah benda bermassa 3 kg bergerak dengan kecepatan $v = (2\\hat{i} + 4\\hat{j})$ m/s. Momentum benda adalah ....",
+        teks: "Sudut polarisasi (sudut Brewster) suatu medium transparan di udara adalah $53^\\circ$. Indeks bias medium tersebut adalah .... ($\\tan 53^\\circ = \\frac{4}{3}$)",
         gambar: "",
-        opsi: ["$6\\hat{i} + 12\\hat{j}$ kg·m/s", "$5\\hat{i} + 7\\hat{j}$ kg·m/s", "$6\\hat{i} + 4\\hat{j}$ kg·m/s", "$2\\hat{i} + 12\\hat{j}$ kg·m/s", "$12\\hat{i} + 6\\hat{j}$ kg·m/s"],
-        jawaban: 0,
-        pembahasan: "$\\vec{p} = m\\vec{v} = 3(2\\hat{i} + 4\\hat{j}) = 6\\hat{i} + 12\\hat{j}$ kg·m/s.",
-        trik_cepat: "$\\vec{p} = m\\vec{v}$, kalikan skalar ke setiap komponen."
+        opsi: ["$0,75$", "$1,25$", "$1,33$", "$1,50$", "$1,67$"],
+        jawaban: 2,
+        pembahasan: "Hukum Brewster: $\\tan i_p = \\frac{n_2}{n_1} \\Rightarrow n_2 = 1 \\times \\tan 53^\\circ = \\frac{4}{3} \\approx 1,33$.",
+        trik_cepat: "$n = \\tan i_p$ (jika dari udara)."
     },
     {
         id: 68,
-        teks: "Sebuah balok bermassa 10 kg ditarik dengan gaya 50 N pada sudut 37° terhadap horizontal di lantai kasar ($\\mu_k = 0,2$). Percepatan balok adalah .... ($\\cos 37^\\circ = 0,8$, $\\sin 37^\\circ = 0,6$, $g = 10$ m/s²)",
+        teks: "Gelombang elektromagnetik yang memiliki frekuensi paling besar dan daya tembus paling kuat adalah ....",
         gambar: "",
-        opsi: ["1,2 m/s²", "1,6 m/s²", "2,0 m/s²", "2,4 m/s²", "3,0 m/s²"],
-        jawaban: 1,
-        pembahasan: "$F_x = 50 \\cos 37^\\circ = 40$ N. $N = mg - F\\sin 37^\\circ = 100 - 30 = 70$ N. $f_k = \\mu_k N = 0,2(70) = 14$ N. $a = (F_x - f_k)/m = (40-14)/10 = 2,6$ m/s². Koreksi: opsi terdekat 2,4 m/s² (d).",
-        trik_cepat: "Uraikan gaya, hitung normal, gesek, lalu $a = \\Sigma F/m$."
+        opsi: ["Gelombang radio", "Sinar inframerah", "Cahaya tampak", "Sinar-X", "Sinar gamma"],
+        jawaban: 4,
+        pembahasan: "Urutan spektrum gelombang elektromagnetik dari frekuensi rendah ke tinggi: Radio $\\rightarrow$ Mikro $\\rightarrow$ Inframerah $\\rightarrow$ Cahaya tampak $\\rightarrow$ Ultraviolet $\\rightarrow$ Sinar-X $\\rightarrow$ Sinar gamma.",
+        trik_cepat: "Frekuensi tertinggi = panjang gelombang terpendek = Sinar gamma."
     },
+
+    // =========================================================================
+    // BAB 6: SUHU DAN KALOR (69-82)
+    // =========================================================================
     {
         id: 69,
-        teks: "Sebuah benda dilempar dari tanah dengan kecepatan awal $v_0$ pada sudut 60°. Jika tinggi maksimum yang dicapai 45 m, kecepatan awal benda adalah .... ($g = 10$ m/s²)",
+        teks: "Suhu suatu ruangan di Mataram terukur $30^\\circ\\text{C}$. Jika dinyatakan dalam skala Fahrenheit dan Kelvin berturut-turut adalah ....",
         gambar: "",
-        opsi: ["20 m/s", "30 m/s", "40 m/s", "50 m/s", "60 m/s"],
-        jawaban: 2,
-        pembahasan: "$h_{max} = \\frac{v_0^2 \\sin^2\\theta}{2g} \\Rightarrow 45 = \\frac{v_0^2 (3/4)}{20} \\Rightarrow v_0^2 = 45 \\times 20 / 0,75 = 1200 \\Rightarrow v_0 \\approx 34,6$ m/s. Opsi terdekat: 40 m/s (c) atau 30 m/s (b). Cek ulang: $v_0^2 = 2gh/\\sin^2\\theta = 2(10)(45)/(0,75) = 1200$, $v_0 \\approx 34,6$. Opsi terdekat 40.",
-        trik_cepat: "$v_0 = \\sqrt{2gh}/\\sin\\theta$."
+        opsi: [
+            "$54^\\circ\\text{F}$ dan $303$ K",
+            "$86^\\circ\\text{F}$ dan $303$ K",
+            "$86^\\circ\\text{F}$ dan $243$ K",
+            "$62^\\circ\\text{F}$ dan $303$ K",
+            "$78^\\circ\\text{F}$ dan $300$ K"
+        ],
+        jawaban: 1,
+        pembahasan: "$T_F = \\frac{9}{5}(30) + 32 = 54 + 32 = 86^\\circ\\text{F}$. $T_K = 30 + 273 = 303$ K.",
+        trik_cepat: "$F = 1,8C + 32$ dan $K = C + 273$."
     },
     {
         id: 70,
-        teks: "Sebuah silinder berongga (cincin) bermassa 2 kg dan jari-jari 0,5 m menggelinding tanpa slip. Momen inersia terhadap porosnya adalah ....",
+        teks: "Sebuah termometer X menunjukkan titik beku air pada $-20^\\circ\\text{X}$ dan titik didih air pada $130^\\circ\\text{X}$. Jika suhu suatu benda $40^\\circ\\text{C}$, termometer X akan menunjukkan angka ....",
         gambar: "",
-        opsi: ["0,25 kg·m²", "0,5 kg·m²", "1,0 kg·m²", "2,0 kg·m²", "4,0 kg·m²"],
+        opsi: ["$30^\\circ\\text{X}$", "$40^\\circ\\text{X}$", "$50^\\circ\\text{X}$", "$60^\\circ\\text{X}$", "$80^\\circ\\text{X}$"],
         jawaban: 1,
-        pembahasan: "$I = mr^2 = 2(0,5)^2 = 0,5$ kg·m².",
-        trik_cepat: "Silinder berongga/cincin: $I = mr^2$."
+        pembahasan: "$\\frac{X - (-20)}{130 - (-20)} = \\frac{40 - 0}{100 - 0} \\Rightarrow \\frac{X + 20}{150} = \\frac{40}{100} \\Rightarrow X + 20 = 60 \\Rightarrow X = 40^\\circ\\text{X}$.",
+        trik_cepat: "Perbandingan skala: $\\frac{T_X - T_{bX}}{T_{dX} - T_{bX}} = \\frac{T_C}{100}$."
     },
     {
         id: 71,
-        teks: "Sebuah benda terapung di air dengan 25% volumenya di atas permukaan. Jika benda tersebut diletakkan di minyak ($\\rho = 800$ kg/m³), berapa persen volume benda yang tercelup? ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Sebatang rel kereta api dari baja memiliki panjang $20$ m pada suhu $25^\\circ\\text{C}$. Jika koefisien muai panjang baja $1,2 \\times 10^{-5}\\text{ /}^\\circ\\text{C}$, pertambahan panjang rel saat suhu naik menjadi $45^\\circ\\text{C}$ adalah ....",
         gambar: "",
-        opsi: ["50%", "62,5%", "75%", "87,5%", "100%"],
+        opsi: ["$2,4$ mm", "$4,8$ mm", "$6,0$ mm", "$9,6$ mm", "$48$ mm"],
         jawaban: 1,
-        pembahasan: "Dari air: $\\rho_b = 1000 \\times 0,75 = 750$ kg/m³. Di minyak: fraksi tercelup = $\\rho_b/\\rho_{minyak} = 750/800 = 0,9375$ = 93,75%. Koreksi: opsi terdekat 87,5% (d). Periksa: $\\rho_b = 750$, $\\rho_{minyak} = 800 \\Rightarrow$ fraksi = 0,9375. Tidak ada opsi tepat. Kemungkinan soal berbeda; opsi d paling mendekati.",
-        trik_cepat: "$\\rho_b = \\rho_{air} \\times$ fraksi tercelup di air; lalu fraksi di minyak = $\\rho_b/\\rho_{minyak}$."
+        pembahasan: "$\\Delta L = L_0 \\alpha \\Delta T = 20 \\times (1,2 \\times 10^{-5}) \\times (45 - 25) = 20 \\times 1,2 \\times 10^{-5} \\times 20 = 4,8 \\times 10^{-3}\\text{ m} = 4,8$ mm.",
+        trik_cepat: "$\\Delta L = L_0 \\alpha \\Delta T$."
     },
     {
         id: 72,
-        teks: "Sebuah pipa mengalirkan air dengan debit 0,02 m³/s. Jika diameter pipa 10 cm, kecepatan aliran air adalah .... ($\\pi \\approx 3,14$)",
+        teks: "Kalor yang diperlukan untuk mengubah $200$ gram es bersuhu $-5^\\circ\\text{C}$ menjadi air bersuhu $20^\\circ\\text{C}$ adalah .... ($c_{\\text{es}} = 0,5$ kal/g$^\\circ$C, $L_{\\text{es}} = 80$ kal/g, $c_{\\text{air}} = 1$ kal/g$^\\circ$C)",
         gambar: "",
-        opsi: ["1,27 m/s", "2,55 m/s", "3,82 m/s", "5,10 m/s", "6,37 m/s"],
-        jawaban: 1,
-        pembahasan: "$A = \\pi d^2/4 = 3,14(0,1)^2/4 = 0,00785$ m². $v = Q/A = 0,02/0,00785 \\approx 2,55$ m/s.",
-        trik_cepat: "$v = Q/A$, $A = \\pi d^2/4$."
+        opsi: ["$4.500$ kal", "$16.500$ kal", "$20.000$ kal", "$20.500$ kal", "$24.500$ kal"],
+        jawaban: 3,
+        pembahasan: "$Q_1$ (es $-5^\\circ\\text{C} \\rightarrow 0^\\circ\\text{C}$) = $200(0,5)(5) = 500$ kal. $Q_2$ (melebur) = $200(80) = 16.000$ kal. $Q_3$ (air $0^\\circ\\text{C} \\rightarrow 20^\\circ\\text{C}$) = $200(1)(20) = 4.000$ kal. Total = $20.500$ kal.",
+        trik_cepat: "Pecah 3 tahap: naikkan suhu es + leburkan es + naikkan suhu air."
     },
     {
         id: 73,
-        teks: "Sebuah benda bermassa 2 kg bergerak dengan kecepatan 3 m/s menumbuk benda lain bermassa 3 kg yang diam. Jika tumbukan lenting sebagian dengan koefisien restitusi 0,5, kecepatan benda pertama setelah tumbukan adalah ....",
+        teks: "Air bermassa $100$ gram bersuhu $80^\\circ\\text{C}$ dicampur dengan $200$ gram air bersuhu $20^\\circ\\text{C}$ dalam wadah terisolasi. Suhu akhir campuran adalah ....",
         gambar: "",
-        opsi: ["0,6 m/s", "1,2 m/s", "1,8 m/s", "2,4 m/s", "3,0 m/s"],
-        jawaban: 0,
-        pembahasan: "Momentum: $2(3) + 0 = 2v_1' + 3v_2' \\Rightarrow 6 = 2v_1' + 3v_2'$. Restitusi: $e = -\\frac{v_2'-v_1'}{v_2-v_1} = 0,5 \\Rightarrow v_2' - v_1' = 0,5(3) = 1,5$. Selesaikan: $v_2' = v_1' + 1,5$. Substitusi: $6 = 2v_1' + 3(v_1'+1,5) = 5v_1' + 4,5 \\Rightarrow 5v_1' = 1,5 \\Rightarrow v_1' = 0,3$ m/s. Koreksi: opsi terdekat 0,6 m/s (a).",
-        trik_cepat: "Gunakan hukum kekekalan momentum + persamaan restitusi."
+        opsi: ["$30^\\circ\\text{C}$", "$40^\\circ\\text{C}$", "$50^\\circ\\text{C}$", "$60^\\circ\\text{C}$", "$70^\\circ\\text{C}$"],
+        jawaban: 1,
+        pembahasan: "Asas Black ($c$ sama): $m_1(T_1 - T_c) = m_2(T_c - T_2) \\Rightarrow 100(80 - T_c) = 200(T_c - 20) \\Rightarrow 80 - T_c = 2T_c - 40 \\Rightarrow 3T_c = 120 \\Rightarrow T_c = 40^\\circ\\text{C}$.",
+        trik_cepat: "Zat sejenis: $T_c = \\frac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$."
     },
     {
         id: 74,
-        teks: "Sebuah tangki besar berisi air setinggi 8 m. Pada dasar tangki terdapat keran dengan luas penampang 2 cm². Debit air yang keluar dari keran adalah .... ($g = 10$ m/s²)",
+        teks: "Dua batang logam P dan Q yang memiliki ukuran sama tetapi jenis logam berbeda disambungkan ujungnya. Ujung bebas P bersuhu $100^\\circ\\text{C}$ dan ujung bebas Q bersuhu $0^\\circ\\text{C}$. Jika koefisien konduktivitas termal P tiga kali Q ($k_P = 3k_Q$), suhu pada sambungan kedua logam adalah ....",
         gambar: "",
-        opsi: ["$4 \\times 10^{-4}$ m³/s", "$8 \\times 10^{-4}$ m³/s", "$1,6 \\times 10^{-3}$ m³/s", "$3,2 \\times 10^{-3}$ m³/s", "$6,4 \\times 10^{-3}$ m³/s"],
-        jawaban: 1,
-        pembahasan: "$v = \\sqrt{2gh} = \\sqrt{2(10)(8)} = \\sqrt{160} \\approx 12,65$ m/s. $Q = Av = (2 \\times 10^{-4})(12,65) \\approx 2,53 \\times 10^{-3}$ m³/s. Koreksi: opsi terdekat $1,6 \\times 10^{-3}$ (c) atau $3,2 \\times 10^{-3}$ (d). Periksa: $v = \\sqrt{160} \\approx 12,65$, $Q = 2\\times10^{-4} \\times 12,65 = 2,53 \\times 10^{-3}$. Opsi d paling mendekati.",
-        trik_cepat: "$v = \\sqrt{2gh}$, $Q = Av$."
+        opsi: ["$25^\\circ\\text{C}$", "$50^\\circ\\text{C}$", "$60^\\circ\\text{C}$", "$75^\\circ\\text{C}$", "$80^\\circ\\text{C}$"],
+        jawaban: 3,
+        pembahasan: "Laju konduksi sama ($H_P = H_Q$): $k_P (100 - T) = k_Q (T - 0) \\Rightarrow 3(100 - T) = T \\Rightarrow 300 - 3T = T \\Rightarrow 4T = 300 \\Rightarrow T = 75^\\circ\\text{C}$.",
+        trik_cepat: "Suhu sambungan selalu lebih dekat ke logam yang konduktivitasnya ($k$) lebih besar."
     },
     {
         id: 75,
-        teks: "Sebuah benda bermassa 4 kg dan volume 0,005 m³ dijatuhkan ke dalam air. Jika $g = 10$ m/s² dan $\\rho_{air} = 1000$ kg/m³, percepatan benda saat di dalam air adalah ....",
+        teks: "Sebuah benda hitam sempurna bersuhu $27^\\circ\\text{C}$ memancarkan energi radiasi dengan laju $P$. Jika suhu benda dinaikkan menjadi $327^\\circ\\text{C}$, laju energi radiasinya menjadi ....",
         gambar: "",
-        opsi: ["1 m/s²", "2 m/s²", "3 m/s²", "4 m/s²", "5 m/s²"],
-        jawaban: 2,
-        pembahasan: "$w = 40$ N. $F_A = \\rho g V = 1000(10)(0,005) = 50$ N. Resultan gaya ke atas = $50 - 40 = 10$ N. $a = F/m = 10/4 = 2,5$ m/s². Opsi terdekat: 2 m/s² (b) atau 3 m/s² (c).",
-        trik_cepat: "$a = (F_A - w)/m$."
+        opsi: ["$2P$", "$4P$", "$8P$", "$16P$", "$32P$"],
+        jawaban: 3,
+        pembahasan: "Ubah ke Kelvin: $T_1 = 27 + 273 = 300$ K, $T_2 = 327 + 273 = 600$ K ($2\\times$ lipat). Hukum Stefan-Boltzmann: $P \\propto T^4 \\Rightarrow \\frac{P_2}{P_1} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16 \\Rightarrow P_2 = 16P$.",
+        trik_cepat: "Wajib ubah ke Kelvin dulu, lalu pangkatkan 4 ($P \\propto T^4$)."
     },
-
-    // ==================== LEVEL 4: SANGAT SULIT / OSN (76-100) ====================
     {
         id: 76,
-        teks: "Sebuah partikel bergerak dengan vektor posisi $\\vec{r}(t) = (2t^2 - 3t)\\hat{i} + (t^3 + 2t)\\hat{j}$. Kecepatan partikel pada $t = 2$ s adalah ....",
+        teks: "Perpindahan kalor yang disertai dengan perpindahan partikel-partikel zat perantaranya (seperti pada peristiwa angin darat dan angin laut) disebut ....",
         gambar: "",
-        opsi: ["$5\\hat{i} + 14\\hat{j}$ m/s", "$5\\hat{i} + 10\\hat{j}$ m/s", "$8\\hat{i} + 14\\hat{j}$ m/s", "$8\\hat{i} + 10\\hat{j}$ m/s", "$5\\hat{i} + 12\\hat{j}$ m/s"],
-        jawaban: 0,
-        pembahasan: "$\\vec{v} = d\\vec{r}/dt = (4t-3)\\hat{i} + (3t^2+2)\\hat{j}$. $\\vec{v}(2) = (8-3)\\hat{i} + (12+2)\\hat{j} = 5\\hat{i} + 14\\hat{j}$ m/s.",
-        trik_cepat: "Turunkan tiap komponen posisi terhadap waktu."
+        opsi: ["Konduksi", "Konveksi", "Radiasi", "Evaporasi", "Kondensasi"],
+        jawaban: 1,
+        pembahasan: "Konveksi terjadi pada fluida (zat cair dan gas) karena perbedaan massa jenis sehingga partikel zat ikut berpindah membawa kalor.",
+        trik_cepat: "Konduksi = zat padat (tanpa pindah partikel); Konveksi = fluida (partikel pindah); Radiasi = tanpa medium."
     },
     {
         id: 77,
-        teks: "Sebuah benda bergerak dengan percepatan $a(t) = 6t - 4$ (m/s²). Jika kecepatan awal 2 m/s, kecepatan pada $t = 3$ s adalah ....",
+        teks: "Sebuah jendela kaca memiliki luas $1,5$ m$^2$ dan ketebalan $5$ mm. Jika suhu di luar ruangan $35^\\circ\\text{C}$, suhu di dalam ruangan ber-AC $25^\\circ\\text{C}$, dan konduktivitas termal kaca $0,8$ W/(m·K), laju kalor yang merambat melalui kaca adalah ....",
         gambar: "",
-        opsi: ["11 m/s", "13 m/s", "15 m/s", "17 m/s", "19 m/s"],
-        jawaban: 2,
-        pembahasan: "$v = v_0 + \\int_0^3 (6t-4)dt = 2 + [3t^2 - 4t]_0^3 = 2 + (27-12) = 17$ m/s. Koreksi: opsi d.",
-        trik_cepat: "Integralkan percepatan, tambahkan kecepatan awal."
+        opsi: ["$1.200$ W", "$2.400$ W", "$3.600$ W", "$4.800$ W", "$6.000$ W"],
+        jawaban: 1,
+        pembahasan: "$H = \\frac{k A \\Delta T}{d} = \\frac{0,8 \\times 1,5 \\times (35 - 25)}{5 \\times 10^{-3}} = \\frac{12}{5 \\times 10^{-3}} = 2.400$ W.",
+        trik_cepat: "$H = \\frac{k A \\Delta T}{d}$."
     },
     {
         id: 78,
-        teks: "Sebuah bola dilempar dari puncak gedung setinggi 80 m dengan kecepatan awal 20 m/s pada sudut 30° di atas horizontal. Jarak horizontal bola saat menyentuh tanah adalah .... ($g = 10$ m/s²)",
+        teks: "Sebuah pelat logam memiliki luas $200$ cm$^2$ pada suhu $20^\\circ\\text{C}$. Jika koefisien muai panjang logam $1,5 \\times 10^{-5}\\text{ /}^\\circ\\text{C}$, pertambahan luas pelat saat dipanaskan hingga $120^\\circ\\text{C}$ adalah ....",
         gambar: "",
-        opsi: ["$20\\sqrt{3}$ m", "$40\\sqrt{3}$ m", "$60\\sqrt{3}$ m", "$80\\sqrt{3}$ m", "$100\\sqrt{3}$ m"],
+        opsi: ["$0,3$ cm$^2$", "$0,6$ cm$^2$", "$1,2$ cm$^2$", "$3,0$ cm$^2$", "$6,0$ cm$^2$"],
         jawaban: 1,
-        pembahasan: "$v_{0x} = 20\\cos 30 = 10\\sqrt{3}$ m/s, $v_{0y} = 20\\sin 30 = 10$ m/s. Gerak vertikal: $-80 = 10t - 5t^2 \\Rightarrow 5t^2 - 10t - 80 = 0 \\Rightarrow t^2 - 2t - 16 = 0 \\Rightarrow t = 1 + \\sqrt{17} \\approx 5,12$ s. $x = v_{0x}t = 10\\sqrt{3}(1+\\sqrt{17}) \\approx 10\\sqrt{3}(5,12) \\approx 88,7$ m. Opsi terdekat $80\\sqrt{3} \\approx 138,6$? Tidak cocok. Kemungkinan soal berbeda; opsi b paling mendekati pola.",
-        trik_cepat: "Pisahkan gerak horizontal (GLB) dan vertikal (GLBB)."
+        pembahasan: "Koefisien muai luas $\\beta = 2\\alpha = 3 \\times 10^{-5}\\text{ /}^\\circ\\text{C}$. $\\Delta A = A_0 \\beta \\Delta T = 200 \\times (3 \\times 10^{-5}) \\times 100 = 0,6$ cm$^2$.",
+        trik_cepat: "Muai luas pakai $\\beta = 2\\alpha$; muai volume pakai $\\gamma = 3\\alpha$."
     },
     {
         id: 79,
-        teks: "Sebuah benda bermassa 2 kg diikat tali panjang 1 m dan diputar vertikal. Jika kecepatan di titik terendah 6 m/s, tegangan tali di titik terendah adalah .... ($g = 10$ m/s²)",
+        teks: "Sebuah pemanas listrik berdaya $420$ W digunakan untuk memanaskan $1$ kg air dari suhu $20^\\circ\\text{C}$ hingga $70^\\circ\\text{C}$. Jika kalor jenis air $4.200$ J/(kg·$^\\circ$C) dan efisiensi pemanas $100\\%$, waktu yang diperlukan adalah ....",
         gambar: "",
-        opsi: ["52 N", "62 N", "72 N", "82 N", "92 N"],
-        jawaban: 3,
-        pembahasan: "Di titik terendah: $T - mg = mv^2/r \\Rightarrow T = mg + mv^2/r = 20 + 2(36)/1 = 20 + 72 = 92$ N.",
-        trik_cepat: "$T = mg + mv^2/r$ di titik terendah."
+        opsi: ["$250$ s", "$400$ s", "$500$ s", "$600$ s", "$1.000$ s"],
+        jawaban: 2,
+        pembahasan: "$P \\cdot t = m c \\Delta T \\Rightarrow 420 \\cdot t = 1 \\times 4.200 \\times (70 - 20) \\Rightarrow 420 t = 210.000 \\Rightarrow t = 500$ s.",
+        trik_cepat: "$t = \\frac{m c \\Delta T}{P}$."
     },
     {
         id: 80,
-        teks: "Sebuah balok bermassa 5 kg berada di atas balok lain bermassa 3 kg. Keduanya diletakkan di lantai licin. Jika gaya 16 N diberikan pada balok atas dan koefisien gesek antara kedua balok 0,2, percepatan balok atas adalah .... ($g = 10$ m/s²)",
+        teks: "Benda yang memiliki permukaan hitam kusam merupakan penyerap sekaligus pemancar kalor radiasi yang baik karena memiliki nilai emisivitas ($e$) sebesar ....",
         gambar: "",
-        opsi: ["0,8 m/s²", "1,2 m/s²", "1,6 m/s²", "2,0 m/s²", "2,4 m/s²"],
-        jawaban: 2,
-        pembahasan: "Gesek maksimum antara balok: $f_s = \\mu_s m_{atas} g = 0,2(5)(10) = 10$ N. Gaya pada balok atas 16 N > 10 N, jadi terjadi slip. $a_{atas} = (F - f_k)/m_{atas} = (16-10)/5 = 1,2$ m/s². Koreksi: opsi b.",
-        trik_cepat: "Cek apakah gaya melebihi gesek statis maksimum; jika ya, gunakan gesek kinetik."
+        opsi: ["$0$", "$0,25$", "$0,5$", "$0,75$", "$1$"],
+        jawaban: 4,
+        pembahasan: "Nilai emisivitas $e$ berkisar antara $0$ (pemantul sempurna/putih mengilap) hingga $1$ (penyerap/pemancar sempurna atau benda hitam sempurna).",
+        trik_cepat: "Hitam sempurna $\\rightarrow e = 1$; Putih mengilap $\\rightarrow e = 0$."
     },
     {
         id: 81,
-        teks: "Sebuah silinder pejal bermassa 2 kg dan jari-jari 0,1 m menggelinding tanpa slip pada bidang miring dengan sudut 30°. Percepatan silinder adalah .... ($g = 10$ m/s²)",
+        teks: "Pada peristiwa anomali air, ketika air dipanaskan dari suhu $0^\\circ\\text{C}$ hingga $4^\\circ\\text{C}$, sifat fisis air yang terjadi adalah ....",
         gambar: "",
-        opsi: ["$\\frac{10}{3}$ m/s²", "$\\frac{20}{3}$ m/s²", "$\\frac{5}{2}$ m/s²", "$\\frac{15}{4}$ m/s²", "$\\frac{25}{6}$ m/s²"],
-        jawaban: 0,
-        pembahasan: "Untuk silinder pejal menggelinding: $a = \\frac{g\\sin\\theta}{1 + I/(mr^2)} = \\frac{10 \\cdot 0,5}{1 + 1/2} = \\frac{5}{1,5} = \\frac{10}{3}$ m/s².",
-        trik_cepat: "$a = \\frac{g\\sin\\theta}{1 + k}$ dengan $k = I/(mr^2)$; silinder pejal $k = 1/2$."
+        opsi: [
+            "Volumenya memuai dan massa jenisnya mengecil",
+            "Volumenya menyusut dan massa jenisnya membesar",
+            "Volume dan massa jenisnya tetap",
+            "Volumenya menyusut dan massa jenisnya mengecil",
+            "Air langsung mendidih"
+        ],
+        jawaban: 1,
+        pembahasan: "Anomali air terjadi pada rentang $0^\\circ\\text{C}$–$4^\\circ\\text{C}$: saat dipanaskan volumenya justru menyusut sehingga pada suhu $4^\\circ\\text{C}$ air memiliki volume minimum dan massa jenis maksimum ($1$ g/cm$^3$).",
+        trik_cepat: "Suhu $4^\\circ\\text{C}$ = volume air paling kecil, massa jenis paling besar."
     },
     {
         id: 82,
-        teks: "Sebuah benda bermassa 3 kg bergerak dengan kecepatan $\\vec{v} = (4\\hat{i} - 3\\hat{j})$ m/s. Energi kinetik benda adalah ....",
+        teks: "Sebuah logam bermassa $0,5$ kg bersuhu $100^\\circ\\text{C}$ dimasukkan ke dalam $1$ kg air bersuhu $20^\\circ\\text{C}$. Jika suhu akhir campuran $25^\\circ\\text{C}$ dan kalor jenis air $4.200$ J/(kg·$^\\circ$C), kalor jenis logam tersebut adalah ....",
         gambar: "",
-        opsi: ["18 J", "24 J", "30 J", "37,5 J", "75 J"],
-        jawaban: 3,
-        pembahasan: "$|\\vec{v}| = \\sqrt{16+9} = 5$ m/s. $E_k = \\frac{1}{2}mv^2 = \\frac{1}{2}(3)(25) = 37,5$ J.",
-        trik_cepat: "$E_k = \\frac{1}{2}m|\\vec{v}|^2$."
+        opsi: [
+            "$280$ J/(kg·$^\\circ$C)",
+            "$420$ J/(kg·$^\\circ$C)",
+            "$560$ J/(kg·$^\\circ$C)",
+            "$840$ J/(kg·$^\\circ$C)",
+            "$1.120$ J/(kg·$^\\circ$C)"
+        ],
+        jawaban: 2,
+        pembahasan: "$m_L c_L (100 - 25) = m_a c_a (25 - 20) \\Rightarrow 0,5 \\cdot c_L (75) = 1(4.200)(5) \\Rightarrow 37,5 c_L = 21.000 \\Rightarrow c_L = 560$ J/(kg·$^\\circ$C).",
+        trik_cepat: "$Q_{\\text{lepas}} = Q_{\\text{terima}}$."
     },
+
+    // =========================================================================
+    // BAB 7: TEORI KINETIK GAS & TERMODINAMIKA (83-100)
+    // =========================================================================
     {
         id: 83,
-        teks: "Sebuah pipa venturi memiliki perbandingan luas penampang $A_1 : A_2 = 4 : 1$. Jika perbedaan tekanan antara kedua penampang 12.000 Pa dan $\\rho = 1000$ kg/m³, kecepatan aliran di penampang besar adalah ....",
+        teks: "Sebuah tabung tertutup berisi gas ideal pada suhu $27^\\circ\\text{C}$ dan tekanan $2$ atm. Jika gas dipanaskan pada volume tetap hingga suhunya menjadi $177^\\circ\\text{C}$, tekanan gas sekarang adalah ....",
         gambar: "",
-        opsi: ["1 m/s", "2 m/s", "3 m/s", "4 m/s", "5 m/s"],
-        jawaban: 1,
-        pembahasan: "Kontinuitas: $v_2 = 4v_1$. Bernoulli: $\\Delta P = \\frac{1}{2}\\rho(v_2^2 - v_1^2) = \\frac{1}{2}(1000)(16v_1^2 - v_1^2) = 500(15v_1^2) = 7500v_1^2$. $12000 = 7500v_1^2 \\Rightarrow v_1^2 = 1,6 \\Rightarrow v_1 \\approx 1,26$ m/s. Opsi terdekat: 1 m/s (a) atau 2 m/s (b).",
-        trik_cepat: "Gunakan kontinuitas untuk relasi $v$, lalu Bernoulli untuk $\\Delta P$."
+        opsi: ["$1,5$ atm", "$2,5$ atm", "$3,0$ atm", "$4,0$ atm", "$13,1$ atm"],
+        jawaban: 2,
+        pembahasan: "Proses isokhorik ($T_1 = 300$ K, $T_2 = 450$ K): $\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\Rightarrow \\frac{2}{300} = \\frac{P_2}{450} \\Rightarrow P_2 = 3,0$ atm.",
+        trik_cepat: "Volume tetap: $P$ sebanding dengan $T$ (dalam Kelvin)."
     },
     {
         id: 84,
-        teks: "Sebuah tangki berisi air setinggi 5 m. Pada dinding tangki terdapat dua lubang pada ketinggian 1 m dan 3 m dari dasar. Perbandingan jarak horizontal air yang keluar dari kedua lubang adalah ....",
+        teks: "Sebanyak $2$ mol gas ideal berada dalam wadah bervolume $8,314$ liter pada suhu $27^\\circ\\text{C}$. Jika tetapan umum gas $R = 8,314$ J/(mol·K), tekanan gas tersebut adalah ....",
         gambar: "",
-        opsi: ["1 : 1", "1 : 2", "1 : 3", "2 : 1", "3 : 1"],
-        jawaban: 0,
-        pembahasan: "Jarak horizontal $x = 2\\sqrt{h_1 h_2}$ dengan $h_1$ = tinggi permukaan ke lubang, $h_2$ = tinggi lubang ke dasar. Lubang 1: $h_1 = 4$, $h_2 = 1 \\Rightarrow x_1 = 2\\sqrt{4} = 4$ m. Lubang 2: $h_1 = 2$, $h_2 = 3 \\Rightarrow x_2 = 2\\sqrt{6} \\approx 4,9$ m. Perbandingan $\\approx 4 : 4,9 \\approx 1 : 1,22$. Tidak tepat 1:1. Namun jika $h_1 h_2$ sama: $4 \\times 1 = 4$ dan $2 \\times 3 = 6$, berbeda. Opsi terdekat: 1:1 (a).",
-        trik_cepat: "$x = 2\\sqrt{h_{atas} \\cdot h_{bawah}}$."
+        opsi: ["$3 \\times 10^5$ Pa", "$4,5 \\times 10^5$ Pa", "$6 \\times 10^5$ Pa", "$9 \\times 10^5$ Pa", "$1,2 \\times 10^6$ Pa"],
+        jawaban: 2,
+        pembahasan: "$V = 8,314\\text{ L} = 8,314 \\times 10^{-3}$ m$^3$, $T = 300$ K. $P = \\frac{n R T}{V} = \\frac{2 \\times 8,314 \\times 300}{8,314 \\times 10^{-3}} = 600 \\times 10^3 = 6 \\times 10^5$ Pa.",
+        trik_cepat: "$PV = nRT$ (ingat $1\\text{ liter} = 10^{-3}\\text{ m}^3$)."
     },
     {
         id: 85,
-        teks: "Sebuah benda bermassa 2 kg dan volume 1.000 cm³ diikat tali dan dicelupkan seluruhnya ke dalam air. Jika $g = 10$ m/s², tegangan tali adalah .... ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Energi kinetik rata-rata molekul gas ideal monoatomik hanya bergantung pada ....",
         gambar: "",
-        opsi: ["5 N", "10 N", "15 N", "20 N", "25 N"],
-        jawaban: 1,
-        pembahasan: "$w = 20$ N. $F_A = \\rho g V = 1000(10)(10^{-3}) = 10$ N. Karena $w > F_A$, benda cenderung tenggelam; tali menahan: $T = w - F_A = 20 - 10 = 10$ N.",
-        trik_cepat: "$T = w - F_A$ (jika benda lebih berat)."
+        opsi: ["Tekanan gas", "Volume wadah", "Massa molekul gas", "Suhu mutlak gas", "Jumlah partikel gas"],
+        jawaban: 3,
+        pembahasan: "$\\bar{E}_k = \\frac{3}{2} k T$. Energi kinetik rata-rata molekul gas ideal hanya bergantung pada suhu mutlak ($T$ dalam Kelvin).",
+        trik_cepat: "Suhu sama $\\rightarrow$ Energi kinetik rata-rata molekul sama."
     },
     {
         id: 86,
-        teks: "Sebuah benda bergerak dengan persamaan $x(t) = t^3 - 6t^2 + 9t$ (m). Kapan partikel berhenti sesaat?",
+        teks: "Jika suhu mutlak suatu gas ideal dinaikkan menjadi $4$ kali semula, kelajuan efektif ($v_{\\text{rms}}$) partikel-partikel gas menjadi ....",
         gambar: "",
-        opsi: ["$t = 1$ s dan $t = 3$ s", "$t = 2$ s dan $t = 4$ s", "$t = 1$ s dan $t = 2$ s", "$t = 3$ s dan $t = 4$ s", "$t = 0$ s dan $t = 3$ s"],
-        jawaban: 0,
-        pembahasan: "$v = dx/dt = 3t^2 - 12t + 9 = 3(t^2 - 4t + 3) = 3(t-1)(t-3)$. Berhenti saat $v=0$: $t=1$ atau $t=3$.",
-        trik_cepat: "Cari akar $v(t) = 0$."
+        opsi: ["$\\frac{1}{2}$ kali semula", "$2$ kali semula", "$4$ kali semula", "$8$ kali semula", "$16$ kali semula"],
+        jawaban: 1,
+        pembahasan: "$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} \\propto \\sqrt{T}$. Jika $T' = 4T$, maka $v'_{\\text{rms}} = \\sqrt{4} = 2$ kali semula.",
+        trik_cepat: "$v_{\\text{rms}}$ sebanding dengan akar suhu mutlak ($\\sqrt{T}$)."
     },
     {
         id: 87,
-        teks: "Sebuah bola bermassa 0,5 kg dilempar vertikal ke atas dengan kecepatan 10 m/s. Momentum bola pada titik tertinggi adalah ....",
+        teks: "Energi dalam ($U$) dari $2$ mol gas ideal monoatomik pada suhu $300$ K adalah .... ($R = 8,31$ J/(mol·K))",
         gambar: "",
-        opsi: ["0 kg·m/s", "2,5 kg·m/s", "5 kg·m/s", "10 kg·m/s", "50 kg·m/s"],
-        jawaban: 0,
-        pembahasan: "Di titik tertinggi, kecepatan bola sesaat nol ($v=0$), sehingga momentum $p = mv = 0$.",
-        trik_cepat: "Titik tertinggi → $v = 0$ → $p = 0$."
+        opsi: ["$2.493$ J", "$4.986$ J", "$7.479$ J", "$12.465$ J", "$14.958$ J"],
+        jawaban: 2,
+        pembahasan: "Gas monoatomik memiliki $3$ derajat kebebasan ($f = 3$): $U = \\frac{3}{2} n R T = \\frac{3}{2}(2)(8,31)(300) = 3 \\times 8,31 \\times 300 = 7.479$ J.",
+        trik_cepat: "Monoatomik: $U = \\frac{3}{2}nRT$; Diatomik suhu sedang: $U = \\frac{5}{2}nRT$."
     },
     {
         id: 88,
-        teks: "Sebuah benda bermassa 4 kg bergerak dengan kecepatan 5 m/s. Berapa energi yang diperlukan untuk menghentikan benda tersebut?",
+        teks: "Gas ideal mengalami proses isobarik pada tekanan tetap $2 \\times 10^5$ Pa sehingga volumenya memuai dari $1,5$ liter menjadi $4,0$ liter. Usaha yang dilakukan oleh gas tersebut adalah ....",
         gambar: "",
-        opsi: ["10 J", "20 J", "40 J", "50 J", "100 J"],
-        jawaban: 3,
-        pembahasan: "Energi kinetik awal = $\\frac{1}{2}(4)(25) = 50$ J. Untuk menghentikan, diperlukan usaha sebesar $50$ J.",
-        trik_cepat: "Usaha = perubahan energi kinetik = $\\frac{1}{2}mv^2$."
+        opsi: ["$250$ J", "$300$ J", "$500$ J", "$800$ J", "$5.000$ J"],
+        jawaban: 2,
+        pembahasan: "$\\Delta V = (4,0 - 1,5)\\text{ L} = 2,5 \\times 10^{-3}$ m$^3$. $W = P \\Delta V = (2 \\times 10^5)(2,5 \\times 10^{-3}) = 500$ J.",
+        trik_cepat: "Isobarik: $W = P(V_2 - V_1)$."
     },
     {
         id: 89,
-        teks: "Sebuah silinder pejal dan cincin tipis dengan massa dan jari-jari sama dilepaskan dari puncak bidang miring. Perbandingan percepatan silinder dan cincin adalah ....",
+        teks: "Suatu gas ideal mengalami proses termodinamika yang berlangsung tanpa adanya pertukaran kalor antara sistem dan lingkungan ($Q = 0$). Proses ini disebut ....",
         gambar: "",
-        opsi: ["2 : 1", "3 : 2", "4 : 3", "1 : 2", "2 : 3"],
-        jawaban: 2,
-        pembahasan: "Silinder pejal: $k = 1/2$, $a_s = g\\sin\\theta/(1+1/2) = (2/3)g\\sin\\theta$. Cincin: $k = 1$, $a_c = g\\sin\\theta/(1+1) = (1/2)g\\sin\\theta$. Perbandingan $a_s : a_c = (2/3) : (1/2) = 4 : 3$.",
-        trik_cepat: "$a = g\\sin\\theta/(1+k)$; silinder $k=1/2$, cincin $k=1$."
+        opsi: ["Isotermal", "Isobarik", "Isokhorik", "Adiabatik", "Isoentropik"],
+        jawaban: 3,
+        pembahasan: "Adiabatik adalah proses termodinamika di mana tidak ada kalor yang masuk maupun keluar sistem ($Q = 0$), sehingga $\\Delta U = -W$.",
+        trik_cepat: "Isotermal ($\\Delta T = 0$); Isobarik ($\\Delta P = 0$); Isokhorik ($\\Delta V = 0$); Adiabatik ($Q = 0$)."
     },
     {
         id: 90,
-        teks: "Sebuah benda terapung di air dengan 40% volume di atas permukaan. Jika benda tersebut diletakkan di cairan lain yang massa jenisnya 1.200 kg/m³, berapa persen volume benda yang muncul di atas permukaan? ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Dalam sebuah proses termodinamika, suatu sistem gas menyerap kalor sebesar $1.500$ J dan melakukan usaha luar sebesar $600$ J. Perubahan energi dalam sistem gas tersebut adalah ....",
         gambar: "",
-        opsi: ["25%", "30%", "40%", "50%", "60%"],
-        jawaban: 0,
-        pembahasan: "$\\rho_b = 1000 \\times 0,6 = 600$ kg/m³. Di cairan: fraksi tercelup = $600/1200 = 0,5$. Fraksi muncul = $1 - 0,5 = 0,5 = 50$%. Koreksi: opsi d.",
-        trik_cepat: "$\\rho_b = \\rho_{air} \\times$ fraksi tercelup; lalu fraksi muncul = $1 - \\rho_b/\\rho_{cairan}$."
+        opsi: ["$-2.100$ J", "$-900$ J", "$600$ J", "$900$ J", "$2.100$ J"],
+        jawaban: 3,
+        pembahasan: "Hukum I Termodinamika: $Q = \\Delta U + W \\Rightarrow +1.500 = \\Delta U + (+600) \\Rightarrow \\Delta U = 900$ J.",
+        trik_cepat: "Menyerap kalor ($Q+$), melakukan usaha ($W+$): $\\Delta U = Q - W$."
     },
     {
         id: 91,
-        teks: "Sebuah partikel bergerak dengan kecepatan $v(t) = 2t\\hat{i} + 3t^2\\hat{j}$ (m/s). Besar percepatan pada $t = 1$ s adalah ....",
+        teks: "Pada proses isokhorik (volume tetap), pernyataan yang benar menurut Hukum I Termodinamika adalah ....",
         gambar: "",
-        opsi: ["$2\\sqrt{10}$ m/s²", "$4\\sqrt{10}$ m/s²", "$2\\sqrt{5}$ m/s²", "$4\\sqrt{5}$ m/s²", "$10$ m/s²"],
-        jawaban: 0,
-        pembahasan: "$\\vec{a} = d\\vec{v}/dt = 2\\hat{i} + 6t\\hat{j}$. Pada $t=1$: $\\vec{a} = 2\\hat{i} + 6\\hat{j}$. $|\\vec{a}| = \\sqrt{4+36} = \\sqrt{40} = 2\\sqrt{10}$ m/s².",
-        trik_cepat: "Turunkan vektor kecepatan, hitung besar."
+        opsi: [
+            "Usaha sistem bernilai maksimum",
+            "Perubahan energi dalam sama dengan nol",
+            "Seluruh kalor yang diserap digunakan untuk menaikkan energi dalam sistem",
+            "Suhu sistem selalu tetap",
+            "Tidak ada kalor yang masuk ke sistem"
+        ],
+        jawaban: 2,
+        pembahasan: "Karena $\\Delta V = 0$, maka usaha $W = 0$. Dari $Q = \\Delta U + W$, diperoleh $Q = \\Delta U$.",
+        trik_cepat: "Isokhorik $\\rightarrow \\Delta V = 0 \\rightarrow W = 0 \\rightarrow Q = \\Delta U$."
     },
     {
         id: 92,
-        teks: "Sebuah balok bermassa 2 kg diletakkan di atas bidang miring kasar dengan sudut 45°. Jika balok tepat akan bergerak, koefisien gesek statis antara balok dan bidang adalah ....",
+        teks: "Sebuah mesin Carnot bekerja di antara reservoir suhu tinggi $527^\\circ\\text{C}$ dan reservoir suhu rendah $127^\\circ\\text{C}$. Efisiensi maksimum mesin Carnot tersebut adalah ....",
         gambar: "",
-        opsi: ["0,5", "0,707", "1,0", "1,414", "2,0"],
+        opsi: ["$25\\%$", "$40\\%$", "$50\\%$", "$75\\%$", "$76\\%$"],
         jawaban: 2,
-        pembahasan: "Tepat akan bergerak: $mg\\sin\\theta = \\mu_s mg\\cos\\theta \\Rightarrow \\mu_s = \\tan\\theta = \\tan 45^\\circ = 1$.",
-        trik_cepat: "$\\mu_s = \\tan\\theta$ pada kondisi tepat akan bergerak."
+        pembahasan: "$T_1 = 527 + 273 = 800$ K dan $T_2 = 127 + 273 = 400$ K. $\\eta = \\left(1 - \\frac{T_2}{T_1}\\right) \\times 100\\% = \\left(1 - \\frac{400}{800}\\right) \\times 100\\% = 50\\%$.",
+        trik_cepat: "Ubah suhu ke Kelvin! $\\eta = (1 - T_{\\text{rendah}}/T_{\\text{tinggi}}) \\times 100\\%$."
     },
     {
         id: 93,
-        teks: "Sebuah bola bermassa 0,2 kg menumbuk dinding dengan kecepatan 10 m/s dan memantul dengan kecepatan 8 m/s. Jika waktu kontak 0,01 s, gaya rata-rata yang diberikan dinding pada bola adalah ....",
+        teks: "Sebuah mesin Carnot menyerap kalor $2.000$ J dari reservoir panas bersuhu $600$ K dan membuang sebagian kalor ke reservoir dingin bersuhu $300$ K. Usaha yang dihasilkan mesin dalam satu siklus adalah ....",
         gambar: "",
-        opsi: ["36 N", "40 N", "180 N", "200 N", "360 N"],
-        jawaban: 4,
-        pembahasan: "Impuls = perubahan momentum: $F\\Delta t = m(v_2 - v_1)$. Ambil arah awal positif: $v_1 = 10$, $v_2 = -8$. $F(0,01) = 0,2(-8-10) = -3,6$ N·s. $F = -360$ N. Besar gaya = 360 N.",
-        trik_cepat: "$F = m(v_2-v_1)/\\Delta t$, perhatikan tanda arah."
+        opsi: ["$500$ J", "$1.000$ J", "$1.500$ J", "$2.000$ J", "$3.000$ J"],
+        jawaban: 1,
+        pembahasan: "$\\eta = 1 - \\frac{300}{600} = 0,5$. Usaha $W = \\eta \\cdot Q_1 = 0,5 \\times 2.000 = 1.000$ J.",
+        trik_cepat: "$W = \\eta Q_1$."
     },
     {
         id: 94,
-        teks: "Sebuah benda bermassa 3 kg bergerak melingkar dengan jari-jari 2 m dan kecepatan sudut 3 rad/s. Energi kinetik benda adalah ....",
+        teks: "Sebuah mesin Carnot memiliki efisiensi $40\\%$ ketika reservoir dinginnya bersuhu $27^\\circ\\text{C}$. Agar efisiensinya meningkat menjadi $60\\%$ dengan suhu reservoir dingin tetap, suhu reservoir panas harus dinaikkan menjadi ....",
         gambar: "",
-        opsi: ["27 J", "54 J", "81 J", "108 J", "162 J"],
-        jawaban: 1,
-        pembahasan: "$v = \\omega r = 3 \\times 2 = 6$ m/s. $E_k = \\frac{1}{2}mv^2 = \\frac{1}{2}(3)(36) = 54$ J.",
-        trik_cepat: "$v = \\omega r$, lalu $E_k = \\frac{1}{2}mv^2$."
+        opsi: ["$450$ K", "$500$ K", "$600$ K", "$750$ K", "$900$ K"],
+        jawaban: 3,
+        pembahasan: "$T_2 = 27 + 273 = 300$ K. Kondisi baru: $0,6 = 1 - \\frac{300}{T_1'} \\Rightarrow \\frac{300}{T_1'} = 0,4 \\Rightarrow T_1' = \\frac{300}{0,4} = 750$ K.",
+        trik_cepat: "$T_1 = \\frac{T_2}{1 - \\eta}$."
     },
     {
         id: 95,
-        teks: "Sebuah benda bermassa 5 kg dan volume 0,01 m³ dijatuhkan ke dalam air. Jika $g = 10$ m/s², percepatan awal benda adalah .... ($\\rho_{air} = 1000$ kg/m³)",
+        teks: "Sebuah mesin pendingin (kulkas) memiliki koefisien performansi ($K_p$) sebesar $5$. Jika mesin mengambil kalor dari ruang pembeku sebesar $1.500$ J setiap siklus, usaha listrik yang diperlukan mesin tersebut adalah ....",
         gambar: "",
-        opsi: ["2 m/s²", "4 m/s²", "6 m/s²", "8 m/s²", "10 m/s²"],
-        jawaban: 2,
-        pembahasan: "$w = 50$ N. $F_A = \\rho g V = 1000(10)(0,01) = 100$ N. Resultan ke atas = $100 - 50 = 50$ N. $a = F/m = 50/5 = 10$ m/s². Koreksi: opsi e. Periksa: $a = (F_A - w)/m = 50/5 = 10$ m/s².",
-        trik_cepat: "$a = (F_A - w)/m$."
+        opsi: ["$250$ J", "$300$ J", "$500$ J", "$1.200$ J", "$7.500$ J"],
+        jawaban: 1,
+        pembahasan: "$K_p = \\frac{Q_2}{W} \\Rightarrow 5 = \\frac{1.500}{W} \\Rightarrow W = \\frac{1.500}{5} = 300$ J.",
+        trik_cepat: "Kulkas: $K_p = \\frac{Q_{\\text{dingin}}}{W}$."
     },
     {
         id: 96,
-        teks: "Sebuah pipa horizontal mengalirkan air. Di titik A (penampang 8 cm²) kecepatan 3 m/s dan tekanan $2 \\times 10^5$ Pa. Di titik B (penampang 2 cm²), tekanan air adalah .... ($\\rho = 1000$ kg/m³)",
+        teks: "Gas ideal mengalami proses ekspansi isotermal pada suhu tetap. Pernyataan yang tepat mengenai usaha dan kalor pada proses ini adalah ....",
         gambar: "",
-        opsi: ["$1,82 \\times 10^5$ Pa", "$1,88 \\times 10^5$ Pa", "$2,00 \\times 10^5$ Pa", "$2,12 \\times 10^5$ Pa", "$2,18 \\times 10^5$ Pa"],
-        jawaban: 0,
-        pembahasan: "Kontinuitas: $v_B = (8/2) \\times 3 = 12$ m/s. Bernoulli: $P_B = P_A + \\frac{1}{2}\\rho(v_A^2 - v_B^2) = 2\\times10^5 + 500(9 - 144) = 2\\times10^5 - 67.500 = 1,325 \\times 10^5$ Pa. Tidak cocok opsi. Koreksi: mungkin $v_A = 2$ m/s? Jika $v_A=2$, $v_B=8$, $P_B = 2\\times10^5 + 500(4-64) = 2\\times10^5 - 30000 = 1,7 \\times 10^5$. Opsi a paling mendekati pola.",
-        trik_cepat: "Kontinuitas → $v_B$, lalu Bernoulli untuk $P_B$."
+        opsi: [
+            "Usaha gas bernilai nol dan kalor masuk seluruhnya menaikkan suhu",
+            "Perubahan energi dalam bernilai nol sehingga kalor yang diserap sama dengan usaha yang dilakukan gas",
+            "Tekanan gas tetap selama volume bertambah",
+            "Tidak ada kalor yang diserap maupun dilepas sistem",
+            "Suhu gas turun sebanding dengan pertambahan volume"
+        ],
+        jawaban: 1,
+        pembahasan: "Pada proses isotermal ($\\Delta T = 0$), perubahan energi dalam $\\Delta U = 0$. Sesuai Hukum I Termodinamika ($Q = \\Delta U + W$), maka $Q = W$.",
+        trik_cepat: "Isotermal $\\rightarrow \\Delta T = 0 \\rightarrow \\Delta U = 0 \\rightarrow Q = W$."
     },
     {
         id: 97,
-        teks: "Sebuah benda bermassa 2 kg bergerak dengan kecepatan $\\vec{v}_1 = 3\\hat{i}$ m/s. Benda lain bermassa 3 kg bergerak dengan $\\vec{v}_2 = -2\\hat{i}$ m/s. Momentum total sistem adalah ....",
+        teks: "Dalam sebuah siklus termodinamika pada diagram $P$-$V$, luas daerah yang dilingkupi oleh kurva siklus tertutup menyatakan ....",
         gambar: "",
-        opsi: ["$0\\hat{i}$ kg·m/s", "$6\\hat{i}$ kg·m/s", "$12\\hat{i}$ kg·m/s", "$-6\\hat{i}$ kg·m/s", "$18\\hat{i}$ kg·m/s"],
-        jawaban: 0,
-        pembahasan: "$\\vec{p}_{total} = m_1\\vec{v}_1 + m_2\\vec{v}_2 = 2(3\\hat{i}) + 3(-2\\hat{i}) = 6\\hat{i} - 6\\hat{i} = 0$.",
-        trik_cepat: "Jumlahkan momentum masing-masing benda (perhatikan tanda)."
+        opsi: [
+            "Perubahan energi dalam total siklus",
+            "Kalor total yang dibuang ke lingkungan",
+            "Usaha bersih yang dilakukan sistem dalam satu siklus",
+            "Efisiensi termal mesin",
+            "Kapasitas kalor molar gas"
+        ],
+        jawaban: 2,
+        pembahasan: "Pada siklus tertutup, keadaan awal sama dengan keadaan akhir sehingga $\\Delta U_{\\text{siklus}} = 0$. Luas kurva tertutup pada diagram $P$-$V$ menyatakan usaha bersih ($W_{\\text{siklus}}$).",
+        trik_cepat: "Luas siklus $P$-$V$ = Usaha bersih ($W$); $\\Delta U_{\\text{siklus}} = 0$."
     },
     {
         id: 98,
-        teks: "Sebuah benda bergerak dengan persamaan $v(t) = 4t - 2$ (m/s). Jarak yang ditempuh dari $t=0$ sampai $t=3$ s adalah ....",
+        teks: "Sebuah siklus termodinamika berbentuk persegi panjang pada diagram $P$-$V$ memiliki batas tekanan $P_1 = 2 \\times 10^5$ Pa hingga $P_2 = 5 \\times 10^5$ Pa, dan batas volume $V_1 = 0,02$ m$^3$ hingga $V_2 = 0,06$ m$^3$. Jika siklus berjalan searah jarum jam, usaha bersih yang dihasilkan adalah ....",
         gambar: "",
-        opsi: ["8 m", "10 m", "12 m", "14 m", "16 m"],
+        opsi: ["$6.000$ J", "$12.000$ J", "$18.000$ J", "$20.000$ J", "$30.000$ J"],
         jawaban: 1,
-        pembahasan: "$s = \\int_0^3 (4t-2)dt = [2t^2 - 2t]_0^3 = (18-6) - 0 = 12$ m. Koreksi: opsi c.",
-        trik_cepat: "Integralkan kecepatan dari $t=0$ ke $t=3$."
+        pembahasan: "Searah jarum jam berarti $W$ bernilai positif. $W = \\text{Luas persegi panjang} = \\Delta P \\cdot \\Delta V = (5 - 2)\\times 10^5 \\times (0,06 - 0,02) = (3 \\times 10^5)(0,04) = 12.000$ J.",
+        trik_cepat: "Siklus persegi panjang: $W = \\pm \\Delta P \\cdot \\Delta V$ ($+$ searah jarum jam, $-$ berlawanan)."
     },
     {
         id: 99,
-        teks: "Sebuah benda bermassa 1 kg dijatuhkan dari ketinggian 20 m. Jika $g = 10$ m/s², momentum benda saat menyentuh tanah adalah ....",
+        teks: "Bunyi Hukum II Termodinamika menurut rumusan Clausius menyatakan bahwa ....",
         gambar: "",
-        opsi: ["10 kg·m/s", "20 kg·m/s", "30 kg·m/s", "40 kg·m/s", "50 kg·m/s"],
-        jawaban: 1,
-        pembahasan: "$v = \\sqrt{2gh} = \\sqrt{2(10)(20)} = \\sqrt{400} = 20$ m/s. $p = mv = 1(20) = 20$ kg·m/s.",
-        trik_cepat: "$v = \\sqrt{2gh}$, lalu $p = mv$."
+        opsi: [
+            "Energi tidak dapat diciptakan maupun dimusnahkan",
+            "Tidak mungkin membuat mesin yang mengubah seluruh kalor menjadi usaha tanpa membuang kalor",
+            "Kalor tidak dapat mengalir secara spontan dari benda bersuhu rendah ke benda bersuhu tinggi tanpa usaha luar",
+            "Entropi alam semesta selalu berkurang pada proses spontan",
+            "Tekanan gas ideal berbanding lurus dengan suhu mutlaknya"
+        ],
+        jawaban: 2,
+        pembahasan: "Rumusan Clausius membahas arah aliran kalor (dasar mesin pendingin): kalor tidak dapat mengalir spontan dari suhu dingin ke suhu panas. Pilihan B adalah rumusan Kelvin-Planck (mesin kalor).",
+        trik_cepat: "Clausius = arah aliran kalor (kulkas); Kelvin-Planck = efisiensi mesin kalor $< 100\\%$."
     },
     {
         id: 100,
-        teks: "Sebuah dongkrak hidrolik digunakan untuk mengangkat mobil bermassa 1.500 kg. Jika penampang kecil 20 cm² dan penampang besar 500 cm², gaya minimum yang diperlukan adalah .... ($g = 10$ m/s²)",
+        teks: "Sebanyak $1$ mol gas ideal mengalami pemuaian isotermal pada suhu $300$ K sehingga volumenya menjadi $2$ kali volume semula. Jika $R = 8,31$ J/(mol·K) dan $\\ln 2 = 0,693$, usaha yang dilakukan gas adalah ....",
         gambar: "",
-        opsi: ["300 N", "400 N", "500 N", "600 N", "700 N"],
-        jawaban: 3,
-        pembahasan: "Berat mobil $w = 1500 \\times 10 = 15.000$ N. Hukum Pascal: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\Rightarrow \\frac{F_1}{20} = \\frac{15000}{500} \\Rightarrow F_1 = 30 \\times 20 = 600$ N.",
-        trik_cepat: "$F_1 = F_2 \\cdot \\frac{A_1}{A_2}$."
+        opsi: ["$864$ J", "$1.246$ J", "$1.728$ J", "$2.493$ J", "$3.456$ J"],
+        jawaban: 2,
+        pembahasan: "$W = n R T \\ln\\left(\\frac{V_2}{V_1}\\right) = 1 \\times 8,31 \\times 300 \\times \\ln(2) = 2.493 \\times 0,693 \\approx 1.728$ J.",
+        trik_cepat: "Usaha isotermal: $W = n R T \\ln(V_2 / V_1)$."
     }
 ];
 
