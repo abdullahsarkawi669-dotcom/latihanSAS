@@ -18,7 +18,7 @@ const soalFisika = [
             "Volume, massa jenis, dan momentum"
         ],
         jawaban: 1,
-        pembahasan: "Besaran vektor memiliki besar (nilai) dan arah. Perpindahan, kecepatan, dan gaya memiliki arah sehingga termasuk besaran vektor. Massa, waktu, suhu, jarak, kelajuan, usaha, energi, daya, tekanan, volume, dan massa jenis adalah besaran skalar.",
+        pembahasan: "Besaran vektor memiliki besar (nilai) dan arah.<br>Perpindahan, kecepatan, dan gaya memiliki arah sehingga termasuk besaran vektor.<br>Massa, waktu, suhu, jarak, kelajuan, usaha, energi, daya, tekanan, volume, dan massa jenis adalah besaran skalar.",
         trik_cepat: "Ingat arah: gerak (perpindahan, kecepatan, percepatan) dan dorongan/tarikan (gaya, momentum, impuls) pasti vektor."
     },
     {
@@ -27,7 +27,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["3 satuan", "4 satuan", "5 satuan", "7 satuan", "25 satuan"],
         jawaban: 2,
-        pembahasan: "$\\vec{R} = (4 + (-1))\\hat{i} + (-2 + 6)\\hat{j} = 3\\hat{i} + 4\\hat{j}$. Besar vektor resultan: $|\\vec{R}| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = 5$ satuan.",
+        pembahasan: "$\\vec{R} = (4 + (-1))\\hat{i} + (-2 + 6)\\hat{j}$<br>$= 3\\hat{i} + 4\\hat{j}$.<br>Besar vektor resultan: $|\\vec{R}| = \\sqrt{3^2 + 4^2}$<br>$= \\sqrt{9 + 16}$<br>$= 5$ satuan.",
         trik_cepat: "Jumlahkan komponen sejenis ($\\hat{i}$ dengan $\\hat{i}$, $\\hat{j}$ dengan $\\hat{j}$), lalu pakai Tripel Pythagoras 3-4-5."
     },
     {
@@ -42,7 +42,7 @@ const soalFisika = [
             "$16$ N dan $20$ N"
         ],
         jawaban: 1,
-        pembahasan: "$F_x = F \\cos 37^\\circ = 20 \\times 0,8 = 16$ N. $F_y = F \\sin 37^\\circ = 20 \\times 0,6 = 12$ N.",
+        pembahasan: "$F_x = F \\cos 37^\\circ = 20 \\times 0,8 = 16$ N.<br>$F_y = F \\sin 37^\\circ = 20 \\times 0,6 = 12$ N.",
         trik_cepat: "Samping sudut pakai $\\cos$, depan sudut pakai $\\sin$."
     },
     {
@@ -51,7 +51,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2\\sqrt{13}$ N", "$2\\sqrt{37}$ N", "$10$ N", "$14$ N", "$2\\sqrt{19}$ N"],
         jawaban: 1,
-        pembahasan: "$R = \\sqrt{F_1^2 + F_2^2 + 2 F_1 F_2 \\cos 60^\\circ} = \\sqrt{6^2 + 8^2 + 2(6)(8)(0,5)} = \\sqrt{36 + 64 + 48} = \\sqrt{148} = 2\\sqrt{37}$ N.",
+        pembahasan: "$R = \\sqrt{F_1^2 + F_2^2 + 2 F_1 F_2 \\cos 60^\\circ}$<br>$= \\sqrt{6^2 + 8^2 + 2(6)(8)(0,5)}$<br>$= \\sqrt{36 + 64 + 48}$<br>$= \\sqrt{148}$<br>$= 2\\sqrt{37}$ N.",
         trik_cepat: "Gunakan rumus kosinus: $R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}$."
     },
     {
@@ -60,7 +60,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["0", "2", "4", "12", "16"],
         jawaban: 0,
-        pembahasan: "$\\vec{P} \\cdot \\vec{Q} = (2)(4) + (3)(-2) + (-1)(2) = 8 - 6 - 2 = 0$. (Karena hasilnya 0, kedua vektor saling tegak lurus).",
+        pembahasan: "$\\vec{P} \\cdot \\vec{Q} = (2)(4) + (3)(-2) + (-1)(2)$<br>$= 8 - 6 - 2$<br>$= 0$. (Karena hasilnya 0, kedua vektor saling tegak lurus).",
         trik_cepat: "Dot product menghasilkan skalar: kalikan koefisien sejenis lalu jumlahkan."
     },
     {
@@ -69,7 +69,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$-16\\hat{k}$", "$-8\\hat{k}$", "$-2\\hat{k}$", "$8\\hat{k}$", "$16\\hat{k}$"],
         jawaban: 0,
-        pembahasan: "$\\vec{A} \\times \\vec{B} = (A_x B_y - A_y B_x)\\hat{k} = ((3)(-4) - (2)(2))\\hat{k} = (-12 - 4)\\hat{k} = -16\\hat{k}$.",
+        pembahasan: "$\\vec{A} \\times \\vec{B} = (A_x B_y - A_y B_x)\\hat{k}$<br>$= ((3)(-4) - (2)(2))\\hat{k}$<br>$= (-12 - 4)\\hat{k}$<br>$= -16\\hat{k}$.",
         trik_cepat: "Cross product 2D: $(x_1 y_2 - y_1 x_2)\\hat{k}$."
     },
     {
@@ -78,7 +78,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$5$ N", "$5\\sqrt{3}$ N", "$10$ N", "$10\\sqrt{3}$ N", "$20$ N"],
         jawaban: 2,
-        pembahasan: "Sudut antarketiga vektor masing-masing $120^\\circ$ (simetris membentuk $360^\\circ$). Agar resultan nol (setimbang), besar ketiga vektor harus sama, yaitu $F_3 = 10$ N.",
+        pembahasan: "Sudut antarketiga vektor masing-masing $120^\\circ$ (simetris membentuk $360^\\circ$).<br>Agar resultan nol (setimbang), besar ketiga vektor harus sama, yaitu $F_3 = 10$ N.",
         trik_cepat: "Tiga vektor bersudut $120^\\circ$ sama besar selalu menghasilkan resultan = 0."
     },
     {
@@ -87,7 +87,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$5 : 7$", "$7 : 5$", "$4 : 3$", "$3 : 4$", "$1 : 1$"],
         jawaban: 1,
-        pembahasan: "Jarak (skalar) = $80 + 60 = 140$ m. Perpindahan (vektor) = $\\sqrt{80^2 + 60^2} = 100$ m. Perbandingan = $140 : 100 = 7 : 5$.",
+        pembahasan: "Jarak (skalar) = $80 + 60 = 140$ m.<br>Perpindahan (vektor) = $\\sqrt{80^2 + 60^2} = 100$ m.<br>Perbandingan = $140 : 100 = 7 : 5$.",
         trik_cepat: "Jarak = total lintasan; Perpindahan = garis lurus awal ke akhir (Tripel 60-80-100)."
     },
     {
@@ -96,7 +96,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$", "$150^\\circ$"],
         jawaban: 3,
-        pembahasan: "$R^2 = A^2 + B^2 + 2AB\\cos\\theta \\Rightarrow F^2 = F^2 + F^2 + 2F^2\\cos\\theta \\Rightarrow -F^2 = 2F^2\\cos\\theta \\Rightarrow \\cos\\theta = -\\frac{1}{2} \\Rightarrow \\theta = 120^\\circ$.",
+        pembahasan: "$R^2 = A^2 + B^2 + 2AB\\cos\\theta$<br>$\\Rightarrow F^2 = F^2 + F^2 + 2F^2\\cos\\theta$<br>$\\Rightarrow -F^2 = 2F^2\\cos\\theta$<br>$\\Rightarrow \\cos\\theta = -\\frac{1}{2}$<br>$\\Rightarrow \\theta = 120^\\circ$.",
         trik_cepat: "Jika $A = B = R = F$, sudut apitnya pasti $120^\\circ$."
     },
     {
@@ -111,7 +111,7 @@ const soalFisika = [
             "$0,3\\hat{i} - 0,4\\hat{j}$"
         ],
         jawaban: 0,
-        pembahasan: "Besar $|\\vec{r}| = \\sqrt{6^2 + (-8)^2} = 10$. Vektor satuan $\\hat{u} = \\frac{\\vec{r}}{|\\vec{r}|} = \\frac{6\\hat{i} - 8\\hat{j}}{10} = 0,6\\hat{i} - 0,8\\hat{j}$.",
+        pembahasan: "Besar $|\\vec{r}| = \\sqrt{6^2 + (-8)^2} = 10$.<br>Vektor satuan $\\hat{u} = \\frac{\\vec{r}}{|\\vec{r}|}$<br>$= \\frac{6\\hat{i} - 8\\hat{j}}{10}$<br>$= 0,6\\hat{i} - 0,8\\hat{j}$.",
         trik_cepat: "Vektor satuan = vektor dibagi besarnya."
     },
 
@@ -124,7 +124,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$5$ m/s", "$9$ m/s", "$13$ m/s", "$17$ m/s", "$21$ m/s"],
         jawaban: 0,
-        pembahasan: "$v(t) = \\frac{dx}{dt} = 6t^2 - 12t + 5$. Pada $t = 2$ s: $v(2) = 6(2)^2 - 12(2) + 5 = 24 - 24 + 5 = 5$ m/s.",
+        pembahasan: "$v(t) = \\frac{dx}{dt} = 6t^2 - 12t + 5$.<br>Pada $t = 2$ s: $v(2) = 6(2)^2 - 12(2) + 5 = 24 - 24 + 5 = 5$ m/s.",
         trik_cepat: "Kecepatan = turunan pertama posisi ($v = dx/dt$)."
     },
     {
@@ -133,7 +133,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$60$ m", "$72$ m", "$84$ m", "$96$ m", "$120$ m"],
         jawaban: 3,
-        pembahasan: "$s = v_0 t + \\frac{1}{2} a t^2 = (10)(6) + \\frac{1}{2}(2)(6)^2 = 60 + 36 = 96$ m.",
+        pembahasan: "$s = v_0 t + \\frac{1}{2} a t^2$<br>$= (10)(6) + \\frac{1}{2}(2)(6)^2$<br>$= 60 + 36$<br>$= 96$ m.",
         trik_cepat: "Gunakan $s = v_0 t + \\frac{1}{2}at^2$."
     },
     {
@@ -148,7 +148,7 @@ const soalFisika = [
             "$90$ m dan $3$ s"
         ],
         jawaban: 2,
-        pembahasan: "$h_{max} = \\frac{v_0^2}{2g} = \\frac{30^2}{2(10)} = \\frac{900}{20} = 45$ m. Waktu naik $t_{naik} = \\frac{v_0}{g} = \\frac{30}{10} = 3$ s, sehingga waktu total di udara $t_{total} = 2 \\times 3 = 6$ s.",
+        pembahasan: "$h_{max} = \\frac{v_0^2}{2g}$<br>$= \\frac{30^2}{2(10)}$<br>$= \\frac{900}{20}$<br>$= 45$ m.<br>Waktu naik $t_{naik} = \\frac{v_0}{g} = \\frac{30}{10} = 3$ s, sehingga waktu total di udara $t_{total} = 2 \\times 3 = 6$ s.",
         trik_cepat: "$h_{max} = v_0^2/(2g)$ dan $t_{udara} = 2v_0/g$."
     },
     {
@@ -157,7 +157,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$40\\sqrt{3}$ m", "$80$ m", "$80\\sqrt{3}$ m", "$120$ m", "$160\\sqrt{3}$ m"],
         jawaban: 2,
-        pembahasan: "$X_{max} = \\frac{v_0^2 \\sin 2\\theta}{g} = \\frac{40^2 \\sin 60^\\circ}{10} = 160 \\times \\frac{\\sqrt{3}}{2} = 80\\sqrt{3}$ m.",
+        pembahasan: "$X_{max} = \\frac{v_0^2 \\sin 2\\theta}{g}$<br>$= \\frac{40^2 \\sin 60^\\circ}{10}$<br>$= 160 \\times \\frac{\\sqrt{3}}{2}$<br>$= 80\\sqrt{3}$ m.",
         trik_cepat: "$X_{max} = \\frac{v_0^2 \\sin 2\\theta}{g}$."
     },
     {
@@ -172,7 +172,7 @@ const soalFisika = [
             "Kecepatan vertikal maksimum dan kecepatan horizontal tetap"
         ],
         jawaban: 2,
-        pembahasan: "Di titik tertinggi gerak parabola, $v_y = 0$, tetapi $v_x = v_0\\cos\\theta \\neq 0$. Percepatan gravitasi $g$ selalu bekerja ke bawah sepanjang lintasan.",
+        pembahasan: "Di titik tertinggi gerak parabola, $v_y = 0$, tetapi $v_x = v_0\\cos\\theta \\neq 0$.<br>Percepatan gravitasi $g$ selalu bekerja ke bawah sepanjang lintasan.",
         trik_cepat: "Puncak parabola: $v_y = 0$, $v_x$ tetap, $a = g$ ke bawah."
     },
     {
@@ -181,7 +181,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$\\pi$ m/s", "$2\\pi$ m/s", "$4\\pi$ m/s", "$10\\pi$ m/s", "$20\\pi$ m/s"],
         jawaban: 1,
-        pembahasan: "$\\omega = 2\\pi f = 2\\pi(5) = 10\\pi$ rad/s. $r = 20$ cm $= 0,2$ m. Maka $v = \\omega r = 10\\pi \\times 0,2 = 2\\pi$ m/s.",
+        pembahasan: "$\\omega = 2\\pi f = 2\\pi(5) = 10\\pi$ rad/s.<br>$r = 20$ cm $= 0,2$ m.<br>Maka $v = \\omega r = 10\\pi \\times 0,2 = 2\\pi$ m/s.",
         trik_cepat: "$v = 2\\pi f r$ (ubah cm ke meter dulu)."
     },
     {
@@ -190,7 +190,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$10$ rad/s", "$20$ rad/s", "$25$ rad/s", "$50$ rad/s", "$125$ rad/s"],
         jawaban: 1,
-        pembahasan: "Roda dihubungkan sabuk memiliki kelajuan linear sama ($v_A = v_B$): $\\omega_A R_A = \\omega_B R_B \\Rightarrow 50(10) = \\omega_B(25) \\Rightarrow \\omega_B = 20$ rad/s.",
+        pembahasan: "Roda dihubungkan sabuk memiliki kelajuan linear sama ($v_A = v_B$): $\\omega_A R_A = \\omega_B R_B$<br>$\\Rightarrow 50(10) = \\omega_B(25)$<br>$\\Rightarrow \\omega_B = 20$ rad/s.",
         trik_cepat: "Dihubungkan sabuk/bersinggungan: $\\omega_1 R_1 = \\omega_2 R_2$."
     },
     {
@@ -199,7 +199,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$60$ m", "$70$ m", "$80$ m", "$90$ m", "$100$ m"],
         jawaban: 2,
-        pembahasan: "Jarak = luas di bawah grafik $v$-$t$. Luas segitiga ($0$–$4$ s) = $\\frac{1}{2}(4)(10) = 20$ m. Luas persegi panjang ($4$–$10$ s) = $(6)(10) = 60$ m. Total = $20 + 60 = 80$ m.",
+        pembahasan: "Jarak = luas di bawah grafik $v$-$t$.<br>Luas segitiga ($0$–$4$ s) = $\\frac{1}{2}(4)(10) = 20$ m.<br>Luas persegi panjang ($4$–$10$ s) = $(6)(10) = 60$ m.<br>Total = $20 + 60 = 80$ m.",
         trik_cepat: "Jarak pada grafik $v$-$t$ = Luas daerah di bawah kurva."
     },
     {
@@ -208,7 +208,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2$ m/s$^2$", "$8$ m/s$^2$", "$16$ m/s$^2$", "$32$ m/s$^2$", "$64$ m/s$^2$"],
         jawaban: 3,
-        pembahasan: "$a_s = \\frac{v^2}{r} = \\frac{4^2}{0,5} = \\frac{16}{0,5} = 32$ m/s$^2$.",
+        pembahasan: "$a_s = \\frac{v^2}{r}$<br>$= \\frac{4^2}{0,5}$<br>$= \\frac{16}{0,5}$<br>$= 32$ m/s$^2$.",
         trik_cepat: "$a_s = v^2 / r$."
     },
     {
@@ -217,7 +217,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$8$ m/s", "$11$ m/s", "$12$ m/s", "$15$ m/s", "$19$ m/s"],
         jawaban: 1,
-        pembahasan: "$v(t) = v_0 + \\int_0^t (6t - 2)dt = 3 + [3t^2 - 2t]_0^2 = 3 + (12 - 4) = 11$ m/s.",
+        pembahasan: "$v(t) = v_0 + \\int_0^t (6t - 2)dt$<br>$= 3 + [3t^2 - 2t]_0^2$<br>$= 3 + (12 - 4)$<br>$= 11$ m/s.",
         trik_cepat: "Integralkan percepatan terhadap waktu lalu tambahkan $v_0$."
     },
     {
@@ -226,7 +226,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$100$ m", "$500$ m", "$1.000$ m", "$1.500$ m", "$2.000$ m"],
         jawaban: 2,
-        pembahasan: "Waktu jatuh: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(500)}{10}} = \\sqrt{100} = 10$ s. Jarak mendatar: $x = v_x \\cdot t = 100 \\times 10 = 1.000$ m.",
+        pembahasan: "Waktu jatuh: $t = \\sqrt{\\frac{2h}{g}}$<br>$= \\sqrt{\\frac{2(500)}{10}}$<br>$= \\sqrt{100}$<br>$= 10$ s.<br>Jarak mendatar: $x = v_x \\cdot t = 100 \\times 10 = 1.000$ m.",
         trik_cepat: "$x = v_0 \\sqrt{2h/g}$."
     },
     {
@@ -235,7 +235,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4$ s", "$5$ s", "$8$ s", "$10$ s", "$20$ s"],
         jawaban: 1,
-        pembahasan: "$s_A + s_B = 200 \\Rightarrow 15t + 25t = 200 \\Rightarrow 40t = 200 \\Rightarrow t = 5$ s.",
+        pembahasan: "$s_A + s_B = 200$<br>$\\Rightarrow 15t + 25t = 200$<br>$\\Rightarrow 40t = 200$<br>$\\Rightarrow t = 5$ s.",
         trik_cepat: "Saling mendekat (GLB): $t = \\frac{\\Delta s}{v_A + v_B}$."
     },
 
@@ -257,7 +257,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$120$ N", "$480$ N", "$600$ N", "$720$ N", "$840$ N"],
         jawaban: 3,
-        pembahasan: "Lift dipercepat ke atas: $N - w = m a \\Rightarrow N = m(g + a) = 60(10 + 2) = 720$ N.",
+        pembahasan: "Lift dipercepat ke atas: $N - w = m a$<br>$\\Rightarrow N = m(g + a) = 60(10 + 2) = 720$ N.",
         trik_cepat: "Lift naik dipercepat: $N = m(g+a)$; turun dipercepat: $N = m(g-a)$."
     },
     {
@@ -266,7 +266,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1$ m/s$^2$", "$2$ m/s$^2$", "$4$ m/s$^2$", "$5$ m/s$^2$", "$10$ m/s$^2$"],
         jawaban: 1,
-        pembahasan: "$a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(3 - 2)(10)}{2 + 3} = \\frac{10}{5} = 2$ m/s$^2$.",
+        pembahasan: "$a = \\frac{(m_2 - m_1)g}{m_1 + m_2}$<br>$= \\frac{(3 - 2)(10)}{2 + 3}$<br>$= \\frac{10}{5}$<br>$= 2$ m/s$^2$.",
         trik_cepat: "Katrol licin dua beban: $a = \\frac{\\Delta m}{\\Sigma m} g$."
     },
     {
@@ -275,7 +275,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$8$ N", "$12$ N", "$16$ N", "$20$ N", "$40$ N"],
         jawaban: 1,
-        pembahasan: "$f_{s,\\text{max}} = \\mu_s m g = 0,4(4)(10) = 16$ N. Karena gaya tarik $F = 12\\text{ N} < f_{s,\\text{max}}$, balok tetap diam dan gaya gesek statis sama dengan gaya tarik, yaitu $12$ N.",
+        pembahasan: "$f_{s,\\text{max}} = \\mu_s m g = 0,4(4)(10) = 16$ N.<br>Karena gaya tarik $F = 12\\text{ N} < f_{s,\\text{max}}$, balok tetap diam dan gaya gesek statis sama dengan gaya tarik, yaitu $12$ N.",
         trik_cepat: "Cek $f_{s,\\text{max}}$ dulu! Jika $F < f_{s,\\text{max}}$, benda diam dan $f = F$."
     },
     {
@@ -293,7 +293,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1$ N·s", "$2$ N·s", "$3$ N·s", "$5$ N·s", "$25$ N·s"],
         jawaban: 3,
-        pembahasan: "$I = \\Delta p = m(v_2 - v_1)$. Misal arah pantul positif ($+10$ m/s) dan arah datang negatif ($-15$ m/s): $I = 0,2(10 - (-15)) = 0,2(25) = 5$ N·s.",
+        pembahasan: "$I = \\Delta p = m(v_2 - v_1)$.<br>Misal arah pantul positif ($+10$ m/s) dan arah datang negatif ($-15$ m/s): $I = 0,2(10 - (-15)) = 0,2(25) = 5$ N·s.",
         trik_cepat: "Benda memantul: jumlahkan kelajuannya lalu kalikan massa, $I = m(v_1 + v_2)$."
     },
     {
@@ -302,7 +302,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1$ m/s", "$2$ m/s", "$3$ m/s", "$4$ m/s", "$6$ m/s"],
         jawaban: 1,
-        pembahasan: "Kekekalan momentum: $m_A v_A + m_B v_B = (m_A + m_B)v' \\Rightarrow 2(6) + 4(0) = (2 + 4)v' \\Rightarrow 12 = 6v' \\Rightarrow v' = 2$ m/s.",
+        pembahasan: "Kekekalan momentum: $m_A v_A + m_B v_B = (m_A + m_B)v'$<br>$\\Rightarrow 2(6) + 4(0) = (2 + 4)v'$<br>$\\Rightarrow 12 = 6v'$<br>$\\Rightarrow v' = 2$ m/s.",
         trik_cepat: "Menyatu: $v' = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$."
     },
     {
@@ -311,7 +311,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$\\frac{1}{3}$", "$\\frac{4}{9}$", "$\\frac{2}{3}$", "$\\frac{3}{4}$", "$\\frac{9}{4}$"],
         jawaban: 2,
-        pembahasan: "$e = \\sqrt{\\frac{h_2}{h_1}} = \\sqrt{\\frac{4}{9}} = \\frac{2}{3}$.",
+        pembahasan: "$e = \\sqrt{\\frac{h_2}{h_1}}$<br>$= \\sqrt{\\frac{4}{9}}$<br>$= \\frac{2}{3}$.",
         trik_cepat: "Bola memantul di lantai: $e = \\sqrt{h_{\\text{pantul}} / h_{\\text{awal}}}$."
     },
     {
@@ -320,7 +320,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$5$ N·m", "$10$ N·m", "$10\\sqrt{3}$ N·m", "$20$ N·m", "$40$ N·m"],
         jawaban: 1,
-        pembahasan: "$\\tau = F \\cdot L \\sin 30^\\circ = 10 \\times 2 \\times 0,5 = 10$ N·m.",
+        pembahasan: "$\\tau = F \\cdot L \\sin 30^\\circ$<br>$= 10 \\times 2 \\times 0,5$<br>$= 10$ N·m.",
         trik_cepat: "$\\tau = r F \\sin\\theta$."
     },
     {
@@ -329,7 +329,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4$ kg·m$^2$", "$8$ kg·m$^2$", "$16$ kg·m$^2$", "$32$ kg·m$^2$", "$64$ kg·m$^2$"],
         jawaban: 2,
-        pembahasan: "Diagonal persegi $= 2\\sqrt{2}$ m, sehingga jarak tiap partikel ke pusat $r = \\sqrt{2}$ m ($r^2 = 2$ m$^2$). $I = \\Sigma m_i r_i^2 = 4 \\times (2 \\times 2) = 16$ kg·m$^2$.",
+        pembahasan: "Diagonal persegi $= 2\\sqrt{2}$ m, sehingga jarak tiap partikel ke pusat $r = \\sqrt{2}$ m ($r^2 = 2$ m$^2$).<br>$I = \\Sigma m_i r_i^2$<br>$= 4 \\times (2 \\times 2)$<br>$= 16$ kg·m$^2$.",
         trik_cepat: "$I = \\Sigma m r^2$; kuadrat setengah diagonal persegi = $\\frac{1}{2}s^2$."
     },
     {
@@ -338,7 +338,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$25$ J", "$50$ J", "$75$ J", "$100$ J", "$150$ J"],
         jawaban: 2,
-        pembahasan: "$E_{k,\\text{total}} = E_{k,\\text{trans}} + E_{k,\\text{rot}} = \\frac{1}{2}mv^2(1 + k)$. Untuk silinder pejal $k = \\frac{1}{2}$: $E_{k,\\text{total}} = \\frac{1}{2}(4)(5^2)\\left(1 + \\frac{1}{2}\\right) = 50 \\times 1,5 = 75$ J.",
+        pembahasan: "$E_{k,\\text{total}} = E_{k,\\text{trans}} + E_{k,\\text{rot}}$<br>$= \\frac{1}{2}mv^2(1 + k)$.<br>Untuk silinder pejal $k = \\frac{1}{2}$: $E_{k,\\text{total}} = \\frac{1}{2}(4)(5^2)\\left(1 + \\frac{1}{2}\\right)$<br>$= 50 \\times 1,5$<br>$= 75$ J.",
         trik_cepat: "Menggelinding: $E_{k,\\text{total}} = \\frac{1}{2}mv^2(1 + k)$."
     },
     {
@@ -347,7 +347,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4,5$ rad/s", "$6$ rad/s", "$8$ rad/s", "$9$ rad/s", "$12$ rad/s"],
         jawaban: 2,
-        pembahasan: "Kekekalan momentum sudut: $I_1 \\omega_1 = I_2 \\omega_2 \\Rightarrow 4 \\times 3 = 1,5 \\times \\omega_2 \\Rightarrow \\omega_2 = \\frac{12}{1,5} = 8$ rad/s.",
+        pembahasan: "Kekekalan momentum sudut: $I_1 \\omega_1 = I_2 \\omega_2$<br>$\\Rightarrow 4 \\times 3 = 1,5 \\times \\omega_2$<br>$\\Rightarrow \\omega_2 = \\frac{12}{1,5} = 8$ rad/s.",
         trik_cepat: "$I_1 \\omega_1 = I_2 \\omega_2$."
     },
     {
@@ -356,7 +356,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4,0$ cm", "$4,5$ cm", "$5,0$ cm", "$5,5$ cm", "$6,0$ cm"],
         jawaban: 2,
-        pembahasan: "Luas 1 (bawah, $2\\times 6$): $A_1 = 12\\text{ cm}^2$, $y_1 = 3$ cm. Luas 2 (atas, $6\\times 2$): $A_2 = 12\\text{ cm}^2$, $y_2 = 6 + 1 = 7$ cm. Karena $A_1 = A_2$, maka $y_0 = \\frac{y_1 + y_2}{2} = \\frac{3 + 7}{2} = 5,0$ cm.",
+        pembahasan: "Luas 1 (bawah, $2\\times 6$): $A_1 = 12\\text{ cm}^2$, $y_1 = 3$ cm.<br>Luas 2 (atas, $6\\times 2$): $A_2 = 12\\text{ cm}^2$, $y_2 = 6 + 1 = 7$ cm.<br>Karena $A_1 = A_2$, maka $y_0 = \\frac{y_1 + y_2}{2}$<br>$= \\frac{3 + 7}{2}$<br>$= 5,0$ cm.",
         trik_cepat: "Jika luas dua bagian sama ($A_1 = A_2$), titik berat tinggal rata-rata koordinatnya."
     },
     {
@@ -365,7 +365,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4\\sqrt{10}$ m/s", "$10$ m/s", "$16$ m/s", "$20$ m/s", "$40$ m/s"],
         jawaban: 0,
-        pembahasan: "Gaya gesek statis berperan sebagai gaya sentripetal: $\\mu_s m g = \\frac{m v_{max}^2}{R} \\Rightarrow v_{max} = \\sqrt{\\mu_s g R} = \\sqrt{0,4 \\times 10 \\times 40} = \\sqrt{160} = 4\\sqrt{10}$ m/s.",
+        pembahasan: "Gaya gesek statis berperan sebagai gaya sentripetal: $\\mu_s m g = \\frac{m v_{max}^2}{R}$<br>$\\Rightarrow v_{max} = \\sqrt{\\mu_s g R}$<br>$= \\sqrt{0,4 \\times 10 \\times 40}$<br>$= \\sqrt{160}$<br>$= 4\\sqrt{10}$ m/s.",
         trik_cepat: "Tikungan datar: $v_{max} = \\sqrt{\\mu_s g R}$."
     },
     {
@@ -374,7 +374,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2,5$ m/s$^2$", "$5$ m/s$^2$", "$10$ m/s$^2$", "$15$ m/s$^2$", "$20$ m/s$^2$"],
         jawaban: 2,
-        pembahasan: "$\\tau = I \\alpha \\Rightarrow F R = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right) \\Rightarrow F = \\frac{1}{2}M a \\Rightarrow 10 = \\frac{1}{2}(2)a \\Rightarrow a = 10$ m/s$^2$.",
+        pembahasan: "$\\tau = I \\alpha$<br>$\\Rightarrow F R = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right)$<br>$\\Rightarrow F = \\frac{1}{2}M a$<br>$\\Rightarrow 10 = \\frac{1}{2}(2)a$<br>$\\Rightarrow a = 10$ m/s$^2$.",
         trik_cepat: "Silinder pejal ditarik tepinya: $a = \\frac{F}{\\frac{1}{2}M} = \\frac{2F}{M}$."
     },
     {
@@ -383,7 +383,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$\\frac{1}{4}F$", "$\\frac{1}{2}F$", "$F$", "$2F$", "$4F$"],
         jawaban: 0,
-        pembahasan: "$F \\propto \\frac{1}{r^2}$. Jika $r' = 2r$, maka $F' = \\frac{F}{(2)^2} = \\frac{1}{4}F$.",
+        pembahasan: "$F \\propto \\frac{1}{r^2}$.<br>Jika $r' = 2r$, maka $F' = \\frac{F}{(2)^2} = \\frac{1}{4}F$.",
         trik_cepat: "Gaya gravitasi berbanding terbalik dengan kuadrat jarak ($1/r^2$)."
     },
 
@@ -396,7 +396,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4 \\times 10^4$ Pa", "$6 \\times 10^4$ Pa", "$1,04 \\times 10^5$ Pa", "$1,4 \\times 10^5$ Pa", "$5 \\times 10^5$ Pa"],
         jawaban: 3,
-        pembahasan: "$P = P_0 + \\rho g h = 10^5 + (1.000)(10)(4) = 100.000 + 40.000 = 1,4 \\times 10^5$ Pa.",
+        pembahasan: "$P = P_0 + \\rho g h$<br>$= 10^5 + (1.000)(10)(4)$<br>$= 100.000 + 40.000$<br>$= 1,4 \\times 10^5$ Pa.",
         trik_cepat: "Tekanan mutlak = $P_0 + \\rho g h$; tekanan hidrostatis saja = $\\rho g h$."
     },
     {
@@ -405,7 +405,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2$ cm", "$4$ cm", "$6$ cm", "$8$ cm", "$10$ cm"],
         jawaban: 0,
-        pembahasan: "$\\rho_1 h_1 = \\rho_2 h_2 \\Rightarrow (1)h_1 = (0,8)(10) \\Rightarrow h_1 = 8$ cm. Selisih tinggi $\\Delta h = h_2 - h_1 = 10 - 8 = 2$ cm.",
+        pembahasan: "$\\rho_1 h_1 = \\rho_2 h_2$<br>$\\Rightarrow (1)h_1 = (0,8)(10)$<br>$\\Rightarrow h_1 = 8$ cm.<br>Selisih tinggi $\\Delta h = h_2 - h_1 = 10 - 8 = 2$ cm.",
         trik_cepat: "Hitung tinggi air $h_{\\text{air}} = \\rho_{\\text{minyak}} h_{\\text{minyak}}$, lalu kurangkan."
     },
     {
@@ -414,7 +414,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$40$ N", "$80$ N", "$160$ N", "$320$ N", "$800$ N"],
         jawaban: 1,
-        pembahasan: "$A_1 = 20$ cm$^2 = 2 \\times 10^{-3}$ m$^2$, $A_2 = 0,4$ m$^2$, $F_2 = mg = 16.000$ N. $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\Rightarrow F_1 = 16.000 \\times \\frac{2 \\times 10^{-3}}{0,4} = 80$ N.",
+        pembahasan: "$A_1 = 20$ cm$^2 = 2 \\times 10^{-3}$ m$^2$, $A_2 = 0,4$ m$^2$, $F_2 = mg = 16.000$ N.<br>$\\frac{F_1}{A_1} = \\frac{F_2}{A_2}$<br>$\\Rightarrow F_1 = 16.000 \\times \\frac{2 \\times 10^{-3}}{0,4}$<br>$= 80$ N.",
         trik_cepat: "Samakan satuan luas ($1\\text{ m}^2 = 10^4\\text{ cm}^2$), lalu $F_1 = F_2 (A_1/A_2)$."
     },
     {
@@ -423,7 +423,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$60\\%$", "$75\\%$", "$80\\%$", "$90\\%$", "$93,75\\%$"],
         jawaban: 4,
-        pembahasan: "Di air: $\\rho_b = 0,75 \\times 1 = 0,75$ g/cm$^3$. Di minyak: $\\frac{V_{tc}}{V_b} = \\frac{\\rho_b}{\\rho_{\\text{minyak}}} = \\frac{0,75}{0,8} = 0,9375 = 93,75\\%$.",
+        pembahasan: "Di air: $\\rho_b = 0,75 \\times 1 = 0,75$ g/cm$^3$.<br>Di minyak: $\\frac{V_{tc}}{V_b} = \\frac{\\rho_b}{\\rho_{\\text{minyak}}}$<br>$= \\frac{0,75}{0,8}$<br>$= 0,9375$<br>$= 93,75\\%$.",
         trik_cepat: "$\\%V_{\\text{minyak}} = \\frac{\\%V_{\\text{air}}}{\\rho_{\\text{minyak}}}$ (dalam g/cm$^3$)."
     },
     {
@@ -432,7 +432,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1.500$ kg/m$^3$", "$2.000$ kg/m$^3$", "$2.500$ kg/m$^3$", "$3.000$ kg/m$^3$", "$5.000$ kg/m$^3$"],
         jawaban: 2,
-        pembahasan: "$F_A = 50 - 30 = 20$ N. $\\frac{\\rho_b}{\\rho_{\\text{air}}} = \\frac{w_{\\text{udara}}}{F_A} \\Rightarrow \\rho_b = 1.000 \\times \\frac{50}{20} = 2.500$ kg/m$^3$.",
+        pembahasan: "$F_A = 50 - 30 = 20$ N.<br>$\\frac{\\rho_b}{\\rho_{\\text{air}}} = \\frac{w_{\\text{udara}}}{F_A}$<br>$\\Rightarrow \\rho_b = 1.000 \\times \\frac{50}{20}$<br>$= 2.500$ kg/m$^3$.",
         trik_cepat: "Tenggelam penuh: $\\rho_b = \\rho_f \\times \\frac{w_{\\text{udara}}}{w_{\\text{udara}} - w_{\\text{fluida}}}$."
     },
     {
@@ -447,7 +447,7 @@ const soalFisika = [
             "Konstanta kapilaritas"
         ],
         jawaban: 2,
-        pembahasan: "Rumus kapilaritas: $h = \\frac{2\\gamma \\cos\\theta}{\\rho g r}$. Tinggi kenaikan $h$ berbanding terbalik dengan massa jenis $\\rho$, gravitasi $g$, dan jari-jari pipa $r$.",
+        pembahasan: "Rumus kapilaritas: $h = \\frac{2\\gamma \\cos\\theta}{\\rho g r}$.<br>Tinggi kenaikan $h$ berbanding terbalik dengan massa jenis $\\rho$, gravitasi $g$, dan jari-jari pipa $r$.",
         trik_cepat: "Makin sempit pipa ($r$ kecil), makin tinggi air naik ($h$ besar)."
     },
     {
@@ -456,7 +456,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1$ m/s", "$4$ m/s", "$8$ m/s", "$16$ m/s", "$32$ m/s"],
         jawaban: 2,
-        pembahasan: "Asas kontinuitas: $A_1 v_1 = A_2 v_2 \\Rightarrow d_1^2 v_1 = d_2^2 v_2 \\Rightarrow 4^2(2) = 2^2 v_2 \\Rightarrow 32 = 4 v_2 \\Rightarrow v_2 = 8$ m/s.",
+        pembahasan: "Asas kontinuitas: $A_1 v_1 = A_2 v_2$<br>$\\Rightarrow d_1^2 v_1 = d_2^2 v_2$<br>$\\Rightarrow 4^2(2) = 2^2 v_2$<br>$\\Rightarrow 32 = 4 v_2$<br>$\\Rightarrow v_2 = 8$ m/s.",
         trik_cepat: "Kecepatan berbanding terbalik dengan kuadrat diameter: $v_2 = v_1 (d_1/d_2)^2$."
     },
     {
@@ -465,16 +465,16 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4$ m/s", "$6$ m/s", "$8$ m/s", "$10$ m/s", "$12$ m/s"],
         jawaban: 1,
-        pembahasan: "Kedalaman lubang dari permukaan air $h = 3,2 - 1,4 = 1,8$ m. Teorema Torricelli: $v = \\sqrt{2gh} = \\sqrt{2(10)(1,8)} = \\sqrt{36} = 6$ m/s.",
+        pembahasan: "Kedalaman lubang dari permukaan air $h = 3,2 - 1,4 = 1,8$ m.<br>Teorema Torricelli: $v = \\sqrt{2gh}$<br>$= \\sqrt{2(10)(1,8)}$<br>$= \\sqrt{36}$<br>$= 6$ m/s.",
         trik_cepat: "$v = \\sqrt{2g h_{\\text{dari permukaan}}}$."
     },
     {
         id: 47,
-        teks: "Dari soal nomor 46 (tinggi air $3,2$ m, lubang $1,4$ m dari dasar), jarak mendatar pancaran air menyentuh tanah diukur dari dinding tangki adalah ....",
+        teks: "Sebuah tangki berisi air setinggi $5$ m memiliki lubang kebocoran kecil pada ketinggian $1,8$ m dari dasar tangki. Jarak mendatar pancaran air menyentuh tanah diukur dari dinding tangki adalah ....",
         gambar: "",
         opsi: ["$2,4$ m", "$3,2$ m", "$3,6$ m", "$4,8$ m", "$6,4$ m"],
         jawaban: 3,
-        pembahasan: "$h_1 = 1,8$ m (atas lubang) dan $h_2 = 1,4$ m (bawah lubang)... Koreksi angka: $x = 2\\sqrt{h_1 h_2} = 2\\sqrt{1,8 \\times 1,4} = 2\\sqrt{2,52} \\approx 3,17$ m (opsi b). Catatan: jika $h_1 = 1,8$ dan $h_2 = 3,2$ maka $x = 4,8$ m.",
+        pembahasan: "Tinggi permukaan air di atas lubang $h_1 = 5 - 1,8 = 3,2$ m dan tinggi lubang dari dasar $h_2 = 1,8$ m.<br>$x = 2\\sqrt{h_1 \\cdot h_2}$<br>$= 2\\sqrt{3,2 \\times 1,8}$<br>$x = 2\\sqrt{5,76} = 2(2,4) = 4,8$ m.",
         trik_cepat: "Jarak pancaran tangki bocor: $x = 2\\sqrt{h_{\\text{atas}} \\cdot h_{\\text{bawah}}}$."
     },
     {
@@ -498,7 +498,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$270$ kN", "$450$ kN", "$540$ kN", "$900$ kN", "$1.080$ kN"],
         jawaban: 2,
-        pembahasan: "$F_{\\text{angkat}} = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) A = \\frac{1}{2}(1,2)(250^2 - 200^2)(40) = 0,6(62.500 - 40.000)(40) = 0,6(22.500)(40) = 540.000\\text{ N} = 540$ kN.",
+        pembahasan: "$F_{\\text{angkat}} = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) A$<br>$= \\frac{1}{2}(1,2)(250^2 - 200^2)(40)$<br>$= 0,6(62.500 - 40.000)(40)$<br>$= 0,6(22.500)(40)$<br>$= 540.000\\text{ N}$<br>$= 540$ kN.",
         trik_cepat: "$F = \\frac{1}{2}\\rho (v_2^2 - v_1^2) A$."
     },
     {
@@ -507,7 +507,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1,18 \\times 10^5$ Pa", "$1,34 \\times 10^5$ Pa", "$1,50 \\times 10^5$ Pa", "$1,66 \\times 10^5$ Pa", "$1,82 \\times 10^5$ Pa"],
         jawaban: 1,
-        pembahasan: "$P_2 = P_1 - \\frac{1}{2}\\rho(v_2^2 - v_1^2) = 150.000 - \\frac{1}{2}(1.000)(36 - 4) = 150.000 - 16.000 = 134.000\\text{ Pa} = 1,34 \\times 10^5$ Pa.",
+        pembahasan: "$P_2 = P_1 - \\frac{1}{2}\\rho(v_2^2 - v_1^2)$<br>$= 150.000 - \\frac{1}{2}(1.000)(36 - 4)$<br>$= 150.000 - 16.000$<br>$= 134.000\\text{ Pa}$<br>$= 1,34 \\times 10^5$ Pa.",
         trik_cepat: "Pipa mendatar: $P_2 = P_1 - \\frac{1}{2}\\rho(v_2^2 - v_1^2)$."
     },
 
@@ -520,7 +520,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$10$ m/s", "$20$ m/s", "$40$ m/s", "$50$ m/s", "$100$ m/s"],
         jawaban: 2,
-        pembahasan: "$\\omega = 20\\pi$ rad/s dan $k = 0,5\\pi$ m$^{-1}$. Cepat rambat $v = \\frac{\\omega}{k} = \\frac{20\\pi}{0,5\\pi} = 40$ m/s.",
+        pembahasan: "$\\omega = 20\\pi$ rad/s dan $k = 0,5\\pi$ m$^{-1}$.<br>Cepat rambat $v = \\frac{\\omega}{k}$<br>$= \\frac{20\\pi}{0,5\\pi}$<br>$= 40$ m/s.",
         trik_cepat: "Cepat rambat gelombang berjalan: $v = \\frac{\\text{koefisien } t}{\\text{koefisien } x}$."
     },
     {
@@ -529,7 +529,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$0,25$ m", "$0,50$ m", "$1,00$ m", "$1,50$ m", "$2,00$ m"],
         jawaban: 1,
-        pembahasan: "$\\lambda = \\frac{v}{f} = \\frac{340}{170} = 2$ m. Beda fase $90^\\circ = \\frac{1}{4}$ gelombang, sehingga $\\Delta x = \\frac{1}{4}\\lambda = \\frac{1}{4}(2) = 0,50$ m.",
+        pembahasan: "$\\lambda = \\frac{v}{f} = \\frac{340}{170} = 2$ m.<br>Beda fase $90^\\circ = \\frac{1}{4}$ gelombang, sehingga $\\Delta x = \\frac{1}{4}\\lambda$<br>$= \\frac{1}{4}(2)$<br>$= 0,50$ m.",
         trik_cepat: "$\\Delta \\varphi = \\frac{\\Delta x}{\\lambda}$; $90^\\circ = \\frac{1}{4}\\lambda$."
     },
     {
@@ -538,7 +538,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$0,4$ m", "$0,5$ m", "$0,8$ m", "$1,0$ m", "$2,0$ m"],
         jawaban: 3,
-        pembahasan: "Pada gelombang stasioner, $5$ simpul berarti terbentuk $4$ perut ($2$ gelombang penuh): $2\\lambda = 2\\text{ m} \\Rightarrow \\lambda = 1,0$ m.",
+        pembahasan: "Pada gelombang stasioner, $5$ simpul berarti terbentuk $4$ perut ($2$ gelombang penuh): $2\\lambda = 2\\text{ m}$<br>$\\Rightarrow \\lambda = 1,0$ m.",
         trik_cepat: "Jumlah gelombang = $\\frac{\\text{jumlah simpul} - 1}{2}$."
     },
     {
@@ -547,7 +547,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$10$ m/s", "$50$ m/s", "$100$ m/s", "$200$ m/s", "$1.000$ m/s"],
         jawaban: 2,
-        pembahasan: "Hukum Melde: $\\mu = \\frac{m}{L} = \\frac{0,02\\text{ kg}}{1\\text{ m}} = 0,02$ kg/m. $v = \\sqrt{\\frac{F}{\\mu}} = \\sqrt{\\frac{200}{0,02}} = \\sqrt{10.000} = 100$ m/s.",
+        pembahasan: "Hukum Melde: $\\mu = \\frac{m}{L}$<br>$= \\frac{0,02\\text{ kg}}{1\\text{ m}}$<br>$= 0,02$ kg/m.<br>$v = \\sqrt{\\frac{F}{\\mu}}$<br>$= \\sqrt{\\frac{200}{0,02}}$<br>$= \\sqrt{10.000}$<br>$= 100$ m/s.",
         trik_cepat: "Melde: $v = \\sqrt{\\frac{F \\cdot L}{m}}$ (ubah gram ke kg)."
     },
     {
@@ -556,7 +556,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$200$ Hz", "$400$ Hz", "$600$ Hz", "$800$ Hz", "$1.200$ Hz"],
         jawaban: 3,
-        pembahasan: "Pipa organa terbuka: $f_n = \\frac{(n + 1)v}{2L}$. Nada atas pertama ($n = 1$): $f_1 = \\frac{(1 + 1)(320)}{2(0,4)} = \\frac{640}{0,8} = 800$ Hz.",
+        pembahasan: "Pipa organa terbuka: $f_n = \\frac{(n + 1)v}{2L}$.<br>Nada atas pertama ($n = 1$): $f_1 = \\frac{(1 + 1)(320)}{2(0,4)}$<br>$= \\frac{640}{0,8}$<br>$= 800$ Hz.",
         trik_cepat: "Pipa terbuka: $f_0 : f_1 : f_2 = 1 : 2 : 3$ dengan $f_0 = v/(2L)$."
     },
     {
@@ -565,7 +565,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$170$ Hz", "$340$ Hz", "$510$ Hz", "$680$ Hz", "$1.020$ Hz"],
         jawaban: 1,
-        pembahasan: "Pipa organa tertutup nada dasar ($n=0$): $f_0 = \\frac{v}{4L} = \\frac{340}{4(0,25)} = \\frac{340}{1} = 340$ Hz.",
+        pembahasan: "Pipa organa tertutup nada dasar ($n=0$): $f_0 = \\frac{v}{4L}$<br>$= \\frac{340}{4(0,25)}$<br>$= \\frac{340}{1}$<br>$= 340$ Hz.",
         trik_cepat: "Pipa tertutup: $f_0 = v/(4L)$, harmoniknya ganjil ($1 : 3 : 5$)."
     },
     {
@@ -574,7 +574,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$600$ Hz", "$604$ Hz", "$680$ Hz", "$700$ Hz", "$720$ Hz"],
         jawaban: 2,
-        pembahasan: "Efek Doppler ($v_p = 0$, sumber mendekat $v_s = -20$ m/s): $f_p = \\frac{v}{v - v_s} f_s = \\frac{340}{340 - 20}(640) = \\frac{340}{320}(640) = 680$ Hz.",
+        pembahasan: "Efek Doppler ($v_p = 0$, sumber mendekat $v_s = -20$ m/s): $f_p = \\frac{v}{v - v_s} f_s$<br>$= \\frac{340}{340 - 20}(640)$<br>$= \\frac{340}{320}(640)$<br>$= 680$ Hz.",
         trik_cepat: "Sumber mendekat $\\rightarrow$ frekuensi terdengar lebih tinggi (penyebut dikurang)."
     },
     {
@@ -583,7 +583,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$62$ dB", "$70$ dB", "$80$ dB", "$160$ dB", "$6.000$ dB"],
         jawaban: 2,
-        pembahasan: "$TI_n = TI_1 + 10 \\log n = 60 + 10 \\log(100) = 60 + 10(2) = 80$ dB.",
+        pembahasan: "$TI_n = TI_1 + 10 \\log n$<br>$= 60 + 10 \\log(100)$<br>$= 60 + 10(2)$<br>$= 80$ dB.",
         trik_cepat: "$TI_n = TI_1 + 10 \\log n$."
     },
     {
@@ -592,7 +592,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$35$ dB", "$50$ dB", "$60$ dB", "$68$ dB", "$90$ dB"],
         jawaban: 1,
-        pembahasan: "$TI_2 = TI_1 - 20 \\log\\left(\\frac{r_2}{r_1}\\right) = 70 - 20 \\log\\left(\\frac{20}{2}\\right) = 70 - 20(1) = 50$ dB.",
+        pembahasan: "$TI_2 = TI_1 - 20 \\log\\left(\\frac{r_2}{r_1}\\right)$<br>$= 70 - 20 \\log\\left(\\frac{20}{2}\\right)$<br>$= 70 - 20(1)$<br>$= 50$ dB.",
         trik_cepat: "Jarak menjauh $10\\times$ lipat $\\rightarrow$ TI berkurang $20$ dB."
     },
     {
@@ -601,7 +601,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4$ layangan", "$8$ layangan", "$10$ layangan", "$20$ layangan", "$40$ layangan"],
         jawaban: 3,
-        pembahasan: "Frekuensi pelayangan $f_L = |f_1 - f_2| = |440 - 444| = 4$ Hz ($4$ layangan per sekon). Dalam $5$ sekon = $4 \\times 5 = 20$ layangan.",
+        pembahasan: "Frekuensi pelayangan $f_L = |f_1 - f_2| = |440 - 444| = 4$ Hz ($4$ layangan per sekon).<br>Dalam $5$ sekon = $4 \\times 5 = 20$ layangan.",
         trik_cepat: "$f_{\\text{layangan}} = |f_1 - f_2|$, lalu kalikan waktu."
     },
     {
@@ -610,7 +610,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1,25$ mm", "$2,5$ mm", "$5,0$ mm", "$7,5$ mm", "$10$ mm"],
         jawaban: 2,
-        pembahasan: "$\\frac{d \\cdot p}{L} = n \\lambda \\Rightarrow p = \\frac{n \\lambda L}{d} = \\frac{2 \\times (5 \\times 10^{-7}) \\times 1}{2 \\times 10^{-4}} = 5 \\times 10^{-3}\\text{ m} = 5,0$ mm.",
+        pembahasan: "$\\frac{d \\cdot p}{L} = n \\lambda$<br>$\\Rightarrow p = \\frac{n \\lambda L}{d}$<br>$= \\frac{2 \\times (5 \\times 10^{-7}) \\times 1}{2 \\times 10^{-4}}$<br>$= 5 \\times 10^{-3}\\text{ m}$<br>$= 5,0$ mm.",
         trik_cepat: "$p = \\frac{n \\lambda L}{d}$ (ubah mm ke m dan nm ke $10^{-9}$ m)."
     },
     {
@@ -619,7 +619,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["Orde ke-2", "Orde ke-3", "Orde ke-4", "Orde ke-5", "Orde ke-6"],
         jawaban: 1,
-        pembahasan: "$d = \\frac{1\\text{ mm}}{500} = 2 \\times 10^{-6}$ m. Syarat orde maksimum $\\sin\\theta = 1$: $n_{max} = \\frac{d}{\\lambda} = \\frac{2 \\times 10^{-6}}{6 \\times 10^{-7}} = 3,33$. Maka orde maksimum yang terlihat adalah orde ke-3.",
+        pembahasan: "$d = \\frac{1\\text{ mm}}{500} = 2 \\times 10^{-6}$ m.<br>Syarat orde maksimum $\\sin\\theta = 1$: $n_{max} = \\frac{d}{\\lambda}$<br>$= \\frac{2 \\times 10^{-6}}{6 \\times 10^{-7}}$<br>$= 3,33$.<br>Maka orde maksimum yang terlihat adalah orde ke-3.",
         trik_cepat: "$n_{max} = \\lfloor d / \\lambda \\rfloor$ (pembulatan ke bawah)."
     },
     {
@@ -628,7 +628,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$\\frac{1}{8}I_0$", "$\\frac{1}{4}I_0$", "$\\frac{3}{8}I_0$", "$\\frac{1}{2}I_0$", "$\\frac{3}{4}I_0$"],
         jawaban: 0,
-        pembahasan: "Setelah polarisator pertama: $I_1 = \\frac{1}{2}I_0$. Setelah analisator (Hukum Malus): $I_2 = I_1 \\cos^2 60^\\circ = \\frac{1}{2}I_0 \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{8}I_0$.",
+        pembahasan: "Setelah polarisator pertama: $I_1 = \\frac{1}{2}I_0$.<br>Setelah analisator (Hukum Malus): $I_2 = I_1 \\cos^2 60^\\circ$<br>$= \\frac{1}{2}I_0 \\left(\\frac{1}{2}\\right)^2$<br>$= \\frac{1}{8}I_0$.",
         trik_cepat: "$I_2 = \\frac{1}{2}I_0 \\cos^2\\theta$."
     },
     {
@@ -643,7 +643,7 @@ const soalFisika = [
             "$4,5 \\times 10^8$ m/s"
         ],
         jawaban: 1,
-        pembahasan: "$v_2 = \\frac{c}{n_2} = \\frac{3 \\times 10^8}{1,5} = 2,0 \\times 10^8$ m/s.",
+        pembahasan: "$v_2 = \\frac{c}{n_2}$<br>$= \\frac{3 \\times 10^8}{1,5}$<br>$= 2,0 \\times 10^8$ m/s.",
         trik_cepat: "$v = c / n$."
     },
     {
@@ -652,7 +652,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["Refleksi", "Refraksi", "Interferensi", "Difraksi", "Dispersi"],
         jawaban: 3,
-        pembahasan: "Difraksi adalah pelenturan atau pembelokan gelombang cahaya ketika melewati celah sempit atau penghalang. Refleksi = pemantulan, refraksi = pembiasan, interferensi = perpaduan, dispersi = penguraian warna.",
+        pembahasan: "Difraksi adalah pelenturan atau pembelokan gelombang cahaya ketika melewati celah sempit atau penghalang.<br>Refleksi = pemantulan, refraksi = pembiasan, interferensi = perpaduan, dispersi = penguraian warna.",
         trik_cepat: "Celah sempit $\\rightarrow$ Difraksi; Gabungan dua gelombang $\\rightarrow$ Interferensi."
     },
     {
@@ -661,7 +661,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$5$ mm", "$10$ mm", "$15$ mm", "$20$ mm", "$25$ mm"],
         jawaban: 3,
-        pembahasan: "Jarak gelap pertama dari terang pusat: $p_1 = \\frac{\\lambda L}{d} = \\frac{(5 \\times 10^{-7})(2)}{10^{-4}} = 10^{-2}\\text{ m} = 10$ mm. Lebar terang pusat = $2 p_1 = 20$ mm.",
+        pembahasan: "Jarak gelap pertama dari terang pusat: $p_1 = \\frac{\\lambda L}{d}$<br>$= \\frac{(5 \\times 10^{-7})(2)}{10^{-4}}$<br>$= 10^{-2}\\text{ m}$<br>$= 10$ mm.<br>Lebar terang pusat = $2 p_1 = 20$ mm.",
         trik_cepat: "Lebar terang pusat difraksi celah tunggal = $\\frac{2\\lambda L}{d}$."
     },
     {
@@ -670,7 +670,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$0,75$", "$1,25$", "$1,33$", "$1,50$", "$1,67$"],
         jawaban: 2,
-        pembahasan: "Hukum Brewster: $\\tan i_p = \\frac{n_2}{n_1} \\Rightarrow n_2 = 1 \\times \\tan 53^\\circ = \\frac{4}{3} \\approx 1,33$.",
+        pembahasan: "Hukum Brewster: $\\tan i_p = \\frac{n_2}{n_1}$<br>$\\Rightarrow n_2 = 1 \\times \\tan 53^\\circ$<br>$= \\frac{4}{3} \\approx 1,33$.",
         trik_cepat: "$n = \\tan i_p$ (jika dari udara)."
     },
     {
@@ -698,7 +698,7 @@ const soalFisika = [
             "$78^\\circ\\text{F}$ dan $300$ K"
         ],
         jawaban: 1,
-        pembahasan: "$T_F = \\frac{9}{5}(30) + 32 = 54 + 32 = 86^\\circ\\text{F}$. $T_K = 30 + 273 = 303$ K.",
+        pembahasan: "$T_F = \\frac{9}{5}(30) + 32$<br>$= 54 + 32$<br>$= 86^\\circ\\text{F}$.<br>$T_K = 30 + 273 = 303$ K.",
         trik_cepat: "$F = 1,8C + 32$ dan $K = C + 273$."
     },
     {
@@ -707,7 +707,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$30^\\circ\\text{X}$", "$40^\\circ\\text{X}$", "$50^\\circ\\text{X}$", "$60^\\circ\\text{X}$", "$80^\\circ\\text{X}$"],
         jawaban: 1,
-        pembahasan: "$\\frac{X - (-20)}{130 - (-20)} = \\frac{40 - 0}{100 - 0} \\Rightarrow \\frac{X + 20}{150} = \\frac{40}{100} \\Rightarrow X + 20 = 60 \\Rightarrow X = 40^\\circ\\text{X}$.",
+        pembahasan: "$\\frac{X - (-20)}{130 - (-20)} = \\frac{40 - 0}{100 - 0}$<br>$\\Rightarrow \\frac{X + 20}{150} = \\frac{40}{100}$<br>$\\Rightarrow X + 20 = 60$<br>$\\Rightarrow X = 40^\\circ\\text{X}$.",
         trik_cepat: "Perbandingan skala: $\\frac{T_X - T_{bX}}{T_{dX} - T_{bX}} = \\frac{T_C}{100}$."
     },
     {
@@ -716,7 +716,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2,4$ mm", "$4,8$ mm", "$6,0$ mm", "$9,6$ mm", "$48$ mm"],
         jawaban: 1,
-        pembahasan: "$\\Delta L = L_0 \\alpha \\Delta T = 20 \\times (1,2 \\times 10^{-5}) \\times (45 - 25) = 20 \\times 1,2 \\times 10^{-5} \\times 20 = 4,8 \\times 10^{-3}\\text{ m} = 4,8$ mm.",
+        pembahasan: "$\\Delta L = L_0 \\alpha \\Delta T$<br>$= 20 \\times (1,2 \\times 10^{-5}) \\times (45 - 25)$<br>$= 20 \\times 1,2 \\times 10^{-5} \\times 20$<br>$= 4,8 \\times 10^{-3}\\text{ m}$<br>$= 4,8$ mm.",
         trik_cepat: "$\\Delta L = L_0 \\alpha \\Delta T$."
     },
     {
@@ -725,7 +725,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$4.500$ kal", "$16.500$ kal", "$20.000$ kal", "$20.500$ kal", "$24.500$ kal"],
         jawaban: 3,
-        pembahasan: "$Q_1$ (es $-5^\\circ\\text{C} \\rightarrow 0^\\circ\\text{C}$) = $200(0,5)(5) = 500$ kal. $Q_2$ (melebur) = $200(80) = 16.000$ kal. $Q_3$ (air $0^\\circ\\text{C} \\rightarrow 20^\\circ\\text{C}$) = $200(1)(20) = 4.000$ kal. Total = $20.500$ kal.",
+        pembahasan: "$Q_1$ (es $-5^\\circ\\text{C} \\rightarrow 0^\\circ\\text{C}$) = $200(0,5)(5) = 500$ kal.<br>$Q_2$ (melebur) = $200(80) = 16.000$ kal.<br>$Q_3$ (air $0^\\circ\\text{C} \\rightarrow 20^\\circ\\text{C}$) = $200(1)(20) = 4.000$ kal.<br>Total = $20.500$ kal.",
         trik_cepat: "Pecah 3 tahap: naikkan suhu es + leburkan es + naikkan suhu air."
     },
     {
@@ -734,7 +734,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$30^\\circ\\text{C}$", "$40^\\circ\\text{C}$", "$50^\\circ\\text{C}$", "$60^\\circ\\text{C}$", "$70^\\circ\\text{C}$"],
         jawaban: 1,
-        pembahasan: "Asas Black ($c$ sama): $m_1(T_1 - T_c) = m_2(T_c - T_2) \\Rightarrow 100(80 - T_c) = 200(T_c - 20) \\Rightarrow 80 - T_c = 2T_c - 40 \\Rightarrow 3T_c = 120 \\Rightarrow T_c = 40^\\circ\\text{C}$.",
+        pembahasan: "Asas Black ($c$ sama): $m_1(T_1 - T_c) = m_2(T_c - T_2)$<br>$\\Rightarrow 100(80 - T_c) = 200(T_c - 20)$<br>$\\Rightarrow 80 - T_c = 2T_c - 40$<br>$\\Rightarrow 3T_c = 120$<br>$\\Rightarrow T_c = 40^\\circ\\text{C}$.",
         trik_cepat: "Zat sejenis: $T_c = \\frac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$."
     },
     {
@@ -743,7 +743,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$25^\\circ\\text{C}$", "$50^\\circ\\text{C}$", "$60^\\circ\\text{C}$", "$75^\\circ\\text{C}$", "$80^\\circ\\text{C}$"],
         jawaban: 3,
-        pembahasan: "Laju konduksi sama ($H_P = H_Q$): $k_P (100 - T) = k_Q (T - 0) \\Rightarrow 3(100 - T) = T \\Rightarrow 300 - 3T = T \\Rightarrow 4T = 300 \\Rightarrow T = 75^\\circ\\text{C}$.",
+        pembahasan: "Laju konduksi sama ($H_P = H_Q$): $k_P (100 - T) = k_Q (T - 0)$<br>$\\Rightarrow 3(100 - T) = T$<br>$\\Rightarrow 300 - 3T = T$<br>$\\Rightarrow 4T = 300$<br>$\\Rightarrow T = 75^\\circ\\text{C}$.",
         trik_cepat: "Suhu sambungan selalu lebih dekat ke logam yang konduktivitasnya ($k$) lebih besar."
     },
     {
@@ -752,7 +752,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2P$", "$4P$", "$8P$", "$16P$", "$32P$"],
         jawaban: 3,
-        pembahasan: "Ubah ke Kelvin: $T_1 = 27 + 273 = 300$ K, $T_2 = 327 + 273 = 600$ K ($2\\times$ lipat). Hukum Stefan-Boltzmann: $P \\propto T^4 \\Rightarrow \\frac{P_2}{P_1} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16 \\Rightarrow P_2 = 16P$.",
+        pembahasan: "Ubah ke Kelvin: $T_1 = 27 + 273 = 300$ K, $T_2 = 327 + 273 = 600$ K ($2\\times$ lipat).<br>Hukum Stefan-Boltzmann: $P \\propto T^4$<br>$\\Rightarrow \\frac{P_2}{P_1} = \\left(\\frac{600}{300}\\right)^4$<br>$= 2^4$<br>$= 16$<br>$\\Rightarrow P_2 = 16P$.",
         trik_cepat: "Wajib ubah ke Kelvin dulu, lalu pangkatkan 4 ($P \\propto T^4$)."
     },
     {
@@ -770,7 +770,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1.200$ W", "$2.400$ W", "$3.600$ W", "$4.800$ W", "$6.000$ W"],
         jawaban: 1,
-        pembahasan: "$H = \\frac{k A \\Delta T}{d} = \\frac{0,8 \\times 1,5 \\times (35 - 25)}{5 \\times 10^{-3}} = \\frac{12}{5 \\times 10^{-3}} = 2.400$ W.",
+        pembahasan: "$H = \\frac{k A \\Delta T}{d}$<br>$= \\frac{0,8 \\times 1,5 \\times (35 - 25)}{5 \\times 10^{-3}}$<br>$= \\frac{12}{5 \\times 10^{-3}}$<br>$= 2.400$ W.",
         trik_cepat: "$H = \\frac{k A \\Delta T}{d}$."
     },
     {
@@ -779,7 +779,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$0,3$ cm$^2$", "$0,6$ cm$^2$", "$1,2$ cm$^2$", "$3,0$ cm$^2$", "$6,0$ cm$^2$"],
         jawaban: 1,
-        pembahasan: "Koefisien muai luas $\\beta = 2\\alpha = 3 \\times 10^{-5}\\text{ /}^\\circ\\text{C}$. $\\Delta A = A_0 \\beta \\Delta T = 200 \\times (3 \\times 10^{-5}) \\times 100 = 0,6$ cm$^2$.",
+        pembahasan: "Koefisien muai luas $\\beta = 2\\alpha$<br>$= 3 \\times 10^{-5}\\text{ /}^\\circ\\text{C}$.<br>$\\Delta A = A_0 \\beta \\Delta T$<br>$= 200 \\times (3 \\times 10^{-5}) \\times 100$<br>$= 0,6$ cm$^2$.",
         trik_cepat: "Muai luas pakai $\\beta = 2\\alpha$; muai volume pakai $\\gamma = 3\\alpha$."
     },
     {
@@ -788,7 +788,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$250$ s", "$400$ s", "$500$ s", "$600$ s", "$1.000$ s"],
         jawaban: 2,
-        pembahasan: "$P \\cdot t = m c \\Delta T \\Rightarrow 420 \\cdot t = 1 \\times 4.200 \\times (70 - 20) \\Rightarrow 420 t = 210.000 \\Rightarrow t = 500$ s.",
+        pembahasan: "$P \\cdot t = m c \\Delta T$<br>$\\Rightarrow 420 \\cdot t = 1 \\times 4.200 \\times (70 - 20)$<br>$\\Rightarrow 420 t = 210.000$<br>$\\Rightarrow t = 500$ s.",
         trik_cepat: "$t = \\frac{m c \\Delta T}{P}$."
     },
     {
@@ -827,7 +827,7 @@ const soalFisika = [
             "$1.120$ J/(kg·$^\\circ$C)"
         ],
         jawaban: 2,
-        pembahasan: "$m_L c_L (100 - 25) = m_a c_a (25 - 20) \\Rightarrow 0,5 \\cdot c_L (75) = 1(4.200)(5) \\Rightarrow 37,5 c_L = 21.000 \\Rightarrow c_L = 560$ J/(kg·$^\\circ$C).",
+        pembahasan: "$m_L c_L (100 - 25) = m_a c_a (25 - 20)$<br>$\\Rightarrow 0,5 \\cdot c_L (75) = 1(4.200)(5)$<br>$\\Rightarrow 37,5 c_L = 21.000$<br>$\\Rightarrow c_L = 560$ J/(kg·$^\\circ$C).",
         trik_cepat: "$Q_{\\text{lepas}} = Q_{\\text{terima}}$."
     },
 
@@ -840,7 +840,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$1,5$ atm", "$2,5$ atm", "$3,0$ atm", "$4,0$ atm", "$13,1$ atm"],
         jawaban: 2,
-        pembahasan: "Proses isokhorik ($T_1 = 300$ K, $T_2 = 450$ K): $\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\Rightarrow \\frac{2}{300} = \\frac{P_2}{450} \\Rightarrow P_2 = 3,0$ atm.",
+        pembahasan: "Proses isokhorik ($T_1 = 300$ K, $T_2 = 450$ K): $\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$<br>$\\Rightarrow \\frac{2}{300} = \\frac{P_2}{450}$<br>$\\Rightarrow P_2 = 3,0$ atm.",
         trik_cepat: "Volume tetap: $P$ sebanding dengan $T$ (dalam Kelvin)."
     },
     {
@@ -849,7 +849,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$3 \\times 10^5$ Pa", "$4,5 \\times 10^5$ Pa", "$6 \\times 10^5$ Pa", "$9 \\times 10^5$ Pa", "$1,2 \\times 10^6$ Pa"],
         jawaban: 2,
-        pembahasan: "$V = 8,314\\text{ L} = 8,314 \\times 10^{-3}$ m$^3$, $T = 300$ K. $P = \\frac{n R T}{V} = \\frac{2 \\times 8,314 \\times 300}{8,314 \\times 10^{-3}} = 600 \\times 10^3 = 6 \\times 10^5$ Pa.",
+        pembahasan: "$V = 8,314\\text{ L} = 8,314 \\times 10^{-3}$ m$^3$, $T = 300$ K.<br>$P = \\frac{n R T}{V}$<br>$= \\frac{2 \\times 8,314 \\times 300}{8,314 \\times 10^{-3}}$<br>$= 600 \\times 10^3$<br>$= 6 \\times 10^5$ Pa.",
         trik_cepat: "$PV = nRT$ (ingat $1\\text{ liter} = 10^{-3}\\text{ m}^3$)."
     },
     {
@@ -858,7 +858,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["Tekanan gas", "Volume wadah", "Massa molekul gas", "Suhu mutlak gas", "Jumlah partikel gas"],
         jawaban: 3,
-        pembahasan: "$\\bar{E}_k = \\frac{3}{2} k T$. Energi kinetik rata-rata molekul gas ideal hanya bergantung pada suhu mutlak ($T$ dalam Kelvin).",
+        pembahasan: "$\\bar{E}_k = \\frac{3}{2} k T$.<br>Energi kinetik rata-rata molekul gas ideal hanya bergantung pada suhu mutlak ($T$ dalam Kelvin).",
         trik_cepat: "Suhu sama $\\rightarrow$ Energi kinetik rata-rata molekul sama."
     },
     {
@@ -867,7 +867,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$\\frac{1}{2}$ kali semula", "$2$ kali semula", "$4$ kali semula", "$8$ kali semula", "$16$ kali semula"],
         jawaban: 1,
-        pembahasan: "$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} \\propto \\sqrt{T}$. Jika $T' = 4T$, maka $v'_{\\text{rms}} = \\sqrt{4} = 2$ kali semula.",
+        pembahasan: "$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} \\propto \\sqrt{T}$.<br>Jika $T' = 4T$, maka $v'_{\\text{rms}} = \\sqrt{4} = 2$ kali semula.",
         trik_cepat: "$v_{\\text{rms}}$ sebanding dengan akar suhu mutlak ($\\sqrt{T}$)."
     },
     {
@@ -876,7 +876,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$2.493$ J", "$4.986$ J", "$7.479$ J", "$12.465$ J", "$14.958$ J"],
         jawaban: 2,
-        pembahasan: "Gas monoatomik memiliki $3$ derajat kebebasan ($f = 3$): $U = \\frac{3}{2} n R T = \\frac{3}{2}(2)(8,31)(300) = 3 \\times 8,31 \\times 300 = 7.479$ J.",
+        pembahasan: "Gas monoatomik memiliki $3$ derajat kebebasan ($f = 3$): $U = \\frac{3}{2} n R T$<br>$= \\frac{3}{2}(2)(8,31)(300)$<br>$= 3 \\times 8,31 \\times 300$<br>$= 7.479$ J.",
         trik_cepat: "Monoatomik: $U = \\frac{3}{2}nRT$; Diatomik suhu sedang: $U = \\frac{5}{2}nRT$."
     },
     {
@@ -885,7 +885,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$250$ J", "$300$ J", "$500$ J", "$800$ J", "$5.000$ J"],
         jawaban: 2,
-        pembahasan: "$\\Delta V = (4,0 - 1,5)\\text{ L} = 2,5 \\times 10^{-3}$ m$^3$. $W = P \\Delta V = (2 \\times 10^5)(2,5 \\times 10^{-3}) = 500$ J.",
+        pembahasan: "$\\Delta V = (4,0 - 1,5)\\text{ L}$<br>$= 2,5 \\times 10^{-3}$ m$^3$.<br>$W = P \\Delta V$<br>$= (2 \\times 10^5)(2,5 \\times 10^{-3})$<br>$= 500$ J.",
         trik_cepat: "Isobarik: $W = P(V_2 - V_1)$."
     },
     {
@@ -903,7 +903,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$-2.100$ J", "$-900$ J", "$600$ J", "$900$ J", "$2.100$ J"],
         jawaban: 3,
-        pembahasan: "Hukum I Termodinamika: $Q = \\Delta U + W \\Rightarrow +1.500 = \\Delta U + (+600) \\Rightarrow \\Delta U = 900$ J.",
+        pembahasan: "Hukum I Termodinamika: $Q = \\Delta U + W$<br>$\\Rightarrow +1.500 = \\Delta U + (+600)$<br>$\\Rightarrow \\Delta U = 900$ J.",
         trik_cepat: "Menyerap kalor ($Q+$), melakukan usaha ($W+$): $\\Delta U = Q - W$."
     },
     {
@@ -918,8 +918,8 @@ const soalFisika = [
             "Tidak ada kalor yang masuk ke sistem"
         ],
         jawaban: 2,
-        pembahasan: "Karena $\\Delta V = 0$, maka usaha $W = 0$. Dari $Q = \\Delta U + W$, diperoleh $Q = \\Delta U$.",
-        trik_cepat: "Isokhorik $\\rightarrow \\Delta V = 0 \\rightarrow W = 0 \\rightarrow Q = \\Delta U$."
+        pembahasan: "Karena $\\Delta V = 0$, maka usaha $W = 0$.<br>Dari $Q = \\Delta U + W$, diperoleh $Q = \\Delta U$.",
+        trik_cepat: "Isokhorik $\\rightarrow \\Delta V = 0 \\rightarrow W$<br>$= 0 \\rightarrow Q$<br>$= \\Delta U$."
     },
     {
         id: 92,
@@ -927,7 +927,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$25\\%$", "$40\\%$", "$50\\%$", "$75\\%$", "$76\\%$"],
         jawaban: 2,
-        pembahasan: "$T_1 = 527 + 273 = 800$ K dan $T_2 = 127 + 273 = 400$ K. $\\eta = \\left(1 - \\frac{T_2}{T_1}\\right) \\times 100\\% = \\left(1 - \\frac{400}{800}\\right) \\times 100\\% = 50\\%$.",
+        pembahasan: "$T_1 = 527 + 273 = 800$ K dan $T_2 = 127 + 273 = 400$ K.<br>$\\eta = \\left(1 - \\frac{T_2}{T_1}\\right) \\times 100\\%$<br>$= \\left(1 - \\frac{400}{800}\\right) \\times 100\\%$<br>$= 50\\%$.",
         trik_cepat: "Ubah suhu ke Kelvin! $\\eta = (1 - T_{\\text{rendah}}/T_{\\text{tinggi}}) \\times 100\\%$."
     },
     {
@@ -936,7 +936,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$500$ J", "$1.000$ J", "$1.500$ J", "$2.000$ J", "$3.000$ J"],
         jawaban: 1,
-        pembahasan: "$\\eta = 1 - \\frac{300}{600} = 0,5$. Usaha $W = \\eta \\cdot Q_1 = 0,5 \\times 2.000 = 1.000$ J.",
+        pembahasan: "$\\eta = 1 - \\frac{300}{600} = 0,5$.<br>Usaha $W = \\eta \\cdot Q_1 = 0,5 \\times 2.000 = 1.000$ J.",
         trik_cepat: "$W = \\eta Q_1$."
     },
     {
@@ -945,7 +945,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$450$ K", "$500$ K", "$600$ K", "$750$ K", "$900$ K"],
         jawaban: 3,
-        pembahasan: "$T_2 = 27 + 273 = 300$ K. Kondisi baru: $0,6 = 1 - \\frac{300}{T_1'} \\Rightarrow \\frac{300}{T_1'} = 0,4 \\Rightarrow T_1' = \\frac{300}{0,4} = 750$ K.",
+        pembahasan: "$T_2 = 27 + 273 = 300$ K.<br>Kondisi baru: $0,6 = 1 - \\frac{300}{T_1'}$<br>$\\Rightarrow \\frac{300}{T_1'} = 0,4$<br>$\\Rightarrow T_1' = \\frac{300}{0,4} = 750$ K.",
         trik_cepat: "$T_1 = \\frac{T_2}{1 - \\eta}$."
     },
     {
@@ -954,7 +954,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$250$ J", "$300$ J", "$500$ J", "$1.200$ J", "$7.500$ J"],
         jawaban: 1,
-        pembahasan: "$K_p = \\frac{Q_2}{W} \\Rightarrow 5 = \\frac{1.500}{W} \\Rightarrow W = \\frac{1.500}{5} = 300$ J.",
+        pembahasan: "$K_p = \\frac{Q_2}{W}$<br>$\\Rightarrow 5 = \\frac{1.500}{W}$<br>$\\Rightarrow W = \\frac{1.500}{5} = 300$ J.",
         trik_cepat: "Kulkas: $K_p = \\frac{Q_{\\text{dingin}}}{W}$."
     },
     {
@@ -969,8 +969,8 @@ const soalFisika = [
             "Suhu gas turun sebanding dengan pertambahan volume"
         ],
         jawaban: 1,
-        pembahasan: "Pada proses isotermal ($\\Delta T = 0$), perubahan energi dalam $\\Delta U = 0$. Sesuai Hukum I Termodinamika ($Q = \\Delta U + W$), maka $Q = W$.",
-        trik_cepat: "Isotermal $\\rightarrow \\Delta T = 0 \\rightarrow \\Delta U = 0 \\rightarrow Q = W$."
+        pembahasan: "Pada proses isotermal ($\\Delta T = 0$), perubahan energi dalam $\\Delta U = 0$.<br>Sesuai Hukum I Termodinamika ($Q = \\Delta U + W$), maka $Q = W$.",
+        trik_cepat: "Isotermal $\\rightarrow \\Delta T = 0 \\rightarrow \\Delta U$<br>$= 0 \\rightarrow Q$<br>$= W$."
     },
     {
         id: 97,
@@ -984,7 +984,7 @@ const soalFisika = [
             "Kapasitas kalor molar gas"
         ],
         jawaban: 2,
-        pembahasan: "Pada siklus tertutup, keadaan awal sama dengan keadaan akhir sehingga $\\Delta U_{\\text{siklus}} = 0$. Luas kurva tertutup pada diagram $P$-$V$ menyatakan usaha bersih ($W_{\\text{siklus}}$).",
+        pembahasan: "Pada siklus tertutup, keadaan awal sama dengan keadaan akhir sehingga $\\Delta U_{\\text{siklus}} = 0$.<br>Luas kurva tertutup pada diagram $P$-$V$ menyatakan usaha bersih ($W_{\\text{siklus}}$).",
         trik_cepat: "Luas siklus $P$-$V$ = Usaha bersih ($W$); $\\Delta U_{\\text{siklus}} = 0$."
     },
     {
@@ -993,7 +993,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$6.000$ J", "$12.000$ J", "$18.000$ J", "$20.000$ J", "$30.000$ J"],
         jawaban: 1,
-        pembahasan: "Searah jarum jam berarti $W$ bernilai positif. $W = \\text{Luas persegi panjang} = \\Delta P \\cdot \\Delta V = (5 - 2)\\times 10^5 \\times (0,06 - 0,02) = (3 \\times 10^5)(0,04) = 12.000$ J.",
+        pembahasan: "Searah jarum jam berarti $W$ bernilai positif.<br>$W = \\text{Luas persegi panjang}$<br>$= \\Delta P \\cdot \\Delta V$<br>$= (5 - 2)\\times 10^5 \\times (0,06 - 0,02)$<br>$= (3 \\times 10^5)(0,04)$<br>$= 12.000$ J.",
         trik_cepat: "Siklus persegi panjang: $W = \\pm \\Delta P \\cdot \\Delta V$ ($+$ searah jarum jam, $-$ berlawanan)."
     },
     {
@@ -1008,7 +1008,7 @@ const soalFisika = [
             "Tekanan gas ideal berbanding lurus dengan suhu mutlaknya"
         ],
         jawaban: 2,
-        pembahasan: "Rumusan Clausius membahas arah aliran kalor (dasar mesin pendingin): kalor tidak dapat mengalir spontan dari suhu dingin ke suhu panas. Pilihan B adalah rumusan Kelvin-Planck (mesin kalor).",
+        pembahasan: "Rumusan Clausius membahas arah aliran kalor (dasar mesin pendingin): kalor tidak dapat mengalir spontan dari suhu dingin ke suhu panas.<br>Pilihan B adalah rumusan Kelvin-Planck (mesin kalor).",
         trik_cepat: "Clausius = arah aliran kalor (kulkas); Kelvin-Planck = efisiensi mesin kalor $< 100\\%$."
     },
     {
@@ -1017,7 +1017,7 @@ const soalFisika = [
         gambar: "",
         opsi: ["$864$ J", "$1.246$ J", "$1.728$ J", "$2.493$ J", "$3.456$ J"],
         jawaban: 2,
-        pembahasan: "$W = n R T \\ln\\left(\\frac{V_2}{V_1}\\right) = 1 \\times 8,31 \\times 300 \\times \\ln(2) = 2.493 \\times 0,693 \\approx 1.728$ J.",
+        pembahasan: "$W = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$<br>$= 1 \\times 8,31 \\times 300 \\times \\ln(2)$<br>$= 2.493 \\times 0,693 \\approx 1.728$ J.",
         trik_cepat: "Usaha isotermal: $W = n R T \\ln(V_2 / V_1)$."
     }
 ];
